@@ -213,7 +213,7 @@ app.layout = html.Div([
         html.Img(src='/assets/IDF_RER_A_logo.svg', style={'width': '12%', 'margin-right': '20px', 'margin-left':'10px'}),
         html.H1('Dashboard du RER A', style={"justifyContent": "center", "display": "flex", "alignItems": "center", "margin-bottom": "20px", "margin-top": "20px"})
     ], style={'display': 'flex', 'textAlign': 'left', 'margin-bottom': '20px', 'margin-top':'20px'}),   
-    html.Div(style={'height': '5px', 'backgroundColor': '#E30418', 'marginTop': '10px', 'marginBottom':'10px', 'width':'50%', 'borderRadius': '25px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
+    html.Div(className='separator'),
     dcc.Tabs(id="multiple_tabs", value="accueil", children=[
         dcc.Tab(label="Vue générale", 
                 value='ligne_rer_a', 
@@ -276,7 +276,7 @@ app.layout = html.Div([
                         'justifyContent': 'center'
                         }),
     ], style={'display': 'flex', 'flex-direction':'row', 'justifyContent': 'center'}),
-    html.Div(style={'height': '5px', 'backgroundColor': '#E30418', 'marginTop': '10px', 'marginBottom':'40px', 'width':'50%', 'borderRadius': '25px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
+    html.Div(className='separator'),
     html.Div(id='tabs-content-example-graph', style={"margin-left":"10px", "margin-right":"10px"})
 ])
 
@@ -318,8 +318,8 @@ def render_content(tab):
             html.Label("Sélectionnez le type de problème :"),
             dcc.Dropdown(
                 id='problem-dropdown',
-                options=[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
-                value=all_types_split_unique,  # Sélectionner tous les types par défaut
+                options=[{'label': 'Tous les problèmes', 'value': 'all'}] +[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
+                value=['all'],  # Sélectionner tous les types par défaut
                 multi=True,
                 style={'width': '98%',},
             ),
@@ -333,7 +333,8 @@ def render_content(tab):
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
-                step=None
+                step=None,
+                className='custom-slider'
             ),
             html.Label("Sélectionnez le mois :"),
             dcc.RangeSlider(
@@ -342,9 +343,10 @@ def render_content(tab):
                 max=months.max(),
                 value=[months.min(), months.max()],
                 marks={str(month): month_dict[month] for month in months},
-                step=None
+                step=None,
+                className='custom-range-slider'
             ),
-            html.Div(style={'height': '5px', 'backgroundColor': 'red', 'marginTop':'20px', 'marginBottom': '20px', 'width':'80%', 'marginLeft': 'auto', 'marginRight': 'auto', 'borderRadius': '25px'}), 
+            html.Div(className='separator'),
             html.H2("Nombre d'incidents par typologie sélectionnées", style={'textAlign': 'center'}),
             html.Div([ 
             html.Label("Sélectionnez le type de tri :", style={'display': 'block', 'textAlign': 'center', 'marginBottom': '10px'}),
@@ -383,7 +385,7 @@ def render_content(tab):
             html.Div(id='average-response-time'),
                 ], style={'margin-top':'40px', 'margin-left':'auto', 'margin-right':'auto', 'border': '5px solid black', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '100%'
                           }),
-            html.Div(id='separator', style={'height': '5px', 'backgroundColor': 'red', 'marginTop': '30px', 'marginBottom': '30px', 'width':'100%'}),
+            html.Div(className='separator'),
             html.H1("Vue complète", style={'textAlign': 'center'}),
 
                 html.Div([
@@ -406,7 +408,8 @@ def render_content(tab):
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
-                    step=None
+                    step=None,
+                    className='custom-range-slider'
                 ),
                 dcc.Slider(
                 id='year-slider_time',
@@ -414,10 +417,11 @@ def render_content(tab):
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
-                step=None
+                step=None,
+                className='custom-slider'
                 ),
 
-                html.Div(id='separator', style={'height': '5px', 'backgroundColor': 'red', 'marginTop': '30px', 'marginBottom': '30px', 'width':'100%'}),
+                html.Div(className='separator'),
                 html.H1("Problèmes les plus courants", style={'textAlign': 'center'}),
                 dcc.Graph(id='incidents_occurences', config={"displayModeBar": False}),
                 dcc.RangeSlider(
@@ -426,7 +430,9 @@ def render_content(tab):
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
-                    step=None
+                    step=None,
+                    className='custom-range-slider'
+
                 ),
                 dcc.Slider(
                 id='year-slider_time_occurences',
@@ -434,10 +440,11 @@ def render_content(tab):
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
-                step=None
+                step=None,
+                className='custom-slider'
                 ),
 
-                html.Div(id='separator', style={'height': '5px', 'backgroundColor': 'red', 'marginTop': '30px', 'marginBottom': '30px', 'width':'100%'}),
+                html.Div(className='separator'),
                 html.H1("Par typologie spécifique", style={'textAlign': 'center'}),
 
                 html.Div([
@@ -458,7 +465,8 @@ def render_content(tab):
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
-                    step=None
+                    step=None,
+                    className='custom-range-slider'
                 ),
                 dcc.Slider(
                 id='year-slider_time_incidents_details',
@@ -466,7 +474,8 @@ def render_content(tab):
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
-                step=None
+                step=None,
+                className='custom-slider'
                 ),
 
 
@@ -498,7 +507,8 @@ def render_content(tab):
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
-                    step=None
+                    step=None,
+                    className='custom-range-slider'
             ),
             html.Div(id='incident-info'),
             html.Div([
@@ -587,8 +597,9 @@ def render_content(tab):
 )
 def update_figure(selected_year, selected_month, selected_problems, sort_type):
 
-    if selected_problems is None:
+    if selected_problems == ['all']:
         selected_problems = all_types_split_unique
+
     # Filtrer les données en fonction de l'année sélectionnée
     filtered_df = df_f[(df_f['year'] == selected_year) 
                        & (df_f['month'] >= selected_month[0]) 
@@ -762,6 +773,9 @@ from datetime import datetime
     [Input('incident-type-dropdown', 'value')]
 )
 def update_figure(selected_incident_type):
+
+    if selected_incident_type == 'all':
+        selected_incident_type = all_types_split_unique
 
     pb_resolve_df_filtered = pb_resolve_df[pb_resolve_df['label'].str.contains('|'.join(selected_incident_type))]
 
