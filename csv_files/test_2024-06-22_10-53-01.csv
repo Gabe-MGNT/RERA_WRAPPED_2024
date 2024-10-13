@@ -1,0 +1,64 @@
+tweet_id,tweet_type,time_posted,content,associated_tweet_id,comments,retweets,likes,views,extraction_date
+id__zmr00cy7rwq,Epinglé,2024-06-19 14:00:19,"[#NouvelArticle ] Les trains courts surchargés en soirée, c'est fini ! Découvrez la nouvelle offre de soirée sur la ligne A dans le nouvel article du blog #RERA ici ",,17,18,69,43945,2024-06-22 10:53:11.126442
+id__2obql5jy11d,Normal,2024-06-22 05:10:45, Le trafic est perturbé de Cergy-le-Haut vers Nanterre- préfecture en raison de personnes sur les voies à Cergy – Saint-Christophe. #RERA,,1,0,1,3625,2024-06-22 10:53:11.310518
+id__68k0m9gvoye,Réponse,2024-06-22 05:30:57, Retour à un trafic régulier sur la ligne. #RERA,,0,0,2,2625,2024-06-22 10:53:11.429210
+id__z4isoaj62ik,Normal,2024-06-21 19:55:57, Le trafic est perturbé de Nanterre Préfecture vers Cergy le Haut en raison d'un incident d'exploitation. #RERA,,2,2,6,7502,2024-06-22 10:53:11.550412
+id__sr48kcoerw,Réponse,2024-06-21 20:32:09,Le trafic est rétabli de Nanterre Préfecture vers Cergy le Haut (incident d'exploitation). #RERA,,2,0,3,4116,2024-06-22 10:53:11.665384
+id__j6l1jygemt,Normal,2024-06-21 17:13:03,Le train actuellement à Châtelet–Les Halles et en direction de Saint-Germain-en-Laye stationne en raison de l'actionnement d'un signal d'alarme. #RERA,,12,3,9,17770,2024-06-22 10:53:11.786496
+id__f3rqiimxhx4,Réponse,2024-06-21 19:08:47,"Le trafic est très perturbé sur l'ensemble de la ligne, en répercussion d'un malaise voyageur à Châtelet – Les Halles. #RERA",,1,1,3,5318,2024-06-22 10:53:20.776937
+id__nc16x0nn8q,Réponse,2024-06-21 19:31:46, Le trafic est régulier sur l'ensemble de la ligne (malaise voyageur à Châtelet – Les Halles). #RERA,,0,0,2,3934,2024-06-22 10:53:20.899117
+id__qcdyptcwi5g,Normal,2024-06-21 17:19:11,Le train actuellement à Joinville-le-Pont et en direction de Cergy-Le Haut stationne en raison d'un ajustement de l'intervalle entre les trains. #RERA,,1,1,5,10951,2024-06-22 10:53:21.022663
+id__l60pjupylyj,Réponse,2024-06-21 17:52:21,Fin de stationnement à Joinville-le-Pont. Le train repart en direction de Cergy-Le Haut (ajustement de l'intervalle entre les trains). #RERA,,0,0,2,4696,2024-06-22 10:53:21.139640
+id__y6u6q1km8gm,Normal,2024-06-21 13:53:50,Le train actuellement à Rueil-Malmaison et en direction de Saint-Germain-en-Laye stationne en raison de l'intervention du conducteur. #RERA,,1,1,4,8439,2024-06-22 10:53:32.728198
+id__hx99pkxyqjr,Réponse,2024-06-21 13:54:29,Fin de stationnement à Rueil-Malmaison. Le train repart en direction de Saint-Germain-en-Laye (intervention du conducteur). #RERA,,0,0,3,5598,2024-06-22 10:53:32.848599
+id__tbxh42ns9c,Normal,2024-06-21 12:24:12,Le train actuellement à Nanterre – Préfecture et en direction de Marne-la-Vallée–Chessy stationne en raison de l'actionnement d'un signal d'alarme. #RERA,,1,0,4,6187,2024-06-22 10:53:32.973492
+id__mjw8glxjsvo,Réponse,2024-06-21 12:31:45,Fin de stationnement à Nanterre – Préfecture. Le train repart en direction de Marne-la-Vallée–Chessy (incident voyageur). #RERA,,0,0,3,4257,2024-06-22 10:53:33.108298
+id__zvo7ju8tcu,Normal,2024-06-21 11:53:46,Le train actuellement à Bussy-Saint-Georges et en direction de Saint-Germain-en-Laye stationne en raison de l'actionnement d'un signal d'alarme. #RERA,,1,0,5,5150,2024-06-22 10:53:33.245367
+id__d7lu4riqelu,Réponse,2024-06-21 11:58:58,Fin de stationnement à Bussy-Saint-Georges. Le train repart en direction de Saint-Germain-en-Laye (incident voyageur). #RERA,,0,0,3,3433,2024-06-22 10:53:33.393391
+id__a15236cf7lk,Normal,2024-06-21 07:27:00, Les trains ne marquent pas l'arrêt en gare de Houilles–Carrières-sur-Seine en direction de Boissy-Saint-Léger et Torcy (bagage oublié sur le quai). #RERA,,3,3,6,9697,2024-06-22 10:53:33.520947
+id__kehotijhwt8,Réponse,2024-06-21 08:12:03, Les trains marquent à nouveau l'arrêt en gare de Houilles–Carrières-sur-Seine (bagage oublié sur le quai). #RERA,,0,0,1,4009,2024-06-22 10:53:45.027375
+id__j5ztstsaxma,Normal,2024-06-21 05:41:51,Le train actuellement à La Défense et en direction de Boissy-Saint-Léger stationne en raison d'une panne électrique. #RERA,,3,4,7,13916,2024-06-22 10:53:45.185825
+id__kopwayvj8s,Réponse,2024-06-21 06:19:34, Le trafic est perturbé de Saint-Germain-en-Laye vers Marne-la-Vallée–Chessy • Boissy-Saint-Léger en raison d'une panne électrique à La Défense. #RERA,,5,0,4,7184,2024-06-22 10:53:45.305022
+id__6cdmnu4lpc,Réponse,2024-06-21 07:29:21, Le trafic est rétabli de Saint-Germain-en-Laye vers Marne-la-Vallée–Chessy • Boissy-Saint-Léger (panne électrique). #RERA,,0,1,4,3922,2024-06-22 10:53:45.431355
+id__xnunr73x42,Réponse,2024-06-21 06:00:25,"[#FêtedelaMusique ] Votre #RERA fonctionne toute la nuit ! Retrouvez toutes les infos ainsi que le planning des animations sur notre blog 
+https://rera-leblog.fr/fete-de-la-musique-2024-avec-vous-au-bout-de-la-nuit/…",,7,5,17,12424,2024-06-22 10:53:45.555735
+id__d5eoj12zqni,Normal,2024-06-21 03:16:24," Le trafic est très perturbé sur l'ensemble de la ligne, en raison d'un rallongement de durée de chantier à Châtelet – Les Halles. #RERA",,3,0,4,7628,2024-06-22 10:54:05.917134
+id__katqimtgjkq,Réponse,2024-06-21 03:27:56, Le trafic est perturbé sur l'ensemble de la ligne en répercussion d'un rallongement de durée de chantier à Châtelet – Les Halles. #RERA,,0,1,3,6064,2024-06-22 10:54:06.180840
+id__k157evj8yt,Normal,2024-06-20 22:37:08,"Le stationnement est prolongé à Marne-la-Vallée – Chessy en direction de Saint-Germain-en-Laye,  en raison d'un train en panne. #RERA",,1,1,3,6200,2024-06-22 10:54:06.330307
+id__1w17mj472ad,Réponse,2024-06-20 22:38:56," Le trafic est perturbé de Marne la Vallée Chessy vers Rueil-Malmaison, en raison d'un train en panne à Marne-la-Vallée – Chessy. #RERA",,1,0,3,4598,2024-06-22 10:54:06.466250
+id__6i9smi9q1pi,Réponse,2024-06-20 23:01:02, Fin d'incident sur le #RERA,,0,0,2,3574,2024-06-22 10:54:06.610315
+id__b3w7jrs2fw9,Normal,2024-06-20 20:59:58," Le trafic est perturbé de Nanterre-Préfecture vers Cergy-Le-Haut, en raison d'un train en panne à Châtelet – Les Halles. #RERA",,2,0,4,7405,2024-06-22 10:54:06.749077
+id__jwszbwkj9k,Réponse,2024-06-20 21:44:39, Le trafic est rétabli sur l'ensemble du #RERA,,0,0,3,3625,2024-06-22 10:54:17.056260
+id__xen0mpn02ed,Normal,2024-06-20 18:39:59," Le trafic est perturbé De Nanterre - Préfecture vers Boissy St léger,  en raison d'un train en panne à Maison Laffitte. #RERA",,1,0,4,7338,2024-06-22 10:54:17.234760
+id__cblgscwedqb,Réponse,2024-06-20 19:24:23, Retour à un trafic régulier sur l'ensemble du #RERA,,0,0,1,3862,2024-06-22 10:54:17.398689
+id__uzsuj1x5i8a,Normal,2024-06-20 13:55:30," Le trafic est perturbé de Marne-la-Vallée–Chessy vers Poissy • Saint-Germain-en-Laye, en raison d'une panne de signalisation à Torcy. #RERA",,4,0,6,7175,2024-06-22 10:54:17.608110
+id__j1h9xh9bim,Réponse,2024-06-20 14:16:44, Le trafic est rétabli de Marne-la-Vallée–Chessy vers Poissy • Saint-Germain-en-Laye (panne de signalisation). #RERA,,1,0,3,3772,2024-06-22 10:54:17.762910
+id__8gr3vjy17lr,Normal,2024-06-20 10:20:33,Le train actuellement à Vincennes et en direction de Boissy-Saint-Léger stationne en raison d'un ajustement de l'intervalle des trains. #RERA,,1,0,4,5580,2024-06-22 10:54:17.937328
+id__n92qa7ilfx,Réponse,2024-06-20 10:25:30,Fin de stationnement à Vincennes. Le train repart en direction de Boissy-Saint-Léger (ajustement d'intervalle entre les trains). #RERA,,0,0,4,3963,2024-06-22 10:54:18.104584
+id__9kyqjtvqymo,Normal,2024-06-20 09:11:26,Les trains actuellement à Torcy et Noisy–Champs et en direction de Marne-la-Vallée–Chessy et Poissy • Cergy-Le Haut stationnent en raison d'une intervention des services techniques. #RERA,,1,0,6,5276,2024-06-22 10:54:30.060351
+id__18ad0qek5aa,Réponse,2024-06-20 09:16:36,Fin de stationnement (intervention des équipes techniques). #RERA,,0,0,3,3298,2024-06-22 10:54:30.257134
+id__pvocwqh5w4k,Normal,2024-06-20 07:12:38, Le trafic est perturbé entre Poissy et Nanterre – Préfecture en raison d'un incident affectant la voie à Achères - Grand Cormier. #RERA,,2,2,4,7927,2024-06-22 10:54:30.494023
+id__r6uh0jr44x,Réponse,2024-06-20 08:30:23, Le trafic est rétabli entre Poissy et Nanterre – Préfecture (incident affectant la voie). #RERA,,1,0,3,3152,2024-06-22 10:54:30.749300
+id__j6klkv89pgh,Normal,2024-06-20 08:18:58,Le train actuellement terminus à Torcy stationne en raison de l'actionnement d'un signal d'alarme. #RERA,,1,0,3,4075,2024-06-22 10:54:31.030726
+id__2yu55ixbq0n,Réponse,2024-06-20 08:19:52,Fin de stationnement à Torcy. Le train repart (incident voyageur). #RERA,,0,0,2,2948,2024-06-22 10:54:31.246154
+id__mn0qhuyug3l,Normal,2024-06-20 04:07:23, Le trafic est perturbé de Poissy vers Nanterre – Préfecture en raison de la panne d'un train à Poissy. #RERA,,3,0,4,7899,2024-06-22 10:54:31.509307
+id__onz79yxudyr,Réponse,2024-06-20 04:30:15, Le trafic est rétabli de Poissy vers Nanterre – Préfecture (panne de train). #RERA,,3,0,5,5966,2024-06-22 10:54:31.742014
+id__o5d22wgyxvb,Normal,2024-06-19 21:58:44," Le trafic est perturbé de Boissy-Saint-Léger vers Poissy,  en raison d'un incident d'exploitation à Boissy-Saint-Léger. #RERA",,1,0,6,9181,2024-06-22 10:54:31.950602
+id__d0pdq2kdo2u,Réponse,2024-06-19 23:04:43,Retour à un trafic régulier sur l'ensemble du #RERA,,0,0,4,5030,2024-06-22 10:54:41.929990
+id__0ehijvxfhszg,Normal,2024-06-19 19:47:42,"Le trafic est perturbé de Cergy-Le-Haut vers Boissy-Saint-Léger,  en raison d'un incident affectant les voies   à Cergy – Saint-Christophe. #RERA",,1,0,6,9294,2024-06-22 10:54:42.146740
+id__e86j6844ri,Réponse,2024-06-19 20:20:56," Fin d'incident, retour à un trafic régulier sur le #RERA",,0,0,4,4788,2024-06-22 10:54:42.353078
+id__yrabiosjfk,Normal,2024-06-19 16:08:23,Le train actuellement à Nanterre–Ville et en direction de Saint-Germain-en-Laye stationne en raison de l'actionnement d'un signal d'alarme. #RERA,,2,1,8,9735,2024-06-22 10:54:42.573260
+id__t49jyxcyrt8,Réponse,2024-06-19 16:13:37," Le trafic est perturbé de La Défense vers Saint-Germain-en-Laye, en raison d'un malaise voyageur à Nanterre–Ville. #RERA",,1,0,5,5253,2024-06-22 10:54:42.735478
+id__wxpb8bedxtm,Réponse,2024-06-19 16:30:32, Le trafic est rétabli de La Défense vers Saint-Germain-en-Laye (malaise voyageur). #RERA,,0,0,2,3783,2024-06-22 10:54:42.968483
+id__t0on47c6snb,Normal,2024-06-19 15:39:09,Le train actuellement à Boissy-Saint-Léger et en direction de Cergy–Le Haut stationne en raison de l'intervention des agents. #RERA,,1,0,4,6448,2024-06-22 10:54:43.214646
+id__k213tu4vkd8,Réponse,2024-06-19 15:42:22, Le trafic est perturbé de Boissy-Saint-Léger vers Cergy–Le Haut en raison de l'intervention des agents à Boissy-Saint-Léger. #RERA,,1,0,3,4749,2024-06-22 10:54:43.441873
+id__hglr3s53tc8,Réponse,2024-06-19 16:01:11, Le trafic est rétabli de Boissy-Saint-Léger vers Cergy–Le Haut (intervention des agents). #RERA,,0,0,3,3310,2024-06-22 10:54:56.652268
+id__lcu0t7vrqrc,Réponse,2024-06-19 15:23:18,"Il y a trop de gens beaux dans le 
+@RER_A
+ je tombe amoureux à chaque station mon cœur explose.",,4,1,17,4996,2024-06-22 10:54:56.926204
+id__xv9wwz580d9,Normal,2024-06-19 11:54:05," Le trafic est perturbé de Poissy vers Nanterre–Préfecture, en raison d'une difficultés d'exploitation à Poissy. #RERA",,1,0,5,6212,2024-06-22 10:54:57.202934
+id__t3t9fx6fa9s,Réponse,2024-06-19 12:10:02, Le trafic est rétabli de Poissy vers Nanterre–Préfecture (difficultés d'exploitation). #RERA,,0,0,4,3589,2024-06-22 10:54:57.433748
+id__63p5y741aug,Normal,2024-06-19 08:57:52,Le train actuellement à Torcy et en direction de Marne-la-Vallée–Chessy stationne en raison de l'intervention du conducteur. #RERA,,1,0,4,5069,2024-06-22 10:54:57.755903
+id__obtc96s0ulo,Réponse,2024-06-19 08:59:30,Fin de stationnement à Torcy. Le train repart en direction de Marne-la-Vallée–Chessy (intervention du conducteur). #RERA,,0,0,3,3445,2024-06-22 10:54:58.012153
+id__zm9zbaca2o8,Normal,2024-06-19 06:24:06,Le train actuellement à Nanterre – Préfecture et en direction de Poissy stationne en raison de l'intervention du conducteur. #RERA,,1,0,5,8490,2024-06-22 10:54:58.280424
+id__qjkeb1esnk,Réponse,2024-06-19 06:47:26,Fin de stationnement à Nanterre – Préfecture. Le train repart en direction de Poissy (intervention du conducteur). #RERA,,0,0,3,4316,2024-06-22 10:54:58.501909

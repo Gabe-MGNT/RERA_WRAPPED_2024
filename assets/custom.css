@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'ParisineBold'; 
+    src: url('Parisine\ Bold.otf');
+}
+
+body{
+    font-family: 'ParisineBold';
+    color:#284897;
+}
+
+.dropdown-item {
+    border: 2px solid black;
+    background-color:#4D4D4D;
+    color:yellow;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Select-value-label {
+    color: #284897;
+    }

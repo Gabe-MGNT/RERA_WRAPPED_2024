@@ -1,0 +1,770 @@
+id,begin_date,end_date,label,gare_source,duration
+8df8f19a-245b-4b8e-87e1-4aaa04f7fd7b,2024-08-03 18:47:13,2024-08-03 19:53:27,incident exploitation,Poissy,0 days 01:06:14
+cf2de773-2139-44aa-b333-1363bfe7db1f,2024-08-03 14:35:52,2024-08-03 15:58:31,signal alarme,Gare de Lyon,0 days 01:22:39
+e9bb1154-f50e-4d8e-a35d-0a02898dcff6,2024-08-03 03:08:16,2024-08-03 04:16:32,incident exploitation,Boissy-Saint-Léger,0 days 01:08:16
+9b296b8a-14e7-4955-935c-5a47fccf82c4,2024-08-02 15:28:11,2024-08-02 15:29:18,intervention personnel,Auber,0 days 00:01:07
+190ad1f7-287d-4220-aa42-529c6b7f60ce,2024-08-02 11:52:49,2024-08-02 11:53:29,intervention personnel,Fontenay-sous-Bois,0 days 00:00:40
+925177df-ac4b-475f-b08b-af8bb6018008,2024-08-02 10:29:56,2024-08-02 10:38:40,bagage oublie,Nanterre Préfecture,0 days 00:08:44
+6103b644-9aa9-4efd-8ce4-331ce48437e4,2024-08-02 10:25:07,2024-08-02 10:43:51,bagage oublie,Nanterre Préfecture,0 days 00:18:44
+a8d7709a-3095-4c93-b34d-2c7bececbfc2,2024-08-02 10:07:20,2024-08-02 10:08:25,intervention personnel,Nanterre Préfecture,0 days 00:01:05
+53eaa037-625f-414a-afc2-a427fea7ac6e,2024-08-02 09:39:25,2024-08-02 09:40:27,intervention personnel,La Varenne-Chennevières,0 days 00:01:02
+f896f1b4-7425-4796-b04a-0963536e8028,2024-08-02 07:52:56,2024-08-02 07:58:34,voies,Cergy le Haut,0 days 00:05:38
+fb2c6501-e71a-4716-b85d-ea91969618d0,2024-08-02 07:27:28,2024-08-02 08:29:15,voyageur,Parc de Saint-Maur,0 days 01:01:47
+e91587ac-b9c7-4f41-8017-0a0470bce8b3,2024-08-02 07:01:39,2024-08-02 07:04:23,intervention personnel,Boissy-Saint-Léger,0 days 00:02:44
+d0ec5b20-8b11-406f-94b0-a1aa94307bd2,2024-08-01 16:41:05,2024-08-01 19:04:32,bagage oublie,Gare de Lyon,0 days 02:23:27
+3447f431-68a5-4c8a-91cf-8c6f10ae9626,2024-08-01 14:06:40,2024-08-01 14:08:57,intervention personnel,Torcy,0 days 00:02:17
+9e6d4443-7577-490d-b6db-35663bafa0c5,2024-08-01 13:38:31,2024-08-01 13:40:35,voies,Châtelet les Halles,0 days 00:02:04
+863ad544-035f-4fe5-8dc7-c63e2c75e9d5,2024-08-01 13:23:38,2024-08-01 13:30:36,signal alarme,Gare de Lyon,0 days 00:06:58
+8261b2e7-8efa-427d-b7dc-892127bb8bdd,2024-08-01 10:11:21,2024-08-01 10:16:18,signal alarme,Houilles-Carrières-sur-Seine,0 days 00:04:57
+70d42217-aaee-485a-bff0-75cec9c42008,2024-08-01 10:04:35,2024-08-01 10:14:54,bagage oublie,Nation,0 days 00:10:19
+491d84d7-c97e-43fb-b49b-4b052fa0ea06,2024-08-01 08:09:43,2024-08-01 08:13:55,intervention personnel,Vincennes,0 days 00:04:12
+a14b7cea-dc84-42c0-8ebd-3a497d55cbef,2024-08-01 07:45:54,2024-08-01 08:20:08,incident technique,La Varenne-Chennevières,0 days 00:34:14
+53807d98-a0f2-4d46-ba8d-ba46e78b8484,2024-08-01 07:01:50,2024-08-01 07:05:35,incident technique,La Varenne-Chennevières,0 days 00:03:45
+1ae7a52e-1d49-43d4-85d8-693f26c69e76,2024-08-01 06:41:17,2024-08-01 06:45:33,incident technique,Sucy-Bonneuil,0 days 00:04:16
+5711cc01-c56b-4564-b336-15c91715efa7,2024-08-01 05:08:09,2024-08-01 05:48:20,divers,La Varenne-Chennevières,0 days 00:40:11
+51bd6975-2c46-4896-a56c-15e76b6332a4,2024-08-01 04:38:25,2024-08-01 05:55:43,voies,Sucy-Bonneuil,0 days 01:17:18
+4e63ae07-3dd1-4672-abfd-60297cf864ac,2024-07-31 17:56:53,2024-07-31 19:55:37,voyageur,Neuville Université,0 days 01:58:44
+f62d38b1-346a-4de6-b215-971f0acdf6c9,2024-07-31 16:47:13,2024-07-31 17:16:18,voies,Maisons-Laffitte,0 days 00:29:05
+b94bd23d-6caa-44d7-89b3-3e48df7f0d4a,2024-07-31 15:56:28,2024-07-31 16:01:49,voies,Fontenay-sous-Bois,0 days 00:05:21
+c63f2703-5728-4f49-a682-c169b5109209,2024-07-31 15:05:51,2024-07-31 15:08:07,incident technique,Boissy-Saint-Léger,0 days 00:02:16
+0075910e-4028-4278-b966-7744a1da3d78,2024-07-31 11:54:35,2024-07-31 14:46:57,intervention personnel,Gare de Lyon,0 days 02:52:22
+87171e0d-f819-4a23-b227-0335af3f0516,2024-07-31 11:37:40,2024-07-31 11:40:29,intervention personnel,Rueil-Malmaison,0 days 00:02:49
+7c29e73b-9e16-4114-b8d2-29e7c7ad1d21,2024-07-31 09:42:38,2024-07-31 10:20:25,intervention personnel,La Varenne-Chennevières,0 days 00:37:47
+25b0363b-c37e-4355-b138-e98527a6d17d,2024-07-31 08:22:49,2024-07-31 08:25:17,porte,Noisiel,0 days 00:02:28
+31d3355d-aca0-445a-937e-0dc12bb6b41d,2024-07-31 03:26:06,2024-07-31 04:54:02,panne train,,0 days 01:27:56
+6466fc5f-b9b9-440b-950f-b30f0a4bb1b7,2024-07-31 03:20:56,2024-07-31 06:49:30,voyageur,,0 days 03:28:34
+a2073b20-ece5-497e-8c11-d2b3615aa3b5,2024-07-30 16:22:57,2024-07-30 17:06:13,panne electrique,Houilles-Carrières-sur-Seine,0 days 00:43:16
+9dae859a-412f-48dc-a8c4-592f5bc23d84,2024-07-30 15:09:17,2024-07-30 15:20:54,voies,Vincennes,0 days 00:11:37
+17765f4f-aab0-4573-8b6a-0ac9c0db31d9,2024-07-30 15:02:12,2024-07-30 15:07:09,voies,Vincennes,0 days 00:04:57
+1b051ed4-f813-4d0f-9132-c88cd2959d11,2024-07-30 13:33:37,2024-07-30 14:00:22,voies,Vincennes,0 days 00:26:45
+fc490c1e-5823-4022-9c68-3cf58222b66f,2024-07-30 13:21:33,2024-07-30 13:29:01,signal alarme,Nanterre Préfecture,0 days 00:07:28
+4b0e65ca-97ae-4557-a407-b75ab6bb38a9,2024-07-30 12:46:01,2024-07-30 12:49:11,voyageur,Marne-la-Vallée-Chessy,0 days 00:03:10
+b057ef21-b34b-4610-9b48-db8636c65d09,2024-07-30 12:35:25,2024-07-30 12:39:50,intervention personnel,La Varenne-Chennevières,0 days 00:04:25
+3f6e72b3-6b03-45ad-b1d3-43fd55e08025,2024-07-30 11:38:02,2024-07-30 11:41:10,intervention personnel,Rueil-Malmaison,0 days 00:03:08
+0dc288ea-02e8-426b-8100-8e53491a7717,2024-07-30 03:31:24,2024-07-30 05:18:13,voies,Vincennes,0 days 01:46:49
+b26e7cde-11ef-4c51-83cb-c35e7408777a,2024-07-29 18:52:13,2024-07-29 20:00:53,bagage oublie,Nanterre Préfecture,0 days 01:08:40
+f2972bb2-5f62-42d6-bfe3-9dcdebc5ed94,2024-07-29 12:38:48,2024-07-29 13:40:39,voyageur,Maisons-Laffitte,0 days 01:01:51
+33851f93-2463-427d-9ebe-73e4a43d5775,2024-07-29 11:16:57,2024-07-29 11:17:44,intervention personnel,Val d'Europe,0 days 00:00:47
+9e2e05fc-28c1-431b-a0a9-561bc303e385,2024-07-29 10:18:42,2024-07-29 11:13:12,signalisation,Achères Ville,0 days 00:54:30
+9adb6095-0cf3-46e7-b1da-d201ace68ff5,2024-07-29 10:12:00,2024-07-29 10:19:21,intervention personnel,La Défense,0 days 00:07:21
+26295b03-f9b4-4564-91bb-3b0b434544ef,2024-07-28 15:52:36,2024-07-28 16:28:14,bagage oublie,Fontenay-sous-Bois,0 days 00:35:38
+f6774b7d-f35e-440f-8e3e-b85d42e43be0,2024-07-28 15:02:48,2024-07-28 15:04:48,intervention personnel,Vincennes,0 days 00:02:00
+b0018f4f-b9c4-4b3d-8c19-55fdadbc492c,2024-07-28 06:12:03,2024-07-28 07:52:00,signalisation,Houilles-Carrières-sur-Seine,0 days 01:39:57
+1084f781-45cd-4f1b-9b6c-81ee263fc3cd,2024-07-27 21:05:32,2024-07-27 21:32:53,panne train,Maisons-Laffitte,0 days 00:27:21
+9bdec865-2321-424e-b564-1e8c99562b80,2024-07-27 10:05:29,2024-07-27 11:13:17,porte,La Défense,0 days 01:07:48
+e760d526-9d52-4fa5-ba94-0c0c9e7a84ce,2024-07-27 08:21:32,2024-07-27 08:51:08,bagage oublie,Bussy-Saint-Georges,0 days 00:29:36
+c45bb5a3-21ef-4ee1-88eb-8587229be632,2024-07-26 20:50:26,2024-07-26 20:53:35,signal alarme,Val d'Europe,0 days 00:03:09
+db2da06a-b72f-4c81-9fb1-5d24c9065c9e,2024-07-26 18:58:04,2024-07-26 19:07:10,incident technique,Auber,0 days 00:09:06
+e6161d24-0ad4-4cfc-8c10-1d9d8de43a46,2024-07-26 18:37:40,2024-07-26 18:59:05,bagage oublie,Nanterre Ville,0 days 00:21:25
+96d85836-12bc-4d5a-96ac-15d7dbc96245,2024-07-26 18:11:46,2024-07-26 18:14:28,signal alarme,Châtelet les Halles,0 days 00:02:42
+757294bc-3312-47ec-b99b-e88aa8aa75c1,2024-07-26 16:13:13,2024-07-26 16:14:04,intervention personnel,Noisy-Champs,0 days 00:00:51
+853fdfa1-d0b8-48e9-9e50-f8f162532106,2024-07-26 14:41:46,2024-07-26 15:00:02,bagage oublie,Sucy-Bonneuil,0 days 00:18:16
+400d2c40-b4c4-4862-a0f0-21622edd672d,2024-07-26 14:34:54,2024-07-26 14:40:52,voyageur,Gare de Lyon,0 days 00:05:58
+9e0c3e6e-fb56-4b9d-a87a-41b11b973d94,2024-07-26 13:15:49,2024-07-26 13:19:15,intervention personnel,Val d'Europe,0 days 00:03:26
+9490b7c7-491e-4257-bcf7-4abc8f5c35ad,2024-07-26 12:45:35,2024-07-26 12:47:18,voyageur,Val d'Europe,0 days 00:01:43
+4b4874e7-a688-4ab5-88a3-8fd9c4a09625,2024-07-26 11:52:55,2024-07-26 12:16:10,incident exploitation,Nanterre Préfecture,0 days 00:23:15
+17996b3c-9bfe-428a-b98a-5a04c0de8b16,2024-07-26 10:32:18,2024-07-26 10:37:17,signal alarme,La Défense,0 days 00:04:59
+407aaebf-7db2-4506-b954-595e4e14faeb,2024-07-26 09:57:32,2024-07-26 10:01:53,intervention personnel,Châtelet les Halles,0 days 00:04:21
+4b72a3ff-fbfc-4769-83c2-dc9ac9522136,2024-07-26 08:37:00,2024-07-26 08:39:02,bagage oublie,Rueil-Malmaison,0 days 00:02:02
+e316ce63-5b08-4da7-a5f9-b5e3075d43bd,2024-07-26 07:33:44,2024-07-26 08:12:54,bagage oublie,Châtelet les Halles,0 days 00:39:10
+fb714f0b-af9d-4a3c-977c-c5dc9c054ae3,2024-07-25 23:05:48,2024-07-25 23:08:13,signal alarme,Noisy-Champs,0 days 00:02:25
+5f58f7c4-b7cc-4efd-b187-087e745673d5,2024-07-25 18:34:24,2024-07-25 19:11:00,voyageur,Nation,0 days 00:36:36
+cfbb343a-d464-4824-ad33-41042c08c32a,2024-07-25 16:42:34,2024-07-25 16:43:12,voies,Auber,0 days 00:00:38
+e2756f50-1ee3-42c4-bb4b-4f733264999d,2024-07-25 16:15:17,2024-07-25 16:16:04,signal alarme,Saint-Maur-Créteil,0 days 00:00:47
+9b9678cf-98e2-4b78-88ec-d7e42f74bf8a,2024-07-25 15:33:17,2024-07-25 15:40:11,signal alarme,Gare de Lyon,0 days 00:06:54
+9554d32b-5bea-4527-bbed-e30460bd3ff6,2024-07-25 15:23:22,2024-07-25 15:28:36,bagage oublie,Champigny,0 days 00:05:14
+5b3fae74-5e2f-452c-8214-d8cf1e543dc3,2024-07-25 14:07:50,2024-07-25 14:25:34,intervention personnel,La Varenne-Chennevières,0 days 00:17:44
+d8a8fa57-ac26-4a2d-89bb-64cbd9a84f54,2024-07-25 12:08:21,2024-07-25 12:09:07,intervention personnel,Torcy,0 days 00:00:46
+49035d56-d088-45b6-912a-dd0e83f66583,2024-07-25 11:34:07,2024-07-25 11:37:32,intervention personnel,La Varenne-Chennevières,0 days 00:03:25
+8f867860-0c6f-47e9-8845-38acfd03652b,2024-07-25 06:20:21,2024-07-25 06:23:45,intervention personnel,Torcy,0 days 00:03:24
+ad1623e8-90bb-4c46-972c-363989f711f2,2024-07-24 16:28:51,2024-07-24 16:32:19,bagage oublie,Châtelet les Halles,0 days 00:03:28
+606eea05-1c2b-4d11-8f08-f2198e8f7e59,2024-07-24 16:11:38,2024-07-24 16:34:18,voyageur,Torcy,0 days 00:22:40
+b612b54a-029b-4745-b349-2686515fb3ec,2024-07-24 15:49:40,2024-07-24 15:50:09,intervention personnel,La Varenne-Chennevières,0 days 00:00:29
+e321ee2e-b642-4027-ad6b-0dae3eda6dbc,2024-07-24 12:22:46,2024-07-24 12:50:04,porte,Fontenay-sous-Bois,0 days 00:27:18
+85c34ef7-681c-458f-98be-403c9ca869a6,2024-07-24 11:01:48,2024-07-24 11:04:05,mesure securite,Charles de Gaulle-Etoile,0 days 00:02:17
+c4921832-dc5b-4032-9d74-4a135b7a53bf,2024-07-24 10:05:02,2024-07-24 10:12:04,panne train,Cergy le Haut,0 days 00:07:02
+532cf80a-6fbd-4ec7-aba4-32f9134754b2,2024-07-24 07:23:11,2024-07-24 07:28:27,voyageur,Châtelet les Halles,0 days 00:05:16
+fb1dbc01-b408-4338-931e-6e3e4dd2b390,2024-07-23 17:08:58,2024-07-23 17:46:54,signalisation,Achères Ville,0 days 00:37:56
+acd403b3-ecd0-4046-8ec0-1d998007f4c2,2024-07-23 16:15:14,2024-07-23 16:52:10,voyageur,Poissy,0 days 00:36:56
+074ba819-9c20-4c7a-8c95-3e5bb8ec11b2,2024-07-23 15:02:08,2024-07-23 16:13:12,voyageur,Achères Ville,0 days 01:11:04
+cf05c91b-6c3f-44f1-b311-02f55f3e8c1e,2024-07-23 13:31:34,2024-07-23 13:32:38,intervention personnel,Rueil-Malmaison,0 days 00:01:04
+cd6fdc23-90cc-4ecc-9272-0440890ccb4a,2024-07-23 12:37:06,2024-07-23 12:38:55,intervention personnel,Châtelet les Halles,0 days 00:01:49
+49abde67-957f-4380-8a7a-8cc5a32f38c1,2024-07-23 10:59:27,2024-07-23 11:04:39,voyageur,Noisy-le-Grand-Mont d'Est,0 days 00:05:12
+b3ede947-d180-442a-b4a8-4c64cb54acef,2024-07-23 10:44:11,2024-07-23 10:51:25,bagage oublie,Auber,0 days 00:07:14
+6c01caed-185c-497e-9688-ab40cb5fea1b,2024-07-23 10:21:40,2024-07-23 10:24:40,intervention personnel,Gare de Lyon,0 days 00:03:00
+0c6e4b88-3624-4497-8d08-bf61abb9c167,2024-07-23 07:19:15,2024-07-23 08:02:36,panne train,Sartrouville,0 days 00:43:21
+cfbffe97-e1dc-437d-a7f7-270834d715f9,2024-07-23 03:18:14,2024-07-23 03:55:54,incident exploitation,Cergy le Haut,0 days 00:37:40
+e22ecea8-b77c-4344-b366-09467469ea6e,2024-07-22 22:17:10,2024-07-22 22:55:09,voyageur,Charles de Gaulle-Etoile,0 days 00:37:59
+b7f3472c-3b4e-444c-853e-970e8406f7d2,2024-07-22 16:41:43,2024-07-22 17:44:43,divers,Marne-la-Vallée-Chessy,0 days 01:03:00
+eb6b454d-e94d-4598-8530-46a1977f9375,2024-07-22 11:24:33,2024-07-22 11:29:50,signal alarme,Noisy-le-Grand-Mont d'Est,0 days 00:05:17
+d8a62a99-1efc-4732-b4e3-a6bb8d399edd,2024-07-22 08:33:15,2024-07-22 08:37:51,signal alarme,Achères Ville,0 days 00:04:36
+2f5360b4-f5e6-425d-9cf7-eacb7df6f1da,2024-07-22 07:02:55,2024-07-22 07:06:25,bagage oublie,Gare de Lyon,0 days 00:03:30
+163ce5a2-4465-4322-adef-dc8836ebf51d,2024-07-21 19:10:43,2024-07-21 19:13:40,intervention personnel,Torcy,0 days 00:02:57
+0fe2cf57-48da-4c42-95a8-fcc651a11877,2024-07-21 17:27:07,2024-07-21 17:28:28,intervention personnel,La Défense,0 days 00:01:21
+0c046e0b-011f-4230-a14e-f9f0566efeb1,2024-07-21 13:46:03,2024-07-21 15:24:04,voyageur,Châtelet les Halles,0 days 01:38:01
+d4012813-b212-4bf9-a06d-b1d12a469ff2,2024-07-20 15:39:28,2024-07-20 17:06:05,voyageur,Cergy le Haut,0 days 01:26:37
+aa1db763-062e-4e0a-a02e-de044e63bdc8,2024-07-20 14:07:54,2024-07-20 15:27:15,panne train,Poissy,0 days 01:19:21
+e64930ba-087f-4417-918b-0ea0c8724123,2024-07-20 13:22:53,2024-07-20 14:00:12,intervention personnel,Nanterre Préfecture,0 days 00:37:19
+2705aa0b-cae3-4337-9f27-4eb9feab6459,2024-07-20 03:37:51,2024-07-20 05:55:56,catenaires,,0 days 02:18:05
+23e1df0b-62fc-4a9c-bf0d-e02c1cc61b5d,2024-07-19 13:38:34,2024-07-19 22:34:03,catenaires,Achères Ville,0 days 08:55:29
+d025b42d-cc8e-4e44-86e8-1010b129665e,2024-07-19 12:30:45,2024-07-19 12:52:13,voyageur,Bussy-Saint-Georges,0 days 00:21:28
+24ac800f-f9bc-4e93-ae38-fdfe4195e26d,2024-07-19 12:02:54,2024-07-19 12:05:24,voyageur,Fontenay-sous-Bois,0 days 00:02:30
+eab7690e-f827-46b1-ade7-e0deda615a63,2024-07-19 11:36:49,2024-07-19 11:37:58,porte,Lognes,0 days 00:01:09
+fce6aab6-cc0f-4be2-b8ef-a36d84e86729,2024-07-19 08:55:51,2024-07-19 09:22:40,intervention personnel,Nanterre Préfecture,0 days 00:26:49
+8c38131a-87ea-4f3b-8fd5-e3db52b3b523,2024-07-19 06:42:31,2024-07-19 06:46:28,bagage oublie,Cergy le Haut,0 days 00:03:57
+959846f8-4c46-4de3-a40b-f81252e8236d,2024-07-19 06:25:54,2024-07-19 06:46:22,intervention personnel,La Défense,0 days 00:20:28
+f31692c8-c533-4b87-b64f-b113a2eef4a3,2024-07-19 05:41:45,2024-07-19 05:43:41,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:01:56
+e7a783e1-e92a-48ca-9d7e-6c11b0bd4e12,2024-07-18 22:20:59,2024-07-18 22:25:59,panne train,Conflans Fin d'Oise,0 days 00:05:00
+96dae615-dcac-4667-9141-a0a6edb445bd,2024-07-18 21:21:34,2024-07-18 22:18:06,porte,Rueil-Malmaison,0 days 00:56:32
+e13f83f8-bd98-4236-a433-8ebe24f5fd21,2024-07-18 18:44:18,2024-07-18 19:41:19,panne train,Saint-Germain-en-Laye,0 days 00:57:01
+ea3c0af7-7734-4b2b-8d10-6940e8a68f1f,2024-07-18 12:23:06,2024-07-18 12:45:36,intervention personnel,Nation,0 days 00:22:30
+64d9db63-6d55-4e8e-8a1a-a7ab3ace8a5a,2024-07-18 07:27:34,2024-07-18 07:29:17,ajustement intervalle,Bussy-Saint-Georges,0 days 00:01:43
+8e2a5a99-859b-4a72-b45a-a0060c554c42,2024-07-18 03:49:30,2024-07-18 06:02:08,panne train,Auber,0 days 02:12:38
+cb068f57-e8bf-4f2d-8b3e-17adb7cb49e9,2024-07-18 03:13:43,2024-07-18 03:23:09,chantier,Boissy-Saint-Léger,0 days 00:09:26
+d2fd6198-e7d4-4ed2-a809-88ab8ff388ee,2024-07-17 19:17:58,2024-07-17 19:45:57,voyageur,Nation,0 days 00:27:59
+2a670ef9-bc18-4741-bb76-6825ead1603e,2024-07-17 15:43:27,2024-07-17 16:00:44,voyageur,Marne-la-Vallée-Chessy,0 days 00:17:17
+b0cb4cc3-0d71-49c4-8146-1d1e2cec709c,2024-07-17 13:51:23,2024-07-17 14:31:28,signalisation,Poissy,0 days 00:40:05
+ba2eedcd-5c07-41a3-abe9-814be6d6fd3a,2024-07-17 11:48:20,2024-07-17 11:52:46,voyageur,Parc de Saint-Maur,0 days 00:04:26
+6db27118-8896-48d0-9769-6615bd3e281f,2024-07-17 06:37:30,2024-07-17 06:40:51,signal alarme,Neuilly-Plaisance,0 days 00:03:21
+32596e48-b7f6-4986-8f5f-a0d7912dbf96,2024-07-17 06:28:26,2024-07-17 06:29:48,intervention personnel,La Défense,0 days 00:01:22
+0e0f256a-9da4-477d-a70c-9eae53dfca6d,2024-07-17 05:55:15,2024-07-17 05:58:10,intervention personnel,Châtelet les Halles,0 days 00:02:55
+82466285-c670-4a75-b2c5-0ad52782dc00,2024-07-17 04:37:13,2024-07-17 04:39:12,intervention personnel,La Défense,0 days 00:01:59
+92e5b46b-bbdc-46ce-ba6d-12e63de18b6d,2024-07-16 20:38:50,2024-07-16 21:01:39,voyageur,Vincennes,0 days 00:22:49
+6b486143-6fa7-4d61-96ad-9265bea705e8,2024-07-16 19:11:35,2024-07-16 19:47:29,voyageur,Marne-la-Vallée-Chessy,0 days 00:35:54
+627a2a66-8a96-4161-8f7d-8e4e0416f6a4,2024-07-16 15:28:52,2024-07-16 16:01:49,signal alarme,Conflans Fin d'Oise,0 days 00:32:57
+310b69a0-1695-4b17-b2d9-3a23dab727e6,2024-07-16 11:31:47,2024-07-16 11:33:04,porte,Gare de Lyon,0 days 00:01:17
+414a69cd-8a46-42cd-b382-a00581f39196,2024-07-16 10:26:37,2024-07-16 10:31:31,signal alarme,Nation,0 days 00:04:54
+4370a2d8-bc2e-459e-9b9b-b1b6c4b8ed8f,2024-07-16 06:37:22,2024-07-16 06:41:22,voyageur,Nation,0 days 00:04:00
+e0c74c5b-1437-4a17-a701-b91f9d2ec1af,2024-07-15 20:40:47,2024-07-15 21:31:13,voyageur,Nanterre Université,0 days 00:50:26
+0db753a3-0000-4243-83ee-1985c02106ec,2024-07-15 14:52:32,2024-07-15 14:55:24,porte,Noisy-le-Grand-Mont d'Est,0 days 00:02:52
+d8abc17a-e5b4-4a0c-a980-28108cdeea40,2024-07-15 13:40:14,2024-07-15 13:44:36,signal alarme,Bry-sur-Marne,0 days 00:04:22
+884095eb-c479-4589-a2df-14ca99563289,2024-07-15 12:57:21,2024-07-15 13:24:12,divers,,0 days 00:26:51
+5ec2d6ae-ae39-4d4d-a1c2-5190a5918042,2024-07-15 05:25:12,2024-07-15 05:26:28,voyageur,Sartrouville,0 days 00:01:16
+a85f01f3-600c-4420-98de-3f0d4322f817,2024-07-15 05:06:43,2024-07-15 05:11:46,incident exploitation,Achères Ville,0 days 00:05:03
+5470151f-f755-4cc1-87d9-ff4af634cbeb,2024-07-15 02:59:57,2024-07-15 06:51:03,incident technique,Bry-sur-Marne,0 days 03:51:06
+ac579e5e-44ee-4c07-9974-fb741fc10b0d,2024-07-14 13:45:46,2024-07-14 14:27:50,bagage oublie,Nanterre Préfecture,0 days 00:42:04
+7ef59edd-5ba8-4742-81ba-1ba6bc64867a,2024-07-14 10:21:56,2024-07-14 10:27:28,signal alarme,Châtelet les Halles,0 days 00:05:32
+c8130622-74ae-464f-934b-0e134f0f6946,2024-07-13 17:59:47,2024-07-13 18:02:54,signal alarme,Châtelet les Halles,0 days 00:03:07
+25de1567-0f40-4997-9b28-82ae1fc5d59e,2024-07-13 13:21:20,2024-07-13 14:03:02,bagage oublie,Neuville Université,0 days 00:41:42
+fcdc220b-f641-431c-be3f-a10b9f88f3df,2024-07-13 09:34:34,2024-07-13 09:35:25,panne train,Achères Ville,0 days 00:00:51
+faf2a4a5-1a02-4ebc-8aa4-15d9edc6078f,2024-07-12 18:43:06,2024-07-12 19:06:34,bagage oublie,Marne-la-Vallée-Chessy,0 days 00:23:28
+f7a5a3e6-2970-4cb0-886f-dcdcb98312e1,2024-07-12 11:48:06,2024-07-12 11:54:04,intervention personnel,Châtelet les Halles,0 days 00:05:58
+7e27bf69-1740-4846-8458-64bad93c0c4f,2024-07-12 08:31:03,2024-07-12 09:11:00,bagage oublie,Nanterre Préfecture,0 days 00:39:57
+4619d8de-c09b-4800-8577-c3ce9192214b,2024-07-12 07:37:26,2024-07-12 07:42:17,voies,Torcy,0 days 00:04:51
+5b232a33-8823-47cb-ae3d-226ce5e80f38,2024-07-11 19:34:04,2024-07-11 19:37:21,signal alarme,Joinville-le-Pont,0 days 00:03:17
+33386280-21d8-485b-96fd-f0e545439b6d,2024-07-11 10:51:58,2024-07-11 10:52:58,intervention personnel,Vincennes,0 days 00:01:00
+0f53f074-52db-463e-ac46-b93886043b34,2024-07-11 07:28:07,2024-07-11 09:14:34,signalisation,Houilles-Carrières-sur-Seine,0 days 01:46:27
+c1061235-4cc5-4d5e-925c-ae2e2c3deca2,2024-07-11 07:05:21,2024-07-11 07:10:16,signal alarme,La Défense,0 days 00:04:55
+af090d67-0914-4a5d-84b3-b84432a85275,2024-07-10 14:12:21,2024-07-10 14:17:28,intervention personnel,Le Vésinet-Le Pecq,0 days 00:05:07
+a0acacba-0216-49d3-b031-914bbf1a4c56,2024-07-10 09:17:32,2024-07-10 10:39:43,panne train,Conflans Fin d'Oise,0 days 01:22:11
+ba9cb3b2-11c9-4aa4-b92c-96a385e15170,2024-07-09 21:13:00,2024-07-09 22:16:48,panne train,Cergy le Haut,0 days 01:03:48
+f0e1b265-2e6e-499c-b1ed-b0d9b05f2db9,2024-07-09 15:16:54,2024-07-09 15:30:15,incident exploitation,Marne-la-Vallée-Chessy,0 days 00:13:21
+a6d71d7c-156d-4a54-8217-4e42d6d280b8,2024-07-09 15:05:31,2024-07-09 15:06:58,voyageur,Bry-sur-Marne,0 days 00:01:27
+f4113dd8-cb8d-44c1-8aa0-2c570f8b0525,2024-07-09 12:26:44,2024-07-09 13:25:09,bagage oublie,Val d'Europe,0 days 00:58:25
+0ff07d1f-6c24-4e5b-b0f7-96aaccb5f183,2024-07-09 03:21:19,2024-07-09 03:54:17,panne train,Poissy,0 days 00:32:58
+29cc3616-5bbd-44d7-9fd0-02d62a8980a8,2024-07-08 15:09:23,2024-07-08 19:37:39,intervention personnel,Neuilly-Plaisance,0 days 04:28:16
+61d11395-35eb-4c67-a65a-11c8b8861303,2024-07-08 12:53:12,2024-07-08 12:54:37,incident technique,Nanterre Université,0 days 00:01:25
+e6d86f5b-e639-4a6d-aa17-55468e0edce4,2024-07-08 11:48:00,2024-07-08 11:48:57,intervention personnel,Torcy,0 days 00:00:57
+8b99c85b-fbd2-4527-a6bd-b0f3cadb7471,2024-07-07 20:54:24,2024-07-07 21:26:41,panne train,Nanterre Préfecture,0 days 00:32:17
+3345f02c-d467-4a0f-a461-ad783f4c2e14,2024-07-07 17:41:23,2024-07-07 18:56:32,panne train,Poissy,0 days 01:15:09
+8b04b60f-0ea3-4cdf-a2cc-62000a549e63,2024-07-06 10:08:12,2024-07-06 10:31:29,intervention personnel,Bussy-Saint-Georges,0 days 00:23:17
+cc39ea82-7a88-4cb9-860e-2b2385c596c6,2024-07-06 08:05:22,2024-07-06 08:10:58,intervention personnel,Bussy-Saint-Georges,0 days 00:05:36
+ad265225-e5d2-470d-ba37-768a0c440c8e,2024-07-06 03:20:16,2024-07-06 03:32:41,voyageur,Torcy,0 days 00:12:25
+7849a35c-9d01-4cb0-843b-01a2070ee84b,2024-07-05 18:45:53,2024-07-05 18:49:18,signal alarme,Charles de Gaulle-Etoile,0 days 00:03:25
+45c8805d-c82a-439f-a627-f9618fafe30f,2024-07-05 13:20:56,2024-07-05 13:23:08,signal alarme,Auber,0 days 00:02:12
+44c51e85-81a1-42ca-b9bd-26989897113a,2024-07-05 12:13:27,2024-07-05 12:22:21,voies,Neuilly-Plaisance,0 days 00:08:54
+e281b8f5-61e5-4d38-bbab-ad2adac9a635,2024-07-05 08:49:05,2024-07-05 09:21:11,intervention personnel,Gare de Lyon,0 days 00:32:06
+8f0e09f9-44f6-4c5a-b0ba-33a97ab8b2f1,2024-07-05 04:46:35,2024-07-05 04:50:54,porte,Fontenay-sous-Bois,0 days 00:04:19
+079f756d-48db-49fb-a9aa-8675ff99269b,2024-07-04 18:37:10,2024-07-04 20:06:16,bagage oublie,Boissy-Saint-Léger,0 days 01:29:06
+c523e6d2-57d3-48fe-8625-4a583a89b516,2024-07-04 15:30:04,2024-07-04 16:41:35,signal alarme,Fontenay-sous-Bois,0 days 01:11:31
+55fe27e7-99a2-41c2-8ad4-f6f5e47bffb8,2024-07-04 13:31:14,2024-07-04 13:37:02,signal alarme,Gare de Lyon,0 days 00:05:48
+a5881350-5f11-4a8e-a967-78618c741bac,2024-07-04 11:05:17,2024-07-04 12:40:43,signal alarme,Nation,0 days 01:35:26
+45c15591-387a-4d14-8fb7-5a57c24baddc,2024-07-04 06:46:38,2024-07-04 07:49:38,panne train,Cergy le Haut,0 days 01:03:00
+7ca42139-a408-4f7c-8a12-4d7f065e2962,2024-07-03 20:11:13,2024-07-03 21:02:56,voyageur,Fontenay-sous-Bois,0 days 00:51:43
+2fc19da5-8e43-48e9-a7bb-1c7dbd7a5484,2024-07-03 15:43:39,2024-07-03 15:46:52,voies,Noisiel,0 days 00:03:13
+e8834d87-9f9b-4929-84c1-cda4e832cd38,2024-07-03 14:49:03,2024-07-03 14:50:07,intervention personnel,Charles de Gaulle-Etoile,0 days 00:01:04
+07761928-9027-4e40-9a86-bc47367eaf8d,2024-07-03 14:35:51,2024-07-03 14:40:03,incident technique,La Défense,0 days 00:04:12
+cb7e8b91-4f02-484b-8a50-e7d191a5f817,2024-07-03 14:25:39,2024-07-03 14:26:57,signal alarme,Val d'Europe,0 days 00:01:18
+cc9d3a94-327c-4686-a495-7c4f12a867bd,2024-07-03 05:17:47,2024-07-03 05:39:41,incident exploitation,Maisons-Laffitte,0 days 00:21:54
+c652b5f1-221f-4dd7-8058-e38633493852,2024-07-03 04:48:57,2024-07-03 05:16:19,bagage oublie,Marne-la-Vallée-Chessy,0 days 00:27:22
+e5962d54-3c62-46cc-897e-bac5529767db,2024-07-02 19:14:24,2024-07-02 20:41:24,panne train,Nogent-sur-Marne,0 days 01:27:00
+081db5f3-4c36-4fce-b874-d41631d064b4,2024-07-02 17:39:54,2024-07-02 18:44:39,signal alarme,Gare de Lyon,0 days 01:04:45
+7f25c168-36da-4fb8-96d5-70ff7b18a167,2024-07-02 17:38:21,2024-07-02 17:49:28,panne train,Sartrouville,0 days 00:11:07
+c1e9d28f-9f49-4099-821a-60a43aa1d81b,2024-07-02 14:29:35,2024-07-02 14:35:52,intervention personnel,Lognes,0 days 00:06:17
+feacb827-aaad-4e2b-b265-90badf08c64e,2024-07-02 11:56:02,2024-07-02 12:52:22,bagage oublie,Marne-la-Vallée-Chessy,0 days 00:56:20
+5b0e8684-0af3-41eb-8f94-4266a64ead6f,2024-07-02 10:08:22,2024-07-02 10:12:18,intervention personnel,Rueil-Malmaison,0 days 00:03:56
+8f135c84-f91f-435a-afdd-bf4b0032a67b,2024-07-01 22:33:50,2024-07-01 23:42:21,incident technique,Marne-la-Vallée-Chessy,0 days 01:08:31
+e71f4d50-e391-405e-bc22-ac0903696b4a,2024-07-01 22:28:24,2024-07-01 22:41:45,voyageur,Gare de Lyon,0 days 00:13:21
+d442ce30-52ad-41ea-9907-bb3bbe79505b,2024-07-01 16:52:32,2024-07-01 16:55:12,voyageur,Châtelet les Halles,0 days 00:02:40
+afe9b01c-d586-44b0-807b-64dc8a31bb3a,2024-07-01 16:02:39,2024-07-01 16:51:45,bagage oublie,Poissy,0 days 00:49:06
+03715ae4-947b-4bbf-9b2f-deb72062bd5f,2024-07-01 11:11:44,2024-07-01 11:15:50,signal alarme,Gare de Lyon,0 days 00:04:06
+e91f4fa8-09eb-437c-a948-af5894c713fa,2024-07-01 08:46:19,2024-07-01 09:09:20,incident exploitation,Achères Ville,0 days 00:23:01
+a516c6c9-3300-4bee-b7b6-fd95591aa1d7,2024-07-01 06:49:32,2024-07-01 06:55:25,porte,Auber,0 days 00:05:53
+12985a5a-46d6-4432-b8d4-d36c563d9fdf,2024-07-01 05:51:00,2024-07-01 06:01:07,porte,La Varenne-Chennevières,0 days 00:10:07
+21b5ec24-bbec-4cbe-afe3-62b59ac75fec,2024-07-01 05:29:02,2024-07-01 05:33:09,signal alarme,Nogent-sur-Marne,0 days 00:04:07
+e63574e4-7c73-4354-91b1-7436ea0c675b,2024-06-30 17:32:45,2024-06-30 18:23:16,signal alarme,Auber,0 days 00:50:31
+d0e7d558-ba29-4bff-a2e8-0ae7c45d3695,2024-06-30 13:54:20,2024-06-30 14:34:08,panne electrique,Sucy-Bonneuil,0 days 00:39:48
+f348841c-f6f4-4c30-a13b-c7bbdc8f1023,2024-06-29 17:16:16,2024-06-29 18:19:49,intervention personnel,Saint-Germain-en-Laye,0 days 01:03:33
+d37e9a14-4bbb-423a-ae6a-52081dbd909d,2024-06-29 06:09:36,2024-06-29 06:15:26,intervention personnel,Bussy-Saint-Georges,0 days 00:05:50
+56c5683a-7d20-41f3-b289-9db39790864a,2024-06-28 20:43:59,2024-06-28 22:37:18,incident exploitation,Boissy-Saint-Léger,0 days 01:53:19
+d91d02de-9835-4aef-8476-3cd566eafb18,2024-06-28 18:54:36,2024-06-28 19:07:02,bagage oublie,Gare de Lyon,0 days 00:12:26
+6fdde40d-a148-471f-8be9-4e7dd5caa5ef,2024-06-28 17:32:21,2024-06-28 17:48:03,voyageur,,0 days 00:15:42
+2739dad5-990f-4a25-9e38-66228e03515c,2024-06-28 17:09:02,2024-06-28 17:11:46,voies,La Varenne-Chennevières,0 days 00:02:44
+39ed5efe-68d5-41de-9b7a-ef90436b83ab,2024-06-28 15:56:17,2024-06-28 17:04:09,signalisation,Houilles-Carrières-sur-Seine,0 days 01:07:52
+b27eb303-573d-4fae-9c99-e167a56487fb,2024-06-28 14:10:27,2024-06-28 15:47:40,incident technique,Fontenay-sous-Bois,0 days 01:37:13
+d15bd1a5-7613-4420-99bc-9082298551f7,2024-06-28 06:36:46,2024-06-28 07:07:36,voies,Sartrouville,0 days 00:30:50
+12b13145-ecfb-449b-9358-e2c3fa7f42cc,2024-06-27 17:45:06,2024-06-27 19:19:28,bagage oublie,Cergy le Haut,0 days 01:34:22
+e4937ffc-f83a-48e6-9601-771ca6d65aa0,2024-06-27 16:47:03,2024-06-27 16:54:03,signal alarme,Fontenay-sous-Bois,0 days 00:07:00
+9c78c830-4699-4409-846a-b526d3e4b112,2024-06-27 16:28:48,2024-06-27 17:38:11,porte,Sucy-Bonneuil,0 days 01:09:23
+447e9689-a92a-4471-b347-024e2c583cf6,2024-06-27 14:49:18,2024-06-27 15:50:40,porte,Sucy-Bonneuil,0 days 01:01:22
+d32bd899-97b2-4b71-8125-943044470996,2024-06-27 10:48:11,2024-06-27 10:49:33,porte,Joinville-le-Pont,0 days 00:01:22
+6870d5da-1442-4aa7-8860-f11c3dbd91a0,2024-06-27 09:48:01,2024-06-27 09:50:29,intervention personnel,Auber,0 days 00:02:28
+59f80fce-5811-44a5-af3b-8f90a1d70f63,2024-06-27 05:13:26,2024-06-27 05:17:54,porte,Châtelet les Halles,0 days 00:04:28
+598d2b2c-df8f-4c1c-aa68-e083a858be0f,2024-06-26 22:07:31,2024-06-26 22:33:59,incident exploitation,Gare de Lyon,0 days 00:26:28
+7e25eff6-aaf3-418d-af0d-1556689e91e4,2024-06-26 17:13:36,2024-06-26 18:18:56,signalisation,Neuilly-Plaisance,0 days 01:05:20
+bbd83706-7bbe-41bd-b5e7-62348e91ba4b,2024-06-26 16:02:29,2024-06-26 16:05:24,signal alarme,Val d'Europe,0 days 00:02:55
+c39a70e3-35da-41f3-966e-60a365a8e5ec,2024-06-26 15:19:59,2024-06-26 16:45:24,porte,Torcy,0 days 01:25:25
+0d0bda0d-b8c5-4d65-ab31-b4c3c1ac4b38,2024-06-26 11:56:10,2024-06-26 12:07:07,panne electrique,Bussy-Saint-Georges,0 days 00:10:57
+05376cb2-7037-4667-962d-502ec7d55da9,2024-06-26 10:16:58,2024-06-26 10:48:22,voies,Sartrouville,0 days 00:31:24
+6efce3ac-e52d-40f2-8f36-dc9c532d289b,2024-06-26 07:37:31,2024-06-26 07:39:45,voyageur,Châtelet les Halles,0 days 00:02:14
+4143e80c-012d-46d4-945a-976ef78bc08a,2024-06-26 07:24:13,2024-06-26 08:42:51,incident technique,Gare de Lyon,0 days 01:18:38
+1c2008e0-ca43-49f9-9871-8b6099feb639,2024-06-26 06:42:06,2024-06-26 06:48:50,signal alarme,Charles de Gaulle-Etoile,0 days 00:06:44
+6643583d-fa6d-4d9a-ad6f-b457d46a54fe,2024-06-26 04:34:00,2024-06-26 04:40:27,signal alarme,Auber,0 days 00:06:27
+0709afc4-a269-420a-b06d-7db8cd39655f,2024-06-26 03:20:57,2024-06-26 03:44:29,chantier,Marne-la-Vallée-Chessy,0 days 00:23:32
+29f6e9a9-f8a9-4df6-8784-50e1781af28c,2024-06-25 18:51:56,2024-06-25 21:15:33,panne train,Boissy-Saint-Léger,0 days 02:23:37
+95f8c4a4-e3f5-4d94-b394-db25224ac88b,2024-06-25 16:20:18,2024-06-25 16:23:10,incident technique,Vincennes,0 days 00:02:52
+a6dc7d50-4c7f-4dd3-9370-19578a564447,2024-06-25 11:45:28,2024-06-25 11:48:01,signalisation,Val d'Europe,0 days 00:02:33
+9cc7b625-e82f-4d7c-9c9b-f9967f202f3c,2024-06-25 11:43:26,2024-06-25 11:46:50,signalisation,Marne-la-Vallée-Chessy,0 days 00:03:24
+da17720d-576e-4ad6-876d-f4f6195c3e2f,2024-06-25 07:41:37,2024-06-25 07:44:51,voies,Nanterre Ville,0 days 00:03:14
+fd8798c8-5cc9-4153-9854-b652367d64ee,2024-06-25 06:56:07,2024-06-25 06:57:18,signal alarme,La Défense,0 days 00:01:11
+895d8328-c216-4d99-b204-e78d344cb60a,2024-06-25 04:51:25,2024-06-25 05:49:42,panne train,Sucy-Bonneuil,0 days 00:58:17
+3897902a-f4c4-4c11-b11c-b2c20b1e3082,2024-06-25 04:32:55,2024-06-25 04:36:29,porte,La Défense,0 days 00:03:34
+1dfa43e5-c72a-4228-890d-181307e90cea,2024-06-24 20:31:40,2024-06-25 00:05:21,voyageur,Nation,0 days 03:33:41
+b141beff-c37b-4598-83ec-bbf1b19ed74c,2024-06-24 16:57:52,2024-06-24 18:01:22,signal alarme,Neuilly-Plaisance,0 days 01:03:30
+912327ac-d6b9-4cbf-be57-719ae1f93ec9,2024-06-24 16:35:10,2024-06-24 16:37:53,voyageur,Bry-sur-Marne,0 days 00:02:43
+5164fcdf-7668-42df-9848-db599289b07f,2024-06-24 08:39:32,2024-06-24 10:30:47,panne electrique,Achères Ville,0 days 01:51:15
+77a0ab6e-f59c-4d12-a34f-24d983d08473,2024-06-24 05:05:31,2024-06-24 08:31:13,bagage oublie,Lognes,0 days 03:25:42
+e396130f-cc11-47d6-be49-dd692013903e,2024-06-22 11:49:06,2024-06-22 13:47:42,voies,La Défense,0 days 01:58:36
+483cf416-70b9-405d-b611-69c64b7c5f16,2024-06-22 11:09:27,2024-06-22 11:32:31,incident exploitation,La Défense,0 days 00:23:04
+3bd58c99-5cb6-4138-b451-4db20cd0d0d7,2024-06-22 05:10:45,2024-06-22 05:30:57,voies,Cergy le Haut,0 days 00:20:12
+bc662b95-c1da-4115-a908-76f1cac55cf6,2024-06-21 19:55:57,2024-06-21 20:32:09,incident exploitation,Nanterre Préfecture,0 days 00:36:12
+19607b32-d550-46c1-8701-3ee9131306ce,2024-06-21 17:19:11,2024-06-21 17:52:21,ajustement intervalle,Joinville-le-Pont,0 days 00:33:10
+1096654c-1be5-411f-8e11-d1e3f464494e,2024-06-21 17:13:03,2024-06-21 19:31:46,signal alarme,Châtelet les Halles,0 days 02:18:43
+bf2c16d2-c2f4-4bf4-9c55-d743db869522,2024-06-21 13:53:50,2024-06-21 13:54:29,intervention personnel,Rueil-Malmaison,0 days 00:00:39
+dd6452c1-4a43-4714-935f-571d01987ec7,2024-06-21 12:24:12,2024-06-21 12:31:45,signal alarme,Nanterre Préfecture,0 days 00:07:33
+d325c9e0-c5cd-449b-9e33-b770581970ff,2024-06-21 11:53:46,2024-06-21 11:58:58,signal alarme,Bussy-Saint-Georges,0 days 00:05:12
+c5e20234-15b9-4930-94fd-e58af5e31306,2024-06-21 07:27:00,2024-06-21 08:12:03,bagage oublie,Houilles-Carrières-sur-Seine,0 days 00:45:03
+791336b9-b005-49c4-9302-572e627d3628,2024-06-21 05:41:51,2024-06-21 07:29:21,panne electrique,La Défense,0 days 01:47:30
+98b9ba4e-f834-4d38-add7-d65f8adab386,2024-06-21 03:16:24,2024-06-21 03:27:56,chantier,Châtelet les Halles,0 days 00:11:32
+c8d8b678-e39d-4844-9a63-2d87c2ce1e62,2024-06-20 22:37:08,2024-06-20 23:01:02,panne train,Marne-la-Vallée-Chessy,0 days 00:23:54
+3c133e08-29f2-45f2-a92c-bc6febc2b52f,2024-06-20 20:59:58,2024-06-20 21:44:39,panne train,Châtelet les Halles,0 days 00:44:41
+44eeda0b-076a-4e88-a2e9-4306a461555a,2024-06-20 18:39:59,2024-06-20 19:24:23,panne train,Maisons-Laffitte,0 days 00:44:24
+ff66869e-4c64-48db-bcbf-4ed275de9e34,2024-06-20 13:55:30,2024-06-20 14:16:44,signalisation,Torcy,0 days 00:21:14
+ac1f84ee-1810-4ba8-bf88-d72cadb0446f,2024-06-20 10:20:33,2024-06-20 10:25:30,ajustement intervalle,Vincennes,0 days 00:04:57
+894691ac-7bfb-460d-9202-b1a0a3c5f6d9,2024-06-20 09:11:26,2024-06-20 09:16:36,incident technique,Torcy,0 days 00:05:10
+4ccf1fd6-d1de-4549-9113-f1499aa192cd,2024-06-20 08:18:58,2024-06-20 08:19:52,signal alarme,Torcy,0 days 00:00:54
+c7eefb7a-9565-49a2-96be-2d6632a0ffe5,2024-06-20 07:12:38,2024-06-20 08:30:23,voies,Achères Grand Cormier,0 days 01:17:45
+7ce586c9-8d17-416d-9aad-bd1f56200ff4,2024-06-20 04:07:23,2024-06-20 04:30:15,panne train,Poissy,0 days 00:22:52
+bc97bb66-a180-46e9-8b1d-be94c095eb85,2024-06-19 21:58:44,2024-06-19 23:04:43,incident exploitation,Boissy-Saint-Léger,0 days 01:05:59
+d98f4e29-02b8-420e-9bfe-35549aa1f2b5,2024-06-19 19:47:42,2024-06-19 20:20:56,voies,Cergy le Haut,0 days 00:33:14
+2f3f73bd-a2b1-444c-bfb3-44c551f13f7c,2024-06-19 16:08:23,2024-06-19 16:30:32,signal alarme,Nanterre Ville,0 days 00:22:09
+3c54a44a-73d3-4e38-8eb6-316dd773ecc0,2024-06-19 15:39:09,2024-06-19 16:01:11,intervention personnel,Boissy-Saint-Léger,0 days 00:22:02
+262b5b2d-9842-4a6b-9375-04b168ebc72c,2024-06-19 11:54:05,2024-06-19 12:10:02,incident exploitation,Poissy,0 days 00:15:57
+6786d1fd-49dd-4bab-92a9-f691b5b089bf,2024-06-19 08:57:52,2024-06-19 08:59:30,intervention personnel,Torcy,0 days 00:01:38
+c7e79871-db7c-4d0a-b21c-63077c4e19fc,2024-06-19 06:24:06,2024-06-19 06:47:26,intervention personnel,Nanterre Préfecture,0 days 00:23:20
+3c7a1342-160a-420b-9483-031beed48882,2024-06-18 18:14:56,2024-06-18 19:41:41,voies,Bussy-Saint-Georges,0 days 01:26:45
+73294d34-2ed0-4a28-b43c-6b11abb799a4,2024-06-18 14:47:57,2024-06-18 16:02:53,signal alarme,Châtelet les Halles,0 days 01:14:56
+80da3ce8-a9e2-42b9-8f46-ee79f5f17cd3,2024-06-18 14:32:50,2024-06-18 14:36:41,signal alarme,Bry-sur-Marne,0 days 00:03:51
+d0ec7904-64c2-4521-92a4-90a6fbbd651e,2024-06-18 10:24:40,2024-06-18 10:27:10,voies,Bussy-Saint-Georges,0 days 00:02:30
+5f800cc2-5447-46d0-9b95-9ef08db1cc42,2024-06-18 07:31:29,2024-06-18 08:00:19,signal alarme,Rueil-Malmaison,0 days 00:28:50
+a274bbe6-baf1-4935-a88a-f1920db5b328,2024-06-18 06:24:41,2024-06-18 07:23:17,panne train,,0 days 00:58:36
+5ee3bdf0-1a4b-44f3-8d3a-b7ec0788d0a4,2024-06-18 06:23:10,2024-06-18 06:24:17,porte,Champigny,0 days 00:01:07
+d890b46b-0c37-4c89-91d8-7807f9207229,2024-06-18 06:12:07,2024-06-18 06:13:37,intervention personnel,Nanterre Préfecture,0 days 00:01:30
+c40bd5e6-2b59-46af-8ba1-6267522c036e,2024-06-17 18:47:58,2024-06-17 19:11:40,porte,Nanterre Préfecture,0 days 00:23:42
+2a02950b-8aa5-4398-bbdb-3bb162c45f60,2024-06-17 15:58:15,2024-06-17 16:01:13,intervention personnel,Auber,0 days 00:02:58
+edc40217-4fb8-4da4-b79a-ec4935936516,2024-06-17 15:17:13,2024-06-17 15:20:53,panne train,Saint-Germain-en-Laye,0 days 00:03:40
+cb096e59-9466-4bae-a28c-b7f26f0c6d56,2024-06-17 15:00:02,2024-06-17 15:02:10,intervention personnel,La Varenne-Chennevières,0 days 00:02:08
+f5874619-05b1-4e6f-8b4b-a8c910aa30b8,2024-06-17 12:23:21,2024-06-17 12:31:00,intervention personnel,Torcy,0 days 00:07:39
+4e39d973-f6be-45d5-b93e-a8cce6966c7f,2024-06-17 11:01:48,2024-06-17 11:05:22,signal alarme,Châtelet les Halles,0 days 00:03:34
+2c1ab6ce-f8b0-49e8-a146-73191cd37267,2024-06-17 10:47:51,2024-06-18 04:21:29,porte,Châtelet les Halles,0 days 17:33:38
+ab793f3b-ce11-4d7a-a0b1-20ee8ba0da63,2024-06-17 09:53:58,2024-06-17 10:03:47,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:09:49
+a0c39cf8-38ad-4476-a5c2-181b84783553,2024-06-17 09:01:10,2024-06-17 10:15:22,bagage oublie,Noisiel,0 days 01:14:12
+d637b3af-f6c0-4377-9230-43626ae73aef,2024-06-17 06:09:18,2024-06-17 06:13:27,signal alarme,Sucy-Bonneuil,0 days 00:04:09
+0db30b7c-a04b-4b37-9be1-bd3f5d486ea4,2024-06-17 06:00:55,2024-06-17 08:58:07,voyageur,Fontenay-sous-Bois,0 days 02:57:12
+42eb22c9-f280-4e0c-bf77-a851c5412d2e,2024-06-17 04:14:06,2024-06-17 04:16:49,signal alarme,Torcy,0 days 00:02:43
+cc6c896a-8786-4f9b-a20c-ecd9269329b3,2024-06-16 17:35:56,2024-06-16 18:32:56,incident exploitation,Torcy,0 days 00:57:00
+a13097b3-31d5-4024-803c-cb638637924e,2024-06-16 16:44:39,2024-06-16 17:12:34,panne train,Cergy le Haut,0 days 00:27:55
+ebf6ebe8-e08d-4097-b7f2-0261963adc1b,2024-06-16 07:07:48,2024-06-16 08:02:50,voyageur,Noisy-le-Grand-Mont d'Est,0 days 00:55:02
+1ca6f99a-bbeb-4969-b430-7b1438b20cff,2024-06-16 03:44:50,2024-06-16 04:57:07,incident exploitation,Poissy,0 days 01:12:17
+70265e58-53d7-4be3-b7e5-87f76b01a640,2024-06-14 17:58:47,2024-06-14 18:02:04,signal alarme,Nation,0 days 00:03:17
+2bc17692-2bcc-46fb-80c6-eaa8b01632d6,2024-06-14 15:22:57,2024-06-14 15:35:51,panne train,Nanterre Préfecture,0 days 00:12:54
+1fe4b83a-d532-4513-ba37-e75c2ef7e844,2024-06-14 15:17:03,2024-06-14 17:30:25,incident exploitation,Boissy-Saint-Léger,0 days 02:13:22
+ca3cf39e-1db0-4fbf-8801-16deb1958f13,2024-06-14 13:46:27,2024-06-14 15:18:14,intervention personnel,Sartrouville,0 days 01:31:47
+ae17614e-0b1a-40b7-beba-b85125d47fd3,2024-06-14 12:58:06,2024-06-14 12:59:12,intervention personnel,Torcy,0 days 00:01:06
+f64c9d2d-7712-4183-af59-d3ca54bdf3a2,2024-06-14 12:21:24,2024-06-14 12:25:28,signal alarme,Val d'Europe,0 days 00:04:04
+cb834681-1948-4695-88b4-923e4850994b,2024-06-14 12:20:17,2024-06-14 12:22:13,incident technique,La Défense,0 days 00:01:56
+1a7a744f-e430-4ba0-b46b-91c9cea3fbc6,2024-06-14 11:40:29,2024-06-14 11:52:53,bagage oublie,Marne-la-Vallée-Chessy,0 days 00:12:24
+80d5a87c-9b10-4dc9-9dbf-1c4f4b4eedb6,2024-06-14 08:32:37,2024-06-14 10:51:56,voies,Nation,0 days 02:19:19
+555c2812-1952-4544-92e6-6c9cf6462c51,2024-06-14 05:29:09,2024-06-14 07:57:19,voies,Nation,0 days 02:28:10
+be0b7988-2e25-474b-923f-26628fe1c15e,2024-06-14 04:18:07,2024-06-14 04:27:59,panne train,Neuville Université,0 days 00:09:52
+02531a87-455f-49b1-9f18-dde88e3f6920,2024-06-13 17:28:28,2024-06-13 17:33:00,signal alarme,Vincennes,0 days 00:04:32
+e90d93b3-b2b1-4aa0-8f5f-63ef6c88b5f0,2024-06-13 15:21:13,2024-06-13 15:24:09,signal alarme,Châtelet les Halles,0 days 00:02:56
+f736406f-7881-4173-813e-3fa18fa7cd5e,2024-06-13 13:21:58,2024-06-13 13:45:04,voies,Achères Ville,0 days 00:23:06
+41efb3f6-8e9f-4f8f-9470-0830f696f898,2024-06-12 19:19:56,2024-06-12 21:10:39,catenaires,,0 days 01:50:43
+cc54c082-d75d-46b6-be9f-4b8d984cd5e5,2024-06-12 16:09:42,2024-06-12 18:00:13,porte,Gare de Lyon,0 days 01:50:31
+0ccab611-e85c-44f6-b468-59352800754d,2024-06-12 14:47:29,2024-06-12 14:48:58,intervention personnel,Gare de Lyon,0 days 00:01:29
+c8984060-ec8a-4c0f-8231-7d8179d6ee19,2024-06-12 06:54:15,2024-06-12 08:24:13,panne train,Auber,0 days 01:29:58
+b9121e88-0b69-4c65-97cb-7b9bf5f0a8d5,2024-06-12 03:30:38,2024-06-12 05:41:30,panne train,Fontenay-sous-Bois,0 days 02:10:52
+6300823f-11ae-40f0-b207-b0dbd08aa109,2024-06-11 20:40:57,2024-06-11 20:54:42,voyageur,Vincennes,0 days 00:13:45
+2921528c-1a70-4231-a94a-6debe1dbf4d7,2024-06-11 17:14:35,2024-06-11 18:47:39,signal alarme,Boissy-Saint-Léger,0 days 01:33:04
+929bac3b-20fc-4f66-854e-9903c642ff59,2024-06-11 16:15:28,2024-06-11 16:17:32,signal alarme,Nanterre Ville,0 days 00:02:04
+2aa26330-5fb9-45eb-ac23-9fa8ead018df,2024-06-11 15:26:55,2024-06-11 15:33:51,signal alarme,Fontenay-sous-Bois,0 days 00:06:56
+0f69468d-173a-4e64-8a8f-cf2dcc565b7d,2024-06-11 14:41:26,2024-06-11 14:43:03,incident exploitation,Torcy,0 days 00:01:37
+d6f35705-a429-4f1a-ba70-6d9031be7efd,2024-06-11 10:52:43,2024-06-11 11:43:46,signal alarme,Charles de Gaulle-Etoile,0 days 00:51:03
+4e4220c8-1ab3-4169-864a-50aa61f886de,2024-06-11 09:17:39,2024-06-11 10:20:25,bagage oublie,Val d'Europe,0 days 01:02:46
+cde9c7b5-887b-4049-acb5-7c539a84b089,2024-06-11 04:47:50,2024-06-11 05:44:14,incident exploitation,Nanterre Préfecture,0 days 00:56:24
+27825a52-6357-4433-bedb-0c101f8a1db7,2024-06-10 21:59:56,2024-06-10 23:03:48,voies,Champigny,0 days 01:03:52
+fd07cda2-034c-4050-bfd8-ac189bfc0a2a,2024-06-10 18:49:17,2024-06-10 21:39:34,panne train,Neuville Université,0 days 02:50:17
+941345e7-e829-4b35-b766-9f2ce4d581e0,2024-06-10 17:49:31,2024-06-10 17:51:06,intervention personnel,Rueil-Malmaison,0 days 00:01:35
+adba3135-f66f-4ab1-a2b1-c9c383fea4db,2024-06-10 16:47:30,2024-06-10 17:34:46,voyageur,Conflans Fin d'Oise,0 days 00:47:16
+b5fda192-1ddc-423a-bb73-1fcf494387d9,2024-06-10 16:35:35,2024-06-10 16:37:33,signal alarme,Cergy le Haut,0 days 00:01:58
+b596af51-9622-4527-984b-94e1ec9df916,2024-06-10 13:06:04,2024-06-10 13:49:46,voyageur,Saint-Maur-Créteil,0 days 00:43:42
+33bcb441-ca4c-42c5-a3b3-5de2fc01ca22,2024-06-10 11:33:24,2024-06-10 12:41:19,voies,Poissy,0 days 01:07:55
+977b9e43-6715-41af-ac8e-e97af942a52b,2024-06-10 09:03:39,2024-06-10 09:09:20,porte,Nation,0 days 00:05:41
+6b9f2f0d-d6f4-4020-b755-0155d97a53ed,2024-06-10 05:27:32,2024-06-10 07:47:58,porte,Boissy-Saint-Léger,0 days 02:20:26
+0f7268c9-d779-4240-96be-8774734c892b,2024-06-09 15:01:17,2024-06-09 15:28:26,bagage oublie,Joinville-le-Pont,0 days 00:27:09
+70c3ac65-d9eb-4ad5-95f8-11e6d1ff4f13,2024-06-09 04:48:10,2024-06-09 05:06:41,incident exploitation,Cergy le Haut,0 days 00:18:31
+83bd1009-e344-4b92-8570-5c9e8d8660de,2024-06-08 21:30:23,2024-06-08 21:56:38,voyageur,Sartrouville,0 days 00:26:15
+25b0b162-ff0a-428b-a1dc-4968dd225e2e,2024-06-08 16:54:02,2024-06-08 17:34:35,voyageur,Bussy-Saint-Georges,0 days 00:40:33
+b4dbe97e-da34-456a-a709-b7adf31164ae,2024-06-08 13:02:32,2024-06-08 13:40:17,voyageur,Nanterre Préfecture,0 days 00:37:45
+facc720c-d404-4c12-88d3-9b167ab313e8,2024-06-08 04:48:27,2024-06-08 04:52:39,signal alarme,Noisiel,0 days 00:04:12
+f80f6b2e-d423-48c7-af87-d4ce1c551c16,2024-06-07 16:58:36,2024-06-07 17:48:08,intervention personnel,Nanterre Université,0 days 00:49:32
+84f38f43-98ce-4d54-828c-f62402255dc0,2024-06-07 15:28:46,2024-06-07 16:16:55,incident technique,Nanterre Préfecture,0 days 00:48:09
+f2ebd30e-1722-47c3-9ebd-fe8bf9e1982a,2024-06-07 12:51:44,2024-06-07 12:58:23,signal alarme,Nanterre Ville,0 days 00:06:39
+d6df2025-869f-4522-b356-111956664b6c,2024-06-07 10:29:29,2024-06-07 10:31:25,incident technique,Auber,0 days 00:01:56
+5e2cf31d-0ac3-4438-9da9-882272cdef4b,2024-06-07 09:35:29,2024-06-07 09:37:13,intervention personnel,Gare de Lyon,0 days 00:01:44
+835c8d5d-9726-4302-a46e-5c4f16e3100a,2024-06-07 08:07:48,2024-06-07 08:34:04,incident exploitation,Nanterre Préfecture,0 days 00:26:16
+c676bd0d-7f2e-45bb-931d-7a831e29442d,2024-06-07 07:18:43,2024-06-07 08:05:41,panne train,Cergy le Haut,0 days 00:46:58
+804629d9-3806-4e3b-b436-781715a0e386,2024-06-07 06:48:55,2024-06-07 06:51:19,panne electrique,Neuilly-Plaisance,0 days 00:02:24
+cdd1ca29-b317-4b1b-8107-7181ef6e4e36,2024-06-07 02:52:02,2024-06-07 05:59:05,panne train,Cergy le Haut,0 days 03:07:03
+f8a62258-3430-405a-9aba-fc44f7f3385e,2024-06-06 22:07:04,2024-06-06 22:50:06,voies,Torcy,0 days 00:43:02
+5b34dfbf-447a-448e-855e-be14d1eb2432,2024-06-06 15:55:34,2024-06-06 17:05:02,"voyageur,panne train",Saint-Germain-en-Laye,0 days 01:09:28
+8bf5327c-2b22-42ff-9fa9-08b63448bfc7,2024-06-06 15:26:35,2024-06-06 15:33:16,signal alarme,Nanterre Université,0 days 00:06:41
+b11c6997-94a0-46fe-9844-7593cae4e082,2024-06-06 14:07:05,2024-06-06 14:12:00,incident technique,Auber,0 days 00:04:55
+7254fd29-fd67-4494-9748-b3355271e00b,2024-06-06 10:25:27,2024-06-06 11:33:27,voyageur,Cergy le Haut,0 days 01:08:00
+1c4b8f2b-f595-4182-bbf8-d9746f4f9830,2024-06-06 09:22:25,2024-06-06 09:24:09,bagage oublie,Neuilly-Plaisance,0 days 00:01:44
+03fe5305-4263-46ad-a89a-4844f8ce1cac,2024-06-05 20:02:29,2024-06-05 20:05:49,incident exploitation,Rueil-Malmaison,0 days 00:03:20
+34f557fd-01f5-4eb9-8e1d-c7017745a13e,2024-06-05 15:43:45,2024-06-05 15:45:19,voyageur,Auber,0 days 00:01:34
+9562f3b4-af62-4b36-b01a-3b08d48fb25d,2024-06-05 15:06:25,2024-06-05 15:11:30,intervention personnel,Saint-Germain-en-Laye,0 days 00:05:05
+025e0d41-6322-4c5b-9911-0719941d8cba,2024-06-05 15:06:00,2024-06-05 15:25:48,incident exploitation,Rueil-Malmaison,0 days 00:19:48
+3f3dfc6b-7301-4e6c-9e3e-e580018d25e1,2024-06-05 13:26:08,2024-06-05 14:16:33,voies,Vincennes,0 days 00:50:25
+15254561-6bbd-4629-95ce-7ba60b9f2c26,2024-06-05 13:13:06,2024-06-05 13:19:16,signal alarme,Nation,0 days 00:06:10
+f5fd7e1c-b5b8-44de-a5c7-7dc61d8833aa,2024-06-05 09:43:18,2024-06-05 09:44:59,intervention personnel,Torcy,0 days 00:01:41
+714d5a1f-1a3b-40ff-929b-3fde0a35091c,2024-06-05 03:01:40,2024-06-05 03:38:03,incident exploitation,Poissy,0 days 00:36:23
+92439d8e-d33c-41ef-bd99-edbcbee91a2a,2024-06-04 23:02:24,2024-06-04 23:08:21,voyageur,Neuilly-Plaisance,0 days 00:05:57
+b6178ab0-2e0b-4ee3-a3c2-e7fc9ef5cabe,2024-06-04 17:11:46,2024-06-04 17:15:19,signal alarme,Auber,0 days 00:03:33
+1d420fc2-1cd1-4db5-916c-bdfed17ca9a3,2024-06-04 07:37:00,2024-06-04 07:38:58,intervention personnel,Nanterre Préfecture,0 days 00:01:58
+936d9d7e-c057-4521-ab3c-eee02a9e918f,2024-06-04 06:52:38,2024-06-04 06:57:41,voies,Nanterre Ville,0 days 00:05:03
+c9988614-86c1-46f4-bb0c-79e0cb3d6668,2024-06-04 06:30:52,2024-06-04 06:36:33,voyageur,Torcy,0 days 00:05:41
+d56f5145-1205-46ac-b68d-86332653747c,2024-06-04 06:17:47,2024-06-04 06:21:43,signal alarme,Marne-la-Vallée-Chessy,0 days 00:03:56
+0ae82ba9-c399-44c1-b31b-35abb6974e22,2024-06-04 03:09:35,2024-06-04 04:06:25,chantier,Boissy-Saint-Léger,0 days 00:56:50
+e0c9ff5d-3075-43f8-9196-43f5d8342900,2024-06-03 22:43:39,2024-06-03 22:44:38,incident exploitation,Neuilly-Plaisance,0 days 00:00:59
+50ac3838-2675-4f32-9df7-6d97ae2453d5,2024-06-03 16:30:57,2024-06-03 16:33:30,voyageur,Gare de Lyon,0 days 00:02:33
+a7309bad-da4c-49f4-8e2e-bfbe552c4a07,2024-06-03 16:01:04,2024-06-03 16:08:51,signal alarme,La Défense,0 days 00:07:47
+b06a970a-e83e-4ff0-bd55-4511131edcc5,2024-06-03 10:28:01,2024-06-03 10:32:11,signal alarme,Auber,0 days 00:04:10
+272e9dda-71ee-43b6-87ed-3e9238dd7b2a,2024-06-03 03:49:25,2024-06-03 04:09:11,incident exploitation,Poissy,0 days 00:19:46
+7b1878f0-40ff-45be-8a5b-1eb7b2f69ae5,2024-06-02 08:49:04,2024-06-02 08:59:33,incident exploitation,Nanterre Préfecture,0 days 00:10:29
+91f5927f-8a22-4d01-b81f-887983fd22ef,2024-06-02 06:30:46,2024-06-02 10:43:52,voies,Nanterre Préfecture,0 days 04:13:06
+ef4c94ad-d2c0-4510-ad88-4d3254e22526,2024-06-01 19:21:04,2024-06-01 20:32:50,bagage oublie,Boissy-Saint-Léger,0 days 01:11:46
+b2c14cfb-4a87-484b-a410-3aff7385e403,2024-06-01 15:39:50,2024-06-01 17:47:26,signalisation,Neuville Université,0 days 02:07:36
+e9f6eaae-e578-4c2a-8136-fc9293a61416,2024-06-01 11:08:49,2024-06-01 12:26:10,mesure securite,Torcy,0 days 01:17:21
+0c6321d0-a368-4f8e-b542-ab7d460c0d59,2024-06-01 03:50:56,2024-06-01 04:50:41,panne train,Auber,0 days 00:59:45
+984254c3-4b0e-496b-b1ac-acd5c13dc1ec,2024-05-31 19:52:04,2024-05-31 20:23:41,panne train,Fontenay-sous-Bois,0 days 00:31:37
+bb2cf207-bcd4-4d43-a199-dc672259e6f8,2024-05-30 18:28:27,2024-05-30 19:04:38,voyageur,Châtelet les Halles,0 days 00:36:11
+ffdb209b-261a-469f-a251-92592eee7370,2024-05-30 11:44:45,2024-05-30 13:39:08,incident exploitation,Châtelet les Halles,0 days 01:54:23
+7be15cbd-4d85-446c-88c6-780015774beb,2024-05-30 07:13:09,2024-05-30 07:24:19,voies,Val d'Europe,0 days 00:11:10
+bde8f0d6-39ba-4d4e-a726-2aa0bfe9f4b0,2024-05-30 05:23:39,2024-05-30 05:26:29,porte,Fontenay-sous-Bois,0 days 00:02:50
+6e1839fa-3c4e-438d-8142-37bd24680843,2024-05-30 05:18:55,2024-05-30 06:01:18,intervention personnel,Rueil-Malmaison,0 days 00:42:23
+d050ffa2-ffaa-4cdb-a3df-eb3e12134051,2024-05-30 03:20:52,2024-05-30 04:04:34,chantier,Vincennes,0 days 00:43:42
+ec7d6772-ff93-486e-a92a-48dfe2b85c3c,2024-05-29 21:00:14,2024-05-29 22:01:40,voyageur,Auber,0 days 01:01:26
+44f95d71-1620-4cce-9e07-1ac4cfc3b21f,2024-05-29 12:13:58,2024-05-29 12:19:57,intervention personnel,La Varenne-Chennevières,0 days 00:05:59
+cd650edd-69b0-46f6-8b1a-45fc0024544e,2024-05-29 11:39:05,2024-05-29 12:22:31,panne train,Bry-sur-Marne,0 days 00:43:26
+5b8a0d1b-0fee-4a2f-aa78-5205de6354a4,2024-05-29 11:33:18,2024-05-29 11:33:55,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:00:37
+88725743-fcf6-4f62-8a36-1942b120628d,2024-05-29 06:21:56,2024-05-29 10:30:32,voyageur,Auber,0 days 04:08:36
+bd744f15-5725-4316-9e35-da3c11922514,2024-05-29 03:16:12,2024-05-29 03:49:14,panne train,Poissy,0 days 00:33:02
+91ad3a96-9d06-41ae-a432-816c309c620a,2024-05-28 16:55:17,2024-05-28 17:08:14,bagage oublie,Cergy le Haut,0 days 00:12:57
+ae7d0858-1ca0-4c88-9cfa-e33782affc19,2024-05-28 13:21:19,2024-05-28 13:50:05,porte,Nanterre Préfecture,0 days 00:28:46
+853ceeea-4126-4947-b024-a81425b99d7f,2024-05-28 11:19:23,2024-05-28 11:26:10,bagage oublie,Lognes,0 days 00:06:47
+cc87f178-8277-4577-a558-81a4ad3985a1,2024-05-28 10:25:53,2024-05-28 10:26:58,intervention personnel,Torcy,0 days 00:01:05
+1e399e68-353b-4357-8a58-0093c9642bfe,2024-05-28 09:30:26,2024-05-28 09:32:52,intervention personnel,Nanterre Préfecture,0 days 00:02:26
+106e151a-a399-4df3-a05e-dfa12bafc217,2024-05-28 09:19:03,2024-05-28 09:20:08,intervention personnel,Auber,0 days 00:01:05
+b532b088-7075-4a43-9076-3a84b54f1308,2024-05-28 08:40:22,2024-05-28 08:47:15,intervention personnel,Bry-sur-Marne,0 days 00:06:53
+54a80525-d1e6-42d5-914f-608eae31f9d0,2024-05-28 07:31:16,2024-05-28 07:37:53,panne electrique,Marne-la-Vallée-Chessy,0 days 00:06:37
+cfd9af3c-daf4-4da6-a33c-04b4c93e1df2,2024-05-28 07:19:10,2024-05-28 07:22:19,regulation,Val d'Europe,0 days 00:03:09
+7f9e757e-45dc-4294-8cfb-9b091b2879c0,2024-05-28 05:55:27,2024-05-28 06:00:21,signal alarme,Boissy-Saint-Léger,0 days 00:04:54
+02dbb591-b435-4044-96aa-30466f466fa8,2024-05-28 05:39:11,2024-05-28 06:35:35,panne train,Achères Ville,0 days 00:56:24
+d3781810-c2ac-418b-9457-e934c460766a,2024-05-28 04:16:43,2024-05-28 05:34:05,porte,Auber,0 days 01:17:22
+6cd571d2-50ff-4108-949e-5095406be918,2024-05-27 19:38:16,2024-05-27 20:49:19,panne train,Torcy,0 days 01:11:03
+ce9f287f-5e46-4b36-8756-59edd74d2cad,2024-05-27 17:27:17,2024-05-27 17:28:40,intervention personnel,Gare de Lyon,0 days 00:01:23
+055e946f-4d3a-4920-967d-1376047e4d80,2024-05-27 15:42:32,2024-05-27 15:43:31,intervention personnel,La Défense,0 days 00:00:59
+70f91a44-ce75-4e32-8a66-38f5a3397e89,2024-05-27 14:28:04,2024-05-27 14:31:44,incident technique,Saint-Germain-en-Laye,0 days 00:03:40
+bae9ac42-307c-41a7-a530-a5725db912f9,2024-05-27 12:20:28,2024-05-27 13:40:15,intervention personnel,La Défense,0 days 01:19:47
+2e824db3-2dc3-414f-9afd-547170dced21,2024-05-27 10:56:44,2024-05-27 10:57:39,intervention personnel,Nanterre Préfecture,0 days 00:00:55
+3e153e45-18eb-478e-8128-8a03035618d8,2024-05-27 09:22:53,2024-05-27 10:06:47,signalisation,Gare de Lyon,0 days 00:43:54
+cc0ccabe-dfc4-4182-9878-2159edcc2615,2024-05-27 07:11:29,2024-05-27 08:42:21,voyageur,Fontenay-sous-Bois,0 days 01:30:52
+82d2690b-5838-47fe-bb74-cc0b1c8848fe,2024-05-27 07:07:08,2024-05-27 07:14:17,voyageur,Gare de Lyon,0 days 00:07:09
+7e6cd353-76cf-4e82-a160-978fd0801d50,2024-05-27 06:47:14,2024-05-27 06:50:20,signal alarme,Gare de Lyon,0 days 00:03:06
+69b7dfce-b2a2-4e74-b58b-9a2068e0a268,2024-05-27 06:26:24,2024-05-27 06:28:38,porte,Vincennes,0 days 00:02:14
+52f39b8f-764f-4798-ad6c-99430db18a0e,2024-05-27 03:13:50,2024-05-27 04:26:29,incident exploitation,Poissy,0 days 01:12:39
+07fdea15-88c1-4ad5-9f92-ec8d18339c56,2024-05-26 21:46:01,2024-05-26 22:58:13,incident exploitation,Poissy,0 days 01:12:12
+f38fad7c-0e4f-4684-8766-d27a17385806,2024-05-26 13:26:06,2024-05-26 13:38:57,panne train,Nanterre Préfecture,0 days 00:12:51
+cd0e6745-dc1b-424d-a210-594e2ade0303,2024-05-26 11:59:00,2024-05-26 13:14:19,panne train,Nanterre Préfecture,0 days 01:15:19
+9d065d4b-2c7c-4665-ae1e-4df3e6fe8ffb,2024-05-26 08:04:12,2024-05-26 09:07:50,bagage oublie,Torcy,0 days 01:03:38
+06459c5d-6ab6-4c01-9b02-6d258b503ef9,2024-05-26 04:55:41,2024-05-26 05:12:46,voyageur,Torcy,0 days 00:17:05
+54def779-bfd6-46f7-94a9-f26b9f77e645,2024-05-25 21:51:57,2024-05-25 22:20:17,voyageur,Nogent-sur-Marne,0 days 00:28:20
+1faa114f-45b6-4698-94ef-98f05d151eec,2024-05-24 20:46:11,2024-05-24 21:33:31,panne train,Cergy le Haut,0 days 00:47:20
+bdd9ed5e-1428-4726-86d3-f67b8311e392,2024-05-24 19:53:51,2024-05-24 21:03:04,panne train,Marne-la-Vallée-Chessy,0 days 01:09:13
+985a3c3b-1034-41e9-8729-dc4161780373,2024-05-24 13:46:47,2024-05-24 14:18:20,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:31:33
+1f4477ed-0c45-480e-bcc8-d8e61133fed8,2024-05-24 13:18:21,2024-05-24 14:01:09,signal alarme,Charles de Gaulle-Etoile,0 days 00:42:48
+552e6e61-3fc6-4b69-8a2b-4863f47d63cc,2024-05-24 06:23:00,2024-05-24 06:25:26,intervention personnel,Charles de Gaulle-Etoile,0 days 00:02:26
+e3d09de8-5eba-456e-ad76-52e5f978ccfe,2024-05-24 04:05:06,2024-05-24 04:34:37,panne train,Nanterre Préfecture,0 days 00:29:31
+dc8beb58-06f6-4a44-b09f-65e94ab5040b,2024-05-23 19:08:43,2024-05-23 19:49:07,panne train,Boissy-Saint-Léger,0 days 00:40:24
+7db5355b-5d8f-478b-96cd-152fa24d405f,2024-05-23 18:42:43,2024-05-23 19:10:41,signalisation,Neuville Université,0 days 00:27:58
+e30b90ea-5f7c-4b77-bb0e-ce7dbaa87dc6,2024-05-23 16:50:39,2024-05-23 17:23:33,signal alarme,Lognes,0 days 00:32:54
+dfc8c619-e96a-4afb-93e2-e5619db347a3,2024-05-23 16:45:56,2024-05-23 16:54:41,panne electrique,Noisy-le-Grand-Mont d'Est,0 days 00:08:45
+3e0be4a4-2c85-4cc6-8f84-59a79baa6302,2024-05-23 16:25:56,2024-05-23 16:44:59,signal alarme,Torcy,0 days 00:19:03
+42173f02-58da-4adc-8b9f-0540484c51be,2024-05-23 15:41:28,2024-05-23 16:06:19,intervention personnel,Saint-Germain-en-Laye,0 days 00:24:51
+f1316005-371b-4138-a8af-6aa86b792e11,2024-05-23 12:49:33,2024-05-23 12:52:31,intervention personnel,Châtelet les Halles,0 days 00:02:58
+01312118-45d1-4e13-b893-854b476442ae,2024-05-23 12:07:39,2024-05-23 12:10:47,signal alarme,Châtelet les Halles,0 days 00:03:08
+be6e9c5d-6a1e-4e7e-ae00-831bd67af4e3,2024-05-23 11:28:08,2024-05-23 11:58:44,incident exploitation,Cergy le Haut,0 days 00:30:36
+bcf9ceac-1c05-42e4-9e74-a6a31110386f,2024-05-23 10:39:26,2024-05-23 10:41:12,"voyageur,voyageur",Noisiel,0 days 00:01:46
+4e3fcdbf-1039-4a5a-9a05-015a643b0b00,2024-05-23 10:26:16,2024-05-23 10:32:15,signal alarme,Maisons-Laffitte,0 days 00:05:59
+26d0684e-3860-400b-93ad-8f24a18019d9,2024-05-23 08:07:37,2024-05-23 08:12:27,signal alarme,Châtelet les Halles,0 days 00:04:50
+c8d09540-a2e3-4e7b-a146-f666e7d638a2,2024-05-23 03:28:02,2024-05-23 10:00:33,"panne electrique,panne train",Marne-la-Vallée-Chessy,0 days 06:32:31
+e76fd558-e69d-4f72-b8f5-725742f4c148,2024-05-22 21:04:11,2024-05-22 22:21:22,bagage oublie,Marne-la-Vallée-Chessy,0 days 01:17:11
+7eb20af1-7674-49bf-89fc-b0f1b32fcc98,2024-05-22 15:33:18,2024-05-22 17:30:55,panne train,,0 days 01:57:37
+b64b05fa-d0d1-4aee-a666-69d0ec369276,2024-05-22 15:16:55,2024-05-22 15:26:50,panne train,Nanterre Préfecture,0 days 00:09:55
+69f45018-79b9-4a35-8f61-60ce81235036,2024-05-22 14:45:19,2024-05-22 14:49:32,signal alarme,Charles de Gaulle-Etoile,0 days 00:04:13
+7640d225-a3de-4c1e-aee5-1cc0abeeb6a7,2024-05-22 14:30:33,2024-05-22 15:19:50,signal alarme,Nanterre Préfecture,0 days 00:49:17
+76ccb76d-0b8c-468d-bcc9-fe39e01805f8,2024-05-22 13:41:02,2024-05-22 13:46:57,bagage oublie,Torcy,0 days 00:05:55
+ce3b5217-e970-4339-bae3-90a4a8f6cb6f,2024-05-22 12:21:40,2024-05-22 12:25:42,intervention personnel,Torcy,0 days 00:04:02
+61436675-cccc-4ac8-908e-8d0c93113de3,2024-05-22 11:41:12,2024-05-22 11:46:33,incident exploitation,Nanterre Ville,0 days 00:05:21
+04167654-96ed-456c-b9bc-eb8592b1a591,2024-05-22 11:27:05,2024-05-22 11:30:24,incident exploitation,Torcy,0 days 00:03:19
+b8b7ffad-7c3b-4647-b10a-0c7eaa87b1fe,2024-05-22 10:22:50,2024-05-22 10:31:09,signal alarme,Nation,0 days 00:08:19
+36a0acfd-4305-4b36-bd70-1d7a9519ff8e,2024-05-22 04:58:06,2024-05-22 05:01:25,signal alarme,Fontenay-sous-Bois,0 days 00:03:19
+16f494ad-d8a1-41d9-81bb-8d97f8ee42f0,2024-05-21 18:39:21,2024-05-21 20:38:50,signalisation,Auber,0 days 01:59:29
+97f217d6-f3ba-49c7-8062-ebcbdf0063d9,2024-05-21 17:23:44,2024-05-21 18:02:54,voyageur,Nanterre Université,0 days 00:39:10
+c157aacc-502e-4c57-85db-b5867ae050ab,2024-05-21 14:16:00,2024-05-21 14:47:37,incident exploitation,Torcy,0 days 00:31:37
+4041e3c4-5acf-4135-bd88-4c28dda38fcd,2024-05-21 13:03:10,2024-05-21 13:09:39,signal alarme,Charles de Gaulle-Etoile,0 days 00:06:29
+925d9271-d52b-4292-bf66-0dede52b4afd,2024-05-21 12:41:01,2024-05-21 12:45:50,intervention personnel,Charles de Gaulle-Etoile,0 days 00:04:49
+a865ae7c-3cdd-42aa-877a-4478d52e10e5,2024-05-21 12:37:17,2024-05-21 12:40:11,intervention personnel,Torcy,0 days 00:02:54
+2b82b1c1-8ad7-4eb9-b831-a96fd0b03ae0,2024-05-21 06:03:19,2024-05-21 06:08:52,signal alarme,Marne-la-Vallée-Chessy,0 days 00:05:33
+d1d13001-3abc-4f02-9ec3-9d3763dbd755,2024-05-19 16:29:17,2024-05-19 17:13:50,panne train,Cergy le Haut,0 days 00:44:33
+0b5d3fd2-5f57-4514-a0ce-f7b4a6b3c364,2024-05-19 12:47:29,2024-05-19 13:19:56,bagage oublie,Gare de Lyon,0 days 00:32:27
+7ca50460-ee53-409a-a7a2-c27975bb3ce2,2024-05-19 03:15:42,2024-05-19 05:16:33,"panne electrique,incident exploitation",Poissy,0 days 02:00:51
+3d05813d-5470-488b-8902-7bdde13b3a87,2024-05-18 21:50:43,2024-05-18 22:33:58,signal alarme,La Défense,0 days 00:43:15
+7c9d3b58-36b8-4548-a6d5-8dd9e47f871d,2024-05-18 05:55:10,2024-05-18 06:16:45,voies,Achères Ville,0 days 00:21:35
+5fabf8bb-eb83-4b2a-ab8b-1a22a2c17dd6,2024-05-17 16:23:13,2024-05-17 16:25:26,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:02:13
+6a35cd26-2f26-45c6-a510-7fc90a5c3636,2024-05-17 11:36:22,2024-05-17 11:41:02,signal alarme,Châtelet les Halles,0 days 00:04:40
+b00bd85d-7505-4bb2-8389-93c2aa21cff2,2024-05-17 09:57:43,2024-05-17 11:12:37,incident exploitation,Torcy,0 days 01:14:54
+63052f17-d8be-4641-afb1-248dffdf4d66,2024-05-17 07:55:31,2024-05-17 08:01:35,intervention personnel,Sucy-Bonneuil,0 days 00:06:04
+24b5ee8e-999f-423e-a842-866a62abe1d9,2024-05-17 07:51:42,2024-05-17 08:00:18,regulation,La Varenne-Chennevières,0 days 00:08:36
+bf9c451e-23e1-4a25-a5b6-5c96bb098bca,2024-05-17 07:28:41,2024-05-17 07:32:14,intervention personnel,Torcy,0 days 00:03:33
+7cc91782-a27e-446f-89d0-333b09d34978,2024-05-16 16:41:25,2024-05-16 17:39:08,signalisation,Sucy-Bonneuil,0 days 00:57:43
+a4aebbab-71eb-4187-b440-d46adb8175e8,2024-05-16 16:22:52,2024-05-16 16:27:19,signal alarme,Auber,0 days 00:04:27
+21ff62d6-de25-4e86-a522-0cdcbc7c7bc8,2024-05-16 10:20:03,2024-05-16 11:14:13,panne train,Marne-la-Vallée-Chessy,0 days 00:54:10
+0f426ca0-90b1-41b6-9ca4-d6f43947a3ed,2024-05-16 03:11:42,2024-05-16 04:36:33,panne electrique,Maisons-Laffitte,0 days 01:24:51
+96160bda-d0f2-4b10-ac4b-5632f9c5d0c2,2024-05-15 19:53:57,2024-05-15 22:02:00,incident exploitation,Vincennes,0 days 02:08:03
+723423f8-9a8d-4525-9ab0-dc1fd0bafbae,2024-05-15 17:37:31,2024-05-15 17:44:19,voyageur,Noisy-le-Grand-Mont d'Est,0 days 00:06:48
+828323cf-7e71-4470-8a54-9829eb5ecc4f,2024-05-15 17:17:47,2024-05-15 17:22:22,intervention personnel,La Défense,0 days 00:04:35
+44a62ffd-1d43-477e-a489-2f9244dc6050,2024-05-15 15:10:25,2024-05-15 15:14:28,signal alarme,Boissy-Saint-Léger,0 days 00:04:03
+b3de78a2-8eff-4e0d-9b06-b8b00cf44507,2024-05-15 14:26:29,2024-05-15 14:29:16,incident exploitation,Rueil-Malmaison,0 days 00:02:47
+dcd119fc-6cd9-45f7-afd7-230258739371,2024-05-15 11:17:03,2024-05-15 11:19:43,signal alarme,Auber,0 days 00:02:40
+ddcf0be4-c1bc-410d-983a-6266772b3897,2024-05-15 10:16:06,2024-05-15 10:17:54,intervention personnel,Torcy,0 days 00:01:48
+781efa11-b114-4186-af9d-90db0c3c0b10,2024-05-15 09:22:17,2024-05-15 09:23:04,intervention personnel,Nation,0 days 00:00:47
+5363491a-5afd-4090-8aa8-a251cca8f87c,2024-05-15 05:35:58,2024-05-15 05:39:27,signal alarme,La Défense,0 days 00:03:29
+ed3568d8-eb28-47f8-a91d-80df0f7c6f58,2024-05-14 22:01:13,2024-05-14 23:04:51,signal alarme,Cergy le Haut,0 days 01:03:38
+dc1b5498-88ee-4d68-a3ed-c2afdc609938,2024-05-14 15:02:45,2024-05-14 15:15:04,voyageur,Marne-la-Vallée-Chessy,0 days 00:12:19
+de988439-16cd-495c-82e9-095e4a9fe5b8,2024-05-14 14:01:02,2024-05-14 14:02:01,intervention personnel,Nanterre Préfecture,0 days 00:00:59
+a82fe970-8e3a-4744-aa75-cc39c5fbe6c2,2024-05-14 13:27:11,2024-05-14 13:30:19,intervention personnel,Rueil-Malmaison,0 days 00:03:08
+bb61fcbc-61a4-4df6-ad54-998b77e17771,2024-05-14 12:12:33,2024-05-14 12:19:57,signal alarme,Nanterre Préfecture,0 days 00:07:24
+76e37a3e-6574-4737-84fc-86dbaaf39b99,2024-05-14 10:56:03,2024-05-14 10:56:48,intervention personnel,La Varenne-Chennevières,0 days 00:00:45
+7c4d3092-989f-4907-91ba-85b593885e38,2024-05-14 06:26:29,2024-05-14 09:28:14,signalisation,Gare de Lyon,0 days 03:01:45
+9d3094ab-9449-4be8-8b26-2310442fcdcb,2024-05-14 05:42:57,2024-05-14 06:24:14,panne train,Nanterre Université,0 days 00:41:17
+bc818774-4e76-4e05-8962-cc63515d9e11,2024-05-14 03:11:26,2024-05-14 04:21:20,chantier,Rueil-Malmaison,0 days 01:09:54
+bd97bc64-a827-48b7-adde-9c9c47c49fd6,2024-05-13 21:07:55,2024-05-13 21:37:29,porte,Gare de Lyon,0 days 00:29:34
+3cd728f5-9355-4d6d-ad53-57eb5a3d8aa0,2024-05-13 15:30:05,2024-05-13 15:47:37,incident exploitation,Rueil-Malmaison,0 days 00:17:32
+07c88109-7fdd-49bb-be2b-579bf0c91319,2024-05-13 15:25:47,2024-05-13 15:28:26,signal alarme,Nanterre Ville,0 days 00:02:39
+851c43be-26c7-4be4-b745-12d606e17c82,2024-05-13 10:51:53,2024-05-13 13:38:57,"signalisation,voyageur",Nanterre Préfecture,0 days 02:47:04
+d645ec2f-cb2b-4420-be0d-234d9274cf2b,2024-05-13 09:55:03,2024-05-13 10:15:57,signalisation,Houilles-Carrières-sur-Seine,0 days 00:20:54
+4cc6ba35-c09d-4e48-abc5-2b63c8509944,2024-05-13 08:43:28,2024-05-13 09:27:26,panne train,Auber,0 days 00:43:58
+647614fb-c84f-4144-839d-afa94539b022,2024-05-13 03:05:49,2024-05-13 04:48:38,chantier,,0 days 01:42:49
+ed957f96-3445-48d4-ba2d-50a7909d3b53,2024-05-12 22:36:37,2024-05-12 22:38:03,intervention personnel,Noisiel,0 days 00:01:26
+c9307016-9424-4d0e-9860-6e3b80fe43d6,2024-05-12 17:27:15,2024-05-12 17:29:38,intervention personnel,Torcy,0 days 00:02:23
+f5ac4546-8283-485b-818d-fc01154d78e3,2024-05-12 10:51:44,2024-05-12 11:18:07,voies,Le Vésinet-Le Pecq,0 days 00:26:23
+da870994-2981-43dc-9537-2b7521ec8f10,2024-05-11 17:21:51,2024-05-11 18:17:41,incident technique,Poissy,0 days 00:55:50
+10762f60-a8c6-4cb5-b2a2-4e0398efa357,2024-05-11 15:30:15,2024-05-11 16:22:30,signalisation,Achères Ville,0 days 00:52:15
+26dadb6c-0ac8-4659-b52c-4413c5b3b8dd,2024-05-11 13:48:48,2024-05-11 13:51:38,voyageur,Nation,0 days 00:02:50
+450cafc0-d13a-4b51-86b8-c280fc067218,2024-05-11 12:39:35,2024-05-11 12:45:20,voyageur,Vincennes,0 days 00:05:45
+741f58a0-2662-435c-88c4-e77d333bfe02,2024-05-11 03:31:00,2024-05-11 05:30:10,voies,Châtelet les Halles,0 days 01:59:10
+b8073147-0ba0-42b5-b0fa-5cd875788afe,2024-05-10 19:56:00,2024-05-10 21:12:59,degagement fumee,La Défense,0 days 01:16:59
+60c5f251-6980-40c2-9041-2168847b00ae,2024-05-10 18:50:00,2024-05-10 21:26:38,voies,Poissy,0 days 02:36:38
+a8e973f4-993c-4e13-b546-cac8442c8318,2024-05-10 18:14:58,2024-05-10 19:26:16,incident exploitation,Rueil-Malmaison,0 days 01:11:18
+f556b32a-4ecc-4c64-b83b-25adce844ab5,2024-05-10 17:51:09,2024-05-10 17:51:59,intervention personnel,Torcy,0 days 00:00:50
+8c4be006-afa7-4663-9ea4-2b1baa61661d,2024-05-10 17:39:21,2024-05-10 17:40:56,intervention personnel,Auber,0 days 00:01:35
+6c65c369-e63b-4aca-b72b-fc16de192b88,2024-05-10 17:21:32,2024-05-10 17:22:35,regulation,La Varenne-Chennevières,0 days 00:01:03
+417d4b59-491f-4751-a3d6-484bb4435269,2024-05-10 14:15:30,2024-05-10 14:21:58,intervention personnel,Nanterre Préfecture,0 days 00:06:28
+37cb7e5d-7d27-4637-812f-896b5b7725dd,2024-05-10 14:08:24,2024-05-10 14:11:24,incident technique,Nanterre Préfecture,0 days 00:03:00
+37282fcf-e7a2-469a-9146-ff975686faf9,2024-05-10 13:30:30,2024-05-10 13:34:05,incident exploitation,Val d'Europe,0 days 00:03:35
+55b3303d-642c-4e15-862f-374ea84027a7,2024-05-10 11:03:00,2024-05-10 11:18:31,intervention personnel,La Varenne-Chennevières,0 days 00:15:31
+fe31d165-cdf3-4107-8a8a-f6f4688567b9,2024-05-10 10:45:42,2024-05-10 11:01:12,incident exploitation,Saint-Germain-en-Laye,0 days 00:15:30
+bf0fd17b-0132-4dab-a9fc-2adc27c509ac,2024-05-10 09:59:57,2024-05-10 10:02:45,intervention personnel,Torcy,0 days 00:02:48
+18ca0716-388d-4164-90e5-bcc3d18e08bb,2024-05-10 09:45:10,2024-05-10 09:49:28,voyageur,Champigny,0 days 00:04:18
+903868cd-029a-4500-ba97-09ee2d7df58a,2024-05-10 09:41:55,2024-05-10 09:43:32,intervention personnel,Châtelet les Halles,0 days 00:01:37
+72dd40cb-f80a-4dd3-b0fc-55de90674811,2024-05-10 06:18:40,2024-05-10 08:46:19,voies,Rueil-Malmaison,0 days 02:27:39
+13601137-6798-4ccb-8615-8baa762eb943,2024-05-09 17:31:15,2024-05-09 22:44:17,bagage oublie,Torcy,0 days 05:13:02
+deb3c8fd-8de0-4ae2-8191-142089e42f5f,2024-05-09 12:09:14,2024-05-09 12:26:32,voyageur,Charles de Gaulle-Etoile,0 days 00:17:18
+e25a4ddb-dc35-4d82-905e-e2c21afd3e39,2024-05-09 07:57:54,2024-05-09 09:20:12,voies,Châtelet les Halles,0 days 01:22:18
+0302c416-5e4d-45fd-9d35-610112453cd6,2024-05-09 03:29:33,2024-05-09 04:19:00,chantier,Rueil-Malmaison,0 days 00:49:27
+ea3f12db-a8dc-4958-a869-48eb887a5c31,2024-05-09 03:09:41,2024-05-09 03:20:08,chantier,Rueil-Malmaison,0 days 00:10:27
+11eded86-6193-486e-b367-27a582c37d8d,2024-05-08 05:48:45,2024-05-08 06:29:51,panne train,Cergy le Haut,0 days 00:41:06
+9740d561-2ad9-4119-a965-e4c6091a00d0,2024-05-08 03:28:17,2024-05-08 10:44:33,police,Charles de Gaulle-Etoile,0 days 07:16:16
+005858c9-4f1b-4e70-9ec4-97df848ee493,2024-05-08 03:26:51,2024-05-08 05:13:05,chantier,Saint-Germain-en-Laye,0 days 01:46:14
+acad2945-5233-4b78-9e03-b67e535b2fc1,2024-05-07 20:06:39,2024-05-07 20:06:39,"mesure securite,police",Charles de Gaulle-Etoile,0 days 00:00:00
+4e52e82d-b7d5-4af0-b428-6e76a8871444,2024-05-07 17:05:33,2024-05-07 17:05:33,"mesure securite,police",Charles de Gaulle-Etoile,0 days 00:00:00
+39f7dfb7-0aa0-4174-b41d-599ec72dc4d8,2024-05-07 16:27:02,2024-05-07 16:31:32,intervention personnel,Nation,0 days 00:04:30
+dd75dcde-e516-4347-b8bb-2192d50a4ea5,2024-05-07 12:05:42,2024-05-07 12:08:11,intervention personnel,Nanterre Préfecture,0 days 00:02:29
+ff3515b3-e1a9-4e1d-9e04-0eb66e5e2356,2024-05-07 10:20:10,2024-05-07 10:22:19,intervention personnel,Châtelet les Halles,0 days 00:02:09
+a99b6818-4242-4e63-85f6-c4a7efd1395c,2024-05-06 20:04:17,2024-05-06 22:40:39,voies,,0 days 02:36:22
+745179e1-17db-4d9b-9054-c8769d72411d,2024-05-06 17:40:16,2024-05-06 17:42:10,intervention personnel,Bry-sur-Marne,0 days 00:01:54
+cf021d2f-a7c0-439c-9db0-082784c12067,2024-05-06 16:18:40,2024-05-06 16:20:33,intervention personnel,Bussy-Saint-Georges,0 days 00:01:53
+9d291241-a6c4-4c87-a0d7-9d8b7a8a6bb4,2024-05-06 16:11:32,2024-05-06 16:12:43,intervention personnel,Nanterre Préfecture,0 days 00:01:11
+95041cca-11b2-4817-a741-4297879b7cd8,2024-05-06 15:56:29,2024-05-06 15:58:32,regulation,Nogent-sur-Marne,0 days 00:02:03
+48a1aed4-f49b-4a32-b341-0c2fbdca8197,2024-05-06 15:14:14,2024-05-06 15:18:01,signal alarme,Torcy,0 days 00:03:47
+b3cd9aaf-53ff-4106-a9ae-73f7f1ce9e96,2024-05-06 15:13:21,2024-05-06 15:18:31,signal alarme,Neuilly-Plaisance,0 days 00:05:10
+aba2513d-9381-4e5c-aa76-f481f083c4cb,2024-05-06 14:53:42,2024-05-06 15:00:08,signal alarme,Bry-sur-Marne,0 days 00:06:26
+732718a0-65e8-40aa-8205-c6ea9ed5b1e1,2024-05-06 14:34:16,2024-05-06 14:36:13,porte,La Défense,0 days 00:01:57
+740d744f-34ec-4d75-bd3f-0b1ee90a7a49,2024-05-06 13:52:05,2024-05-06 13:55:41,intervention personnel,Nation,0 days 00:03:36
+5c63e6aa-5df9-49c3-a9eb-0dfee52406f7,2024-05-06 13:34:53,2024-05-06 13:42:01,porte,Neuilly-Plaisance,0 days 00:07:08
+90e40106-8942-459f-8670-64e0c9873209,2024-05-06 11:38:30,2024-05-06 11:43:18,intervention personnel,Nanterre Préfecture,0 days 00:04:48
+0a1cb6d3-17f8-4351-a7ac-e994f3b36547,2024-05-06 11:06:59,2024-05-06 11:09:28,intervention personnel,Châtelet les Halles,0 days 00:02:29
+dd587bef-aa27-43cf-8b04-8c193027a72f,2024-05-06 08:05:00,2024-05-06 08:07:24,bagage oublie,Fontenay-sous-Bois,0 days 00:02:24
+b9673d92-baae-4051-84cb-a9a2151a76ae,2024-05-06 07:04:37,2024-05-06 07:05:34,voyageur,Gare de Lyon,0 days 00:00:57
+f0610d53-9dde-42a1-89df-828f3ec38214,2024-05-06 06:33:06,2024-05-06 06:35:48,signal alarme,Auber,0 days 00:02:42
+ccf5f716-a5fa-4ad2-a403-3ca94f15407d,2024-05-06 05:01:44,2024-05-06 09:45:42,panne electrique,Cergy le Haut,0 days 04:43:58
+0332ae30-fa76-472a-9a0c-d5f0c58b57c2,2024-05-04 08:26:34,2024-05-04 11:44:30,signalisation,Maisons-Laffitte,0 days 03:17:56
+29e089c3-653f-412f-9eba-2b11d7040c31,2024-05-04 05:40:46,2024-05-04 05:47:47,incident exploitation,Marne-la-Vallée-Chessy,0 days 00:07:01
+4f801e26-4a85-4623-9ca9-c1e2adf05711,2024-05-03 19:45:12,2024-05-03 21:37:50,incident exploitation,Cergy le Haut,0 days 01:52:38
+84dd52c3-a1a3-4a30-8355-adcc7dc16934,2024-05-03 16:25:12,2024-05-03 17:04:21,panne train,Achères Grand Cormier,0 days 00:39:09
+0d2a7f52-8460-428e-9d48-31b21e2335f4,2024-05-03 15:52:49,2024-05-03 15:54:23,incident technique,Fontenay-sous-Bois,0 days 00:01:34
+137c8847-af94-4f71-9c83-a0fe0a259bdf,2024-05-03 15:38:49,2024-05-03 15:40:51,incident technique,Lognes,0 days 00:02:02
+517d078f-9585-4ab8-975a-8ab1275471be,2024-05-03 15:19:35,2024-05-03 15:23:26,bagage oublie,La Varenne-Chennevières,0 days 00:03:51
+c527f170-0894-45b1-b410-f537f1ecb5ed,2024-05-03 15:09:45,2024-05-03 15:13:48,incident technique,Fontenay-sous-Bois,0 days 00:04:03
+f0716bdb-9531-430b-9a5a-ba3e43eb4517,2024-05-03 12:33:50,2024-05-03 12:35:38,incident exploitation,Nanterre Préfecture,0 days 00:01:48
+44bd4012-9052-468c-8cf2-ad1c766f6f93,2024-05-03 12:16:15,2024-05-03 13:04:35,incident exploitation,Poissy,0 days 00:48:20
+ef73992e-31b2-4a05-bb46-dc37c7035a7b,2024-05-03 08:57:56,2024-05-03 09:30:23,incident exploitation,Torcy,0 days 00:32:27
+be3be309-9172-4783-8673-b9b9e2e61e15,2024-05-03 03:23:17,2024-05-03 03:49:10,incident exploitation,Poissy,0 days 00:25:53
+0992efc3-1541-4a0f-96aa-81fd1ee44f9c,2024-05-02 19:39:02,2024-05-02 20:40:18,voyageur,Noisiel,0 days 01:01:16
+8d81b689-1d95-48ff-9189-3adacfd957c2,2024-05-02 11:40:04,2024-05-02 14:04:23,degagement fumee,Bussy-Saint-Georges,0 days 02:24:19
+db21f813-09b7-416c-bdae-9ebd911e08f4,2024-05-02 08:56:29,2024-05-02 11:29:43,degagement fumee,Bussy-Saint-Georges,0 days 02:33:14
+a398af00-07a3-4082-a892-12846bffab88,2024-05-02 08:49:36,2024-05-02 08:52:09,intervention personnel,Nanterre Préfecture,0 days 00:02:33
+9c36fa4b-83c4-4900-af59-0c43ef345651,2024-05-02 06:48:47,2024-05-02 08:30:18,bagage oublie,Nanterre Préfecture,0 days 01:41:31
+c9b0abf1-6b49-4285-be89-b66ccb75c71b,2024-05-01 21:19:24,2024-05-01 21:32:02,degagement fumee,Nanterre Ville,0 days 00:12:38
+498f423a-0117-43af-a6d9-78fabec735ae,2024-05-01 05:12:17,2024-05-01 06:03:53,voyageur,Maisons-Laffitte,0 days 00:51:36
+21eb416b-81be-4c44-b131-511f33b95895,2024-04-30 22:55:51,2024-04-30 23:31:35,panne train,Fontenay-sous-Bois,0 days 00:35:44
+080c1a7f-c264-4333-9874-d18c1ed6182b,2024-04-30 21:02:14,2024-04-30 21:25:28,voyageur,Houilles-Carrières-sur-Seine,0 days 00:23:14
+848c2e62-7102-4ec1-921a-c057b3fc8863,2024-04-30 14:47:00,2024-04-30 15:20:45,incident exploitation,Torcy,0 days 00:33:45
+e3e5663e-0cea-44f8-9e86-f1d1ab6a1dda,2024-04-30 07:46:47,2024-04-30 10:48:14,intervention personnel,Cergy le Haut,0 days 03:01:27
+229cf1ee-ac76-4a4c-b5a1-243c4f0c0d23,2024-04-30 04:00:54,2024-04-30 04:31:01,incident exploitation,Poissy,0 days 00:30:07
+c5a8fb4c-36df-42b1-81c9-36cb456f8a57,2024-04-29 11:52:45,2024-04-29 11:55:36,incident technique,Nation,0 days 00:02:51
+10b2448e-12b1-4a67-b303-1a41a7894916,2024-04-29 11:15:21,2024-04-29 11:17:36,porte,Auber,0 days 00:02:15
+ff800dd8-7fe8-4030-92c7-e34f2fe1b96b,2024-04-29 07:00:33,2024-04-29 07:45:17,voies,Bry-sur-Marne,0 days 00:44:44
+fbaf5c17-0f3d-4066-913d-e47da5e19137,2024-04-29 06:18:07,2024-04-29 06:19:51,intervention personnel,Noisy-le-Grand-Mont d'Est,0 days 00:01:44
+39dc13d8-858c-498e-b94e-6e075ca2fbcc,2024-04-29 05:54:46,2024-04-29 05:59:09,incident exploitation,Maisons-Laffitte,0 days 00:04:23
+50e1541f-153f-461d-b258-70e6704666fb,2024-04-28 16:20:25,2024-04-28 16:41:57,bagage oublie,Châtelet les Halles,0 days 00:21:32
+a0119dde-d45d-4255-b02c-fdf3e39ee80c,2024-04-28 06:00:07,2024-04-28 06:11:48,voies,Cergy le Haut,0 days 00:11:41
+eb4055b9-6065-4fb4-91af-13bba64953ac,2024-04-27 20:28:24,2024-04-27 21:07:45,signal alarme,Vincennes,0 days 00:39:21
+3f9a6925-6ce3-4295-a112-3a629ad29ef4,2024-04-27 14:14:52,2024-04-27 15:10:35,voyageur,Torcy,0 days 00:55:43
+a4bcb94f-0cbb-46fd-8448-43e613cb15d5,2024-04-27 10:06:20,2024-04-27 11:31:08,mesure securite,Auber,0 days 01:24:48
+afe2bcb5-3825-4e50-bd87-67ea19bc50a3,2024-04-27 02:57:22,2024-04-27 03:49:36,panne train,Cergy le Haut,0 days 00:52:14
+3fa0c155-5986-400f-88e7-5a3af345f6c0,2024-04-26 14:59:11,2024-04-26 14:59:45,intervention personnel,Nanterre Préfecture,0 days 00:00:34
+92b8e529-c51d-4cc3-9fad-4c8ac7a207ff,2024-04-26 13:45:39,2024-04-26 14:01:32,voyageur,Nanterre Université,0 days 00:15:53
+4c38701a-07c3-4f6a-953d-3cf2c3cf95a4,2024-04-26 13:05:51,2024-04-26 13:07:00,intervention personnel,La Varenne-Chennevières,0 days 00:01:09
+c18d24c8-fcc7-4c5e-80a4-a64412d600cb,2024-04-26 12:09:29,2024-04-26 12:10:35,incident technique,La Défense,0 days 00:01:06
+5e7fbfc3-3061-4dbe-9144-a2eec35776f7,2024-04-26 10:53:19,2024-04-26 10:56:18,porte,Noisiel,0 days 00:02:59
+faac6c7f-ab9f-4629-b867-8af25558a8b7,2024-04-26 05:57:25,2024-04-26 08:23:36,bagage oublie,Champigny,0 days 02:26:11
+2814bd7d-2311-4331-9d20-4ec1562d0640,2024-04-26 05:25:19,2024-04-26 06:01:40,voies,Achères Ville,0 days 00:36:21
+ec87d250-2996-40dd-ba93-07c0d86a5d9a,2024-04-25 17:37:01,2024-04-25 17:39:13,voies,Gare de Lyon,0 days 00:02:12
+c9247837-4a25-41e6-b29b-3d99f56d4c73,2024-04-25 14:34:17,2024-04-25 14:39:15,signal alarme,Noisiel,0 days 00:04:58
+b30bc802-9db7-4530-8a95-65f2c0b1745f,2024-04-25 13:09:00,2024-04-25 13:11:33,intervention personnel,La Varenne-Chennevières,0 days 00:02:33
+27adda68-cbd4-4aad-a33c-7ff28640270e,2024-04-25 09:00:27,2024-04-25 09:04:50,intervention personnel,Châtelet les Halles,0 days 00:04:23
+2fbfd3f4-3d60-4eda-a724-a411898615b2,2024-04-25 07:00:46,2024-04-25 08:51:25,intervention personnel,Nanterre Préfecture,0 days 01:50:39
+107699fd-da3e-47d9-8a44-1f6e919330b7,2024-04-24 20:57:34,2024-04-24 21:38:23,intervention personnel,Boissy-Saint-Léger,0 days 00:40:49
+91b06e18-9f86-46f9-9865-75440a41dec7,2024-04-24 14:06:51,2024-04-24 14:14:35,porte,Châtelet les Halles,0 days 00:07:44
+d704d2f2-6172-41d1-baf9-e4188a5bd1c9,2024-04-24 13:55:47,2024-04-24 13:59:05,intervention personnel,Rueil-Malmaison,0 days 00:03:18
+2ba22003-d1c4-490a-a8a2-cabcc3f01ff8,2024-04-24 09:33:41,2024-04-24 09:37:40,signal alarme,Châtelet les Halles,0 days 00:03:59
+1379a3ab-2f37-45bb-a489-37a122d8f1ea,2024-04-23 15:00:38,2024-04-23 16:55:42,bagage oublie,,0 days 01:55:04
+6d8d9e75-b3a9-4e0c-b766-28264a5b0c65,2024-04-23 14:37:07,2024-04-23 14:55:29,bagage oublie,,0 days 00:18:22
+2ee71865-80ed-4f51-afa0-a9d407c96aeb,2024-04-23 11:10:34,2024-04-23 13:56:56,signalisation,Châtelet les Halles,0 days 02:46:22
+7609c7a9-b222-4f23-ae8b-33e13f3d411a,2024-04-23 05:51:35,2024-04-23 08:02:30,bagage oublie,Gare de Lyon,0 days 02:10:55
+f44072b0-4519-4b19-bcd9-f6e65617aff0,2024-04-23 03:21:22,2024-04-23 05:00:31,chantier,Val d'Europe,0 days 01:39:09
+d10e450e-5fab-4cdd-8962-c4cf66bde5b5,2024-04-22 20:14:37,2024-04-22 20:21:35,voyageur,Torcy,0 days 00:06:58
+5fffc61c-360a-40eb-b2a4-88c5fa2db448,2024-04-22 19:14:59,2024-04-22 19:15:53,voyageur,Auber,0 days 00:00:54
+e4945326-58cd-4432-bfd8-c5c8268a2cb5,2024-04-22 18:56:53,2024-04-22 20:32:58,panne train,Nanterre Préfecture,0 days 01:36:05
+d3617ecf-3be1-49bc-b4c9-cd92be686601,2024-04-22 17:08:01,2024-04-22 17:26:02,intervention personnel,Nanterre Préfecture,0 days 00:18:01
+83e3918e-2d06-4043-a1a7-8f193fbe6955,2024-04-22 14:51:19,2024-04-22 16:01:18,voyageur,Cergy le Haut,0 days 01:09:59
+977f0b7a-56eb-44bb-a1f4-02181d8eb974,2024-04-22 13:47:38,2024-04-22 13:50:19,intervention personnel,Nanterre Préfecture,0 days 00:02:41
+6313322d-0abf-4e0b-83b8-5e8c9af76228,2024-04-22 09:20:04,2024-04-22 09:29:25,voyageur,La Défense,0 days 00:09:21
+54ea8b67-4316-4915-9679-54c716f6c450,2024-04-22 05:42:39,2024-04-22 05:50:37,signal alarme,Rueil-Malmaison,0 days 00:07:58
+3d7010bd-a770-4698-8795-7e2e403703c4,2024-04-22 04:14:15,2024-04-22 06:39:14,voies,Achères Ville,0 days 02:24:59
+f712ece6-6332-41da-90fb-dfe056576a8e,2024-04-21 18:16:55,2024-04-21 18:22:43,incident exploitation,Nanterre Préfecture,0 days 00:05:48
+89854640-3de9-487b-83e5-07661d246f3b,2024-04-21 17:45:52,2024-04-21 18:00:11,voyageur,Nanterre Préfecture,0 days 00:14:19
+50bb83f8-d841-42e8-a15f-f43b093d29ff,2024-04-21 15:38:23,2024-04-21 17:02:59,signalisation,Cergy le Haut,0 days 01:24:36
+46002cdf-7eb8-450a-8516-91b4a5440b16,2024-04-21 11:16:25,2024-04-21 11:52:09,voyageur,Boissy-Saint-Léger,0 days 00:35:44
+29eae8c1-02d3-448f-af0b-55d1a997b436,2024-04-20 18:36:11,2024-04-20 21:28:13,voies,Achères Ville,0 days 02:52:02
+6b4edb53-a881-4110-bc07-6564110757b8,2024-04-20 03:30:57,2024-04-20 04:30:54,chantier,Bussy-Saint-Georges,0 days 00:59:57
+8e279ed7-7811-4315-9bf7-d76a5206285e,2024-04-19 14:52:57,2024-04-19 14:58:21,signal alarme,Gare de Lyon,0 days 00:05:24
+af302662-305d-470f-89cd-01a58fdda646,2024-04-19 12:07:50,2024-04-19 14:05:37,intervention personnel,Rueil-Malmaison,0 days 01:57:47
+0a6fe056-de22-4ad1-a1f8-ce923bd6efde,2024-04-19 10:05:22,2024-04-19 10:07:20,intervention personnel,Torcy,0 days 00:01:58
+dce2807e-8a03-488d-b9c8-db219f8715b6,2024-04-19 09:51:07,2024-04-19 09:52:04,intervention personnel,Nanterre Préfecture,0 days 00:00:57
+485487a7-c1ca-4cc7-8ca7-117f2935c23f,2024-04-19 08:34:12,2024-04-19 08:38:38,signalisation,Auber,0 days 00:04:26
+95404aab-44e1-414f-b716-df0553d91b2b,2024-04-19 08:26:06,2024-04-19 08:29:53,intervention personnel,Nanterre Préfecture,0 days 00:03:47
+a4852fda-924a-4062-adb7-3427a0aede57,2024-04-19 08:21:31,2024-04-19 08:22:57,porte,Châtelet les Halles,0 days 00:01:26
+22adcd62-5411-446e-ab7d-4a09280d19ab,2024-04-19 06:12:46,2024-04-19 10:30:45,signalisation,Auber,0 days 04:17:59
+5b44e18a-f1df-45b5-9e1b-c2b4567bcf06,2024-04-19 05:45:13,2024-04-19 05:47:56,intervention personnel,Auber,0 days 00:02:43
+e48ce9ab-cb0e-4ef7-8f24-7909828980a9,2024-04-18 20:26:18,2024-04-18 20:26:43,voies,Auber,0 days 00:00:25
+cabee628-85ee-48f0-ab83-5b4d70f6c7b2,2024-04-18 19:15:44,2024-04-18 20:11:10,voyageur,Poissy,0 days 00:55:26
+18f3903e-6aa6-4ec8-b210-09e9057ea5b3,2024-04-18 14:37:48,2024-04-18 14:39:21,intervention personnel,Fontenay-sous-Bois,0 days 00:01:33
+f07facb0-f2b0-4523-b17c-ec3ed9b89da5,2024-04-18 14:02:47,2024-04-18 14:04:59,incident technique,Châtelet les Halles,0 days 00:02:12
+183b9d3f-5a58-4c61-b616-cbedf53d4364,2024-04-18 12:22:08,2024-04-18 12:26:21,intervention personnel,La Défense,0 days 00:04:13
+56adb997-8bbc-47eb-83b2-789067a049f3,2024-04-18 10:35:11,2024-04-18 10:38:56,intervention personnel,Vincennes,0 days 00:03:45
+4ec30c14-7e95-48cb-9ea7-8569fa52c2da,2024-04-18 09:49:49,2024-04-18 09:54:22,intervention personnel,La Défense,0 days 00:04:33
+e8f9cbb9-a1f1-420d-a528-3c26b3a090a8,2024-04-18 04:52:38,2024-04-18 06:28:16,panne train,Cergy le Haut,0 days 01:35:38
+76ab504b-ede0-4a32-9fe1-b8da7b10e533,2024-04-18 02:55:30,2024-04-18 06:38:03,panne electrique,Val d'Europe,0 days 03:42:33
+c40e798d-0c94-4361-97b8-5d3053fd263f,2024-04-17 19:11:35,2024-04-17 20:18:35,intervention personnel,Saint-Maur-Créteil,0 days 01:07:00
+43fed885-e3a4-439c-b3c2-70a61d0930f2,2024-04-17 17:02:56,2024-04-17 17:05:05,signal alarme,Charles de Gaulle-Etoile,0 days 00:02:09
+270234dc-dbfc-451e-af15-f8f0db5fbf70,2024-04-17 16:47:32,2024-04-17 16:52:19,signal alarme,Noisiel,0 days 00:04:47
+5afe749d-fd83-4632-8649-97cc2cbd24a4,2024-04-17 14:21:24,2024-04-17 14:22:35,intervention personnel,Auber,0 days 00:01:11
+59f00e7f-fc18-4f63-949b-73c8b7bcc6cf,2024-04-17 04:23:17,2024-04-17 08:45:34,panne electrique,Val d'Europe,0 days 04:22:17
+5917263c-6045-4258-ae38-9966b38ac102,2024-04-17 03:32:29,2024-04-17 04:07:44,panne train,Val d'Europe,0 days 00:35:15
+82803baa-6f78-4802-b83c-84335cdc18e4,2024-04-16 16:03:46,2024-04-16 16:06:38,signal alarme,Gare de Lyon,0 days 00:02:52
+ba81cfde-19d2-45df-bcc9-3c015c5fe804,2024-04-16 14:15:25,2024-04-16 15:25:21,incident exploitation,Poissy,0 days 01:09:56
+4d2bd388-0642-403c-b21c-244cc2f05373,2024-04-16 05:53:54,2024-04-16 07:05:48,intervention personnel,Rueil-Malmaison,0 days 01:11:54
+5e5564fc-0685-45aa-95e0-ba20e9af3317,2024-04-15 21:40:12,2024-04-16 00:13:02,voyageur,Nanterre Ville,0 days 02:32:50
+16484971-5a25-4a79-855e-d9ffadd55182,2024-04-15 20:25:10,2024-04-15 21:03:42,bagage oublie,La Varenne-Chennevières,0 days 00:38:32
+1cdb31a9-cc45-4dbd-924a-145d2d9b1053,2024-04-15 09:56:51,2024-04-15 10:00:04,voyageur,Gare de Lyon,0 days 00:03:13
+4be08564-9c5b-45ea-a052-25a2ad76ae29,2024-04-15 09:35:56,2024-04-15 09:38:00,signal alarme,Auber,0 days 00:02:04
+23b75f32-9325-4f13-8a5f-8aeead139ebf,2024-04-15 08:50:26,2024-04-15 09:07:49,incident exploitation,Torcy,0 days 00:17:23
+917247bd-a9a6-4be4-98d6-81f8b76cbe01,2024-04-15 08:48:14,2024-04-15 08:51:00,intervention personnel,La Varenne-Chennevières,0 days 00:02:46
+ebe818d6-cb1f-4036-8466-9f8f4f29d36d,2024-04-15 05:59:12,2024-04-15 08:32:04,porte,Gare de Lyon,0 days 02:32:52
+339a13cb-2efa-447e-ae52-8ce8961b19b7,2024-04-14 16:04:34,2024-04-14 18:23:54,voyageur,Houilles-Carrières-sur-Seine,0 days 02:19:20
+cdf76788-222d-4f84-9793-51ec21395dc5,2024-04-14 05:08:11,2024-04-14 05:34:03,panne train,Maisons-Laffitte,0 days 00:25:52
+be35fc87-35e3-4b32-814b-805d08fe6528,2024-04-14 03:18:45,2024-04-14 04:33:41,panne train,Boissy-Saint-Léger,0 days 01:14:56
+abb9366e-efc3-40e3-8997-ebea4b9236a1,2024-04-13 20:34:51,2024-04-13 21:53:01,incident exploitation,Poissy,0 days 01:18:10
+6992204e-6a97-47ab-b9d7-f1f2182eea9a,2024-04-13 18:20:14,2024-04-13 19:12:35,porte,Marne-la-Vallée-Chessy,0 days 00:52:21
+a82476c1-04e6-4f37-9f3f-4cb3bc46d4a7,2024-04-13 17:15:06,2024-04-13 17:57:11,porte,Achères Ville,0 days 00:42:05
+ab1762f8-a0e4-4c4c-9863-a9aecae23ed6,2024-04-13 13:48:41,2024-04-13 15:45:40,incident exploitation,Maisons-Laffitte,0 days 01:56:59
+7e7ed850-155f-421d-9ce2-5224a42dbf03,2024-04-12 20:39:35,2024-04-12 23:01:07,voies,Achères Grand Cormier,0 days 02:21:32
+246f3b5c-45b6-4a1f-97d1-38990293352e,2024-04-12 15:41:23,2024-04-12 15:47:55,voyageur,Gare de Lyon,0 days 00:06:32
+b61bab03-bfb9-4d5b-b18c-1ee81267aedc,2024-04-12 14:58:15,2024-04-12 17:41:45,voies,Achères Grand Cormier,0 days 02:43:30
+42484cee-3fe4-4b43-9cb6-293d2ada5acc,2024-04-12 12:27:23,2024-04-12 13:46:57,bagage oublie,Noisy-le-Grand-Mont d'Est,0 days 01:19:34
+2944c777-7d20-48d2-aaf0-2cfbd0cb512f,2024-04-12 12:04:07,2024-04-12 12:20:46,bagage oublie,Saint-Germain-en-Laye,0 days 00:16:39
+bfd146fe-c3ca-47cf-a1bb-ccc6c2e12da2,2024-04-12 10:26:44,2024-04-12 11:45:00,incident exploitation,Boissy-Saint-Léger,0 days 01:18:16
+811d22a6-3519-431d-874d-887aa9663cf7,2024-04-12 09:50:39,2024-04-12 09:54:22,porte,Boissy-Saint-Léger,0 days 00:03:43
+2585c0ee-bb94-48ea-b17b-d555e66e9f18,2024-04-12 07:15:58,2024-04-12 07:18:26,signal alarme,Saint-Maur-Créteil,0 days 00:02:28
+57c54c43-527b-46ed-acfe-a69219737dbe,2024-04-12 04:11:34,2024-04-12 06:54:23,incident exploitation,Torcy,0 days 02:42:49
+dbea80d8-4e1d-4448-b322-77cdc77b6b1c,2024-04-12 03:25:01,2024-04-12 03:47:34,incident exploitation,Torcy,0 days 00:22:33
+af35bc5a-616b-42fc-a804-401975e0aaa6,2024-04-11 21:43:10,2024-04-11 21:43:48,voyageur,Vincennes,0 days 00:00:38
+3e189710-acd7-420a-8cdc-864f73ded274,2024-04-11 21:29:35,2024-04-11 21:31:29,voyageur,Nation,0 days 00:01:54
+b05c00d9-b9b0-4151-bb6f-a6e78ac40c2a,2024-04-11 21:00:56,2024-04-11 21:05:02,signal alarme,Saint-Germain-en-Laye,0 days 00:04:06
+6530e848-e77f-4836-981a-9dc92deb4f86,2024-04-11 20:08:02,2024-04-11 23:01:37,incident exploitation,Cergy le Haut,0 days 02:53:35
+38682b1f-dd67-42bb-a7fa-cf7678edd847,2024-04-11 18:23:38,2024-04-11 18:27:38,incident exploitation,Nanterre Préfecture,0 days 00:04:00
+502a7e65-a6e8-4529-bca8-80fa0309ce25,2024-04-11 15:55:48,2024-04-11 16:00:36,intervention personnel,Nanterre Préfecture,0 days 00:04:48
+33b40121-aa76-4da3-ad0c-e667079a6e0c,2024-04-11 15:13:43,2024-04-11 15:29:18,panne train,Marne-la-Vallée-Chessy,0 days 00:15:35
+73781dc5-0a5c-447c-8c53-c29bb19e0320,2024-04-11 06:58:02,2024-04-11 09:02:34,affluence exceptionnelle,Gare de Lyon,0 days 02:04:32
+d5dd50d4-8c75-4024-b19b-c768fb1f9de4,2024-04-10 22:15:15,2024-04-10 22:22:54,voyageur,Neuilly-Plaisance,0 days 00:07:39
+3b4f2645-3ffa-45ae-870d-9a573bb18d3c,2024-04-10 21:41:57,2024-04-10 22:09:36,intervention personnel,Nanterre Préfecture,0 days 00:27:39
+c5b901fb-6a26-4cec-ac02-ca457bc12781,2024-04-10 21:24:26,2024-04-10 21:33:37,intervention personnel,Nanterre Préfecture,0 days 00:09:11
+fcc02f90-f02d-47b4-8894-d719a737d98a,2024-04-10 19:43:14,2024-04-10 20:46:56,voies,Torcy,0 days 01:03:42
+b5501177-c3e0-48cc-8e2f-544e0fcb0eda,2024-04-10 14:28:15,2024-04-10 15:09:41,voyageur,Rueil-Malmaison,0 days 00:41:26
+a5f08578-0cc6-45ea-a488-3a104823be4f,2024-04-10 14:23:32,2024-04-10 14:27:27,intervention personnel,La Défense,0 days 00:03:55
+1b42bf8d-c583-446b-a388-40eb8cf13738,2024-04-09 21:44:00,2024-04-09 22:29:14,bagage oublie,Vincennes,0 days 00:45:14
+41607e0c-817d-447f-aaf3-63df7d2b2484,2024-04-09 16:29:30,2024-04-09 16:32:41,porte,Chatou-Croissy,0 days 00:03:11
+8b531b14-7237-4595-b855-aa3cc0dab556,2024-04-09 14:35:14,2024-04-09 14:40:25,signal alarme,Auber,0 days 00:05:11
+c3e7bca6-d72e-43c7-baab-bc567726816f,2024-04-09 13:53:23,2024-04-09 14:24:47,intervention personnel,La Défense,0 days 00:31:24
+4bb2dcbd-4e7d-4b95-a3da-652864c029a7,2024-04-09 13:35:24,2024-04-09 13:38:41,intervention personnel,Vincennes,0 days 00:03:17
+890b65b6-a255-49df-bc32-9ae4b684bc0d,2024-04-09 11:42:16,2024-04-09 11:44:45,incident technique,Boissy-Saint-Léger,0 days 00:02:29
+fc778ebf-44b7-4557-903c-d8f2afebd184,2024-04-09 09:44:17,2024-04-09 09:50:18,bagage oublie,Chatou-Croissy,0 days 00:06:01
+6276f26e-660d-404d-951b-7d6d25595509,2024-04-09 08:41:35,2024-04-09 08:59:02,bagage oublie,Rueil-Malmaison,0 days 00:17:27
+b342da42-002f-4db9-bc90-45d51e0a8737,2024-04-09 08:36:38,2024-04-09 08:43:25,signal alarme,Le Vésinet-Le Pecq,0 days 00:06:47
+11f85414-0cf9-4681-85de-75e5c78dde31,2024-04-09 06:35:35,2024-04-09 11:16:03,affluence exceptionnelle,Gare de Lyon,0 days 04:40:28
+8037586c-dd2b-46ba-b33c-3e223832c3c6,2024-04-08 20:09:14,2024-04-08 21:02:43,incident exploitation,Boissy-Saint-Léger,0 days 00:53:29
+a0b0c126-da74-41b5-91fe-c432f52023e3,2024-04-08 16:24:36,2024-04-08 16:31:26,voies,Rueil-Malmaison,0 days 00:06:50
+0cef5346-9baa-4221-838c-b7340ff91444,2024-04-08 15:21:31,2024-04-08 19:07:58,voies,Rueil-Malmaison,0 days 03:46:27
+23db3ead-4632-461c-a5d6-304a0e83a97e,2024-04-08 14:55:09,2024-04-08 15:12:52,voies,Rueil-Malmaison,0 days 00:17:43
+20e6a7b4-b923-4647-b5c6-e6c2547c139e,2024-04-08 13:49:22,2024-04-08 13:52:53,intervention personnel,Champigny,0 days 00:03:31
+0ec291b7-d8fb-484a-8aa7-4492b52a2862,2024-04-08 13:19:34,2024-04-08 13:22:57,intervention personnel,Rueil-Malmaison,0 days 00:03:23
+195f15a4-2966-457c-a0e4-484c7816ec49,2024-04-08 13:17:38,2024-04-08 13:23:42,intervention personnel,Nanterre Préfecture,0 days 00:06:04
+8241b72f-12bc-4f1a-99c0-a7da3c8df3ab,2024-04-08 13:00:13,2024-04-08 13:15:13,intervention personnel,Fontenay-sous-Bois,0 days 00:15:00
+a5a2663b-4912-4167-87a5-25616a7f910a,2024-04-08 11:06:04,2024-04-08 11:09:01,incident technique,Auber,0 days 00:02:57
+5da0d295-cd1f-4fef-bdf2-96f61abf08aa,2024-04-08 10:33:15,2024-04-08 10:35:58,intervention personnel,Charles de Gaulle-Etoile,0 days 00:02:43
+f1cf35b9-7443-4f7e-bb71-e217b8cbaaee,2024-04-08 09:32:52,2024-04-08 09:33:51,intervention personnel,Vincennes,0 days 00:00:59
+3b20037d-2aed-47e6-a170-0e239954aefc,2024-04-08 06:33:41,2024-04-08 08:01:24,panne train,Vincennes,0 days 01:27:43
+5db86ff2-d7cd-445c-a069-aefa2717b0f0,2024-04-08 06:08:20,2024-04-08 06:13:26,signal alarme,Nation,0 days 00:05:06
+882769f7-870f-4ffc-99b5-3d139654dc55,2024-04-08 05:57:20,2024-04-08 05:57:42,voies,Bry-sur-Marne,0 days 00:00:22
+ef352c66-50d1-4755-80cd-d30b1f1e04a9,2024-04-07 16:05:37,2024-04-07 17:19:30,bagage oublie,Boissy-Saint-Léger,0 days 01:13:53
+c6009f52-ce08-4d8c-a103-b8ce1e8c231f,2024-04-07 07:40:09,2024-04-07 08:31:53,panne train,Boissy-Saint-Léger,0 days 00:51:44
+a65ea14a-258a-4361-aaf8-fcded1477af2,2024-04-07 03:19:15,2024-04-07 04:32:58,incident exploitation,Poissy,0 days 01:13:43
+cf6506b6-9db9-4bfe-95c0-86e353e0e615,2024-04-06 17:10:43,2024-04-06 19:30:41,bagage oublie,Vincennes,0 days 02:19:58
+0b9eb49d-b2fe-4632-89d9-361e868ee208,2024-04-06 17:07:41,2024-04-06 17:09:28,intervention personnel,Fontenay-sous-Bois,0 days 00:01:47
+0d948a6f-df35-4713-805c-07e5c76c38b1,2024-04-06 10:56:37,2024-04-06 12:34:46,bagage oublie,Auber,0 days 01:38:09
+38ba7ccd-645c-4b59-a2f4-f6408a24e927,2024-04-06 03:15:24,2024-04-06 05:03:11,chantier,Val d'Europe,0 days 01:47:47
+62e53191-cc3e-47e9-b369-c8acd4e78a09,2024-04-05 21:11:03,2024-04-05 21:13:03,intervention personnel,Châtelet les Halles,0 days 00:02:00
+4bc8dcb8-d162-40de-8df9-501456fa10d4,2024-04-05 21:05:16,2024-04-05 22:31:50,incident exploitation,,0 days 01:26:34
+318bb604-4af1-4020-8e82-c2fea0511913,2024-04-05 16:39:20,2024-04-05 17:29:27,incident exploitation,Rueil-Malmaison,0 days 00:50:07
+9fae305e-5374-4143-af68-c5244282c760,2024-04-05 14:31:01,2024-04-05 15:35:34,panne train,Torcy,0 days 01:04:33
+525d7f08-a9a3-4833-a184-6ba9be1c5a74,2024-04-05 09:24:59,2024-04-05 09:25:31,intervention personnel,Gare de Lyon,0 days 00:00:32
+7b46664c-2458-4ec2-825e-ef058944803a,2024-04-05 06:39:01,2024-04-05 07:06:39,bagage oublie,Rueil-Malmaison,0 days 00:27:38
+09ab51b4-2937-4a9b-8470-7e916ec70343,2024-04-05 05:32:34,2024-04-05 05:34:31,porte,Noisy-Champs,0 days 00:01:57
+714a7732-35ec-45bf-a170-641afc25996b,2024-04-04 20:00:58,2024-04-04 22:01:29,incident exploitation,Nanterre Préfecture,0 days 02:00:31
+37012617-bf2d-4282-8f66-2b312b9dcc41,2024-04-04 17:53:31,2024-04-04 17:54:26,intervention personnel,Châtelet les Halles,0 days 00:00:55
+db2b9287-e9a2-4759-bb81-b709b85ba3d4,2024-04-04 17:31:50,2024-04-04 19:35:10,incident exploitation,La Défense,0 days 02:03:20
+115ffa67-b32a-49b4-a8b2-9210e24a87bb,2024-04-04 16:54:41,2024-04-04 16:57:07,voyageur,Charles de Gaulle-Etoile,0 days 00:02:26
+e951d54c-7227-4103-a9ad-127da09cf93c,2024-04-04 15:58:30,2024-04-04 15:59:48,voies,Vincennes,0 days 00:01:18
+72af3ebb-2712-4e2a-bc06-1adbb37eee35,2024-04-04 15:08:26,2024-04-04 15:10:55,panne electrique,Torcy,0 days 00:02:29
+4267566c-a615-40f1-8b07-5638d457dc72,2024-04-04 13:39:28,2024-04-04 14:13:33,incident exploitation,Torcy,0 days 00:34:05
+25d16534-71d7-43c3-b419-c7e0aebad8ac,2024-04-04 11:43:52,2024-04-04 12:08:49,bagage oublie,Saint-Maur-Créteil,0 days 00:24:57
+4b506531-baa5-494e-9a91-83d2c3c6d354,2024-04-04 06:09:10,2024-04-04 07:09:57,signalisation,Maisons-Laffitte,0 days 01:00:47
+7167edc2-460c-4bee-8d83-58cec20b7ed9,2024-04-04 03:52:46,2024-04-04 04:12:32,incident exploitation,Vincennes,0 days 00:19:46
+4d78f27b-cfe6-4c0d-8135-8b25221101f6,2024-04-03 22:06:42,2024-04-03 23:06:25,incident exploitation,Neuville Université,0 days 00:59:43
+433b6d01-5095-4697-8232-8b1485a463e2,2024-04-03 16:48:50,2024-04-03 17:16:00,signal alarme,Châtelet les Halles,0 days 00:27:10
+2178f85f-52b3-46a2-b769-06b5e380e3c0,2024-04-03 16:03:30,2024-04-03 16:12:59,incident technique,La Défense,0 days 00:09:29
+647a5150-6bc9-4e38-a3d3-a0b671a911f9,2024-04-03 13:05:04,2024-04-03 13:07:08,incident exploitation,Torcy,0 days 00:02:04
+ffc457f9-e447-4f68-800d-db15aff4ecc7,2024-04-03 12:04:43,2024-04-03 16:39:59,incident exploitation,Neuville Université,0 days 04:35:16
+2cfdd56a-2b7a-49c0-9c37-de6b0e64b1e5,2024-04-03 11:11:42,2024-04-03 11:14:41,incident technique,Nanterre Préfecture,0 days 00:02:59
+6e453dbf-c58c-478f-9321-1e8bcabc6f5a,2024-04-03 10:15:16,2024-04-03 11:08:06,incident exploitation,Neuville Université,0 days 00:52:50
+d7ac5e20-33d4-4d46-aeba-1d59ced57f7d,2024-04-03 06:40:32,2024-04-03 07:55:24,porte,Houilles-Carrières-sur-Seine,0 days 01:14:52
+aa22f9c6-28d4-4ec7-b398-2c48335b46c6,2024-04-03 05:14:25,2024-04-03 05:16:11,intervention personnel,Torcy,0 days 00:01:46
+f1a1bd86-cc42-45f2-9d69-0568cd972b69,2024-04-03 04:13:26,2024-04-03 05:04:05,incident exploitation,Boissy-Saint-Léger,0 days 00:50:39
+48444fc4-8f3b-4006-9baa-52129685eead,2024-04-02 18:22:15,2024-04-02 19:36:07,voies,Marne-la-Vallée-Chessy,0 days 01:13:52
+d87b932f-036b-4816-88a3-c6a89d63a497,2024-04-02 10:57:19,2024-04-02 11:01:51,panne train,Torcy,0 days 00:04:32
+626d7312-477f-490a-bc3b-1a0b0a9ca60a,2024-04-02 10:38:19,2024-04-02 10:39:43,intervention personnel,La Défense,0 days 00:01:24
+285150e1-5f83-4633-bdf1-fd9ee52f945a,2024-04-02 10:26:52,2024-04-02 10:28:30,intervention personnel,Rueil-Malmaison,0 days 00:01:38
+f6c7179f-8fb8-4355-9ecf-87a83363dd98,2024-04-02 06:53:32,2024-04-02 06:58:41,signal alarme,Nation,0 days 00:05:09
+a9ee2203-0547-4724-ab05-3789ede12862,2024-04-02 06:47:30,2024-04-02 06:50:04,signal alarme,Auber,0 days 00:02:34
+7af4cd40-697d-4296-8378-65dec78b97a2,2024-04-02 06:32:22,2024-04-02 06:38:54,signal alarme,Vincennes,0 days 00:06:32
+64c1401c-694e-4afc-be18-4cf150c12891,2024-04-02 06:19:05,2024-04-02 09:01:08,panne train,Auber,0 days 02:42:03
+fc487257-ce71-4605-a6d6-a5f4cf2e38ad,2024-04-01 22:44:54,2024-04-01 22:51:16,signalisation,Maisons-Laffitte,0 days 00:06:22
+c7d0a7c8-3819-45e1-aef1-b9b8343e122d,2024-04-01 18:44:23,2024-04-01 21:14:03,signalisation,Poissy,0 days 02:29:40
+767757c5-ef38-460f-9dc0-ea1800c5419d,2024-04-01 15:28:57,2024-04-01 17:34:14,voies,Boissy-Saint-Léger,0 days 02:05:17
+8e44bdd7-3b4b-4ec7-9c46-4caf74cb2819,2024-03-31 09:13:17,2024-03-31 10:01:28,voies,Nation,0 days 00:48:11
+989cc978-bcad-4a66-9d8e-354f760d5ff7,2024-03-31 03:53:13,2024-03-31 06:03:01,incident exploitation,Cergy le Haut,0 days 02:09:48
+bbb0421b-c7ee-4c6e-a09a-ba88c9212696,2024-03-31 03:25:07,2024-03-31 03:49:02,voyageur,Torcy,0 days 00:23:55
+914673e7-354d-48d9-be9d-2f9840043303,2024-03-30 12:20:54,2024-03-30 12:22:28,signal alarme,Vincennes,0 days 00:01:34
+aab92c0d-75c3-4494-9eda-0b36223bae48,2024-03-30 09:36:20,2024-03-30 10:53:19,porte,La Défense,0 days 01:16:59
+264da157-bd26-4b24-a726-d7d93f1da025,2024-03-30 04:42:36,2024-03-30 08:08:13,incident technique,Torcy,0 days 03:25:37
+dd5d7da0-b1c4-4c6e-aac3-739d5b2c65fa,2024-03-29 18:42:40,2024-03-29 18:50:59,voyageur,Vincennes,0 days 00:08:19
+2daf6b2b-15c1-4514-bcbc-f1c413848678,2024-03-29 16:32:10,2024-03-29 17:59:51,signalisation,Gare de Lyon,0 days 01:27:41
+4ebf78e9-5aa9-4282-b6dd-39cf80ba7812,2024-03-29 14:52:31,2024-03-29 15:51:12,intervention personnel,Gare de Lyon,0 days 00:58:41
+90fede48-f350-4441-8d58-cdb31d5ac520,2024-03-29 14:41:55,2024-03-29 14:44:20,intervention personnel,Gare de Lyon,0 days 00:02:25
+8c4640f1-f7e1-4af9-9bff-79bcff163090,2024-03-29 14:26:35,2024-03-29 14:27:57,signal alarme,Auber,0 days 00:01:22
