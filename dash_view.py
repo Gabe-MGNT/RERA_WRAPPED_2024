@@ -211,108 +211,30 @@ problem_types = df_f['label'].unique()
 app.layout = html.Div([
     html.Div([
         html.Img(src='/assets/IDF_RER_A_logo.svg', style={'width': '12%', 'margin-right': '20px', 'margin-left':'10px'}),
-        html.H1('Dashboard du RER A', style={"justifyContent": "center", "display": "flex", "alignItems": "center", "margin-bottom": "20px", "margin-top": "20px"})
-    ], style={'display': 'flex', 'textAlign': 'left', 'margin-bottom': '20px', 'margin-top':'20px'}),   
+        html.H1('Dashboard du RER A')
+    ], className="title_div"),   
     html.Div(className='separator'),
     dcc.Tabs(id="multiple_tabs", value="accueil", children=[
         dcc.Tab(label="Vue générale", 
-                value='ligne_rer_a', 
-                style={
-                    'width': '30%', 
-                    'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                    'border-radius': '10px',  # Coins arrondis
-                    'border':'2px solid', 
-                    "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                    'justifyContent': 'center'
-                    }, 
-                    selected_style={
-                        'backgroundColor': '#E30418', 
-                        'border':'2px solid', 
-                        'color':'white',  
-                        'width': '30%', 
-                        'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                        'border-radius': '10px',  # Coins arrondis
-                        "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                        'justifyContent': 'center'
-                        }),
+                value='ligne_rer_a',
+                 className='tab', selected_className='tab--selected' ),
         dcc.Tab(label="Temps réponse à incident", 
-                value='temps_reponse_incidents', 
-                style={
-                    'width': '30%',  
-                    'border':'2px solid',
-                    'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                    'border-radius': '10px',  # Coins arrondis  
-                    "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                    'justifyContent': 'center'
-                    }, 
-                    selected_style={
-                        'backgroundColor': '#E30418', 
-                        'border':'2px solid', 
-                        'color':'white',  
-                        'width': '30%', 
-                        'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                        'border-radius': '10px',  # Coins arrondis
-                        "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                        'justifyContent': 'center'
-                        }),
+                value='temps_reponse_incidents',
+                 className='tab', selected_className='tab--selected' ),
         dcc.Tab(label="Détails par gare", 
                 value='details_par_gare', 
-                style={
-                    'width': '30%',  
-                    'border':'2px solid',
-                    'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                    'border-radius': '10px',  # Coins arrondis  
-                    "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                    'justifyContent': 'center'
-                    }, 
-                    selected_style={
-                        'backgroundColor': '#E30418', 
-                        'border':'2px solid', 
-                        'color':'white',  
-                        'width': '30%', 
-                        'margin': '0 10px',  # Ajouter une marge pour séparer les onglets
-                        'border-radius': '10px',  # Coins arrondis
-                        "box-shadow": "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                        'justifyContent': 'center'
-                        }),
+                className='tab', selected_className='tab--selected'),
     ], style={'display': 'flex', 'flex-direction':'row', 'justifyContent': 'center'}),
     html.Div(className='separator'),
-    html.Div(id='tabs-content-example-graph', style={"margin-left":"10px", "margin-right":"10px"})
+    html.Div(id='tabs-content-example-graph', className="main_content")
 ])
 
-"""
-app.layout = html.Div([
-
-    html.Div([
-        html.H2("Nombre d'incidents par gare", style={'textAlign': 'center'}),
-        html.Label("Sélectionnez l'année :"),
-        dcc.Slider(
-        id='year-slider',
-        min=years.min(),
-        max=years.max(),
-        value=years.max(),
-        marks={str(year): str(year) for year in years},
-        step=None
-    ),
-    html.Label("Sélectionnez le mois :"),
-    dcc.Slider(
-        id='month-slider',
-        min=months.min(),
-        max=months.max(),
-        value=months.max(),
-        marks={str(month): str(month) for month in months},
-        step=None
-    ),
-        dcc.Graph(id='incident-graph')
-    ])
-])
-"""
 
 @callback(Output('tabs-content-example-graph', 'children'),Input('multiple_tabs', 'value'))
 def render_content(tab):
     if tab == 'ligne_rer_a':
         return html.Div([
-            html.H2("Nombre d'incidents par gare", style={'textAlign': 'center'}),
+            html.H1("Nombre d'incidents par gare"),
 
             html.Div([
             html.Label("Sélectionnez le type de problème :"),
@@ -321,9 +243,10 @@ def render_content(tab):
                 options=[{'label': 'Tous les problèmes', 'value': 'all'}] +[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
                 value=['all'],  # Sélectionner tous les types par défaut
                 multi=True,
-                style={'width': '98%',},
-            ),
-            ], style={'margin-left':'auto', 'margin-right':'auto', 'border': '1px solid #ccc', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '95%'}),
+                                        ),
+            ]
+            , className="modifiers"
+            , style={'width': '95%'}),            
             dcc.Graph(id='incident-graph', config={"displayModeBar": False}),
             html.Div([
                 html.Label("Sélectionnez l'année :"),
@@ -347,7 +270,7 @@ def render_content(tab):
                 className='custom-range-slider'
             ),
             html.Div(className='separator'),
-            html.H2("Nombre d'incidents par typologie sélectionnées", style={'textAlign': 'center'}),
+            html.H1("Nombre d'incidents par typologie sélectionnées"),
             html.Div([ 
             html.Label("Sélectionnez le type de tri :", style={'display': 'block', 'textAlign': 'center', 'marginBottom': '10px'}),
             dcc.RadioItems(
@@ -356,37 +279,39 @@ def render_content(tab):
                             {'label': 'Non triés', 'value': 'no_sort'},
                             {'label': 'Croissant', 'value': 'asc_sort'},
                             {'label': 'Décroissant', 'value': 'desc_sort'},
-
                         ],
                         value='no_sort',
                         labelStyle={'display': 'inline-block', 'marginRight': '20px'}  # Espacer les boutons radio
                     ),
-            ], style={'margin-left':'auto', 'margin-right':'auto', 'border': '1px solid #ccc', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '60%'}),
+            ]
+            , className="modifiers"
+            , style={'width': '60%'}),
             dcc.Graph(id='incident-bar', config={"displayModeBar": False})
             ])
         ])
     elif tab == 'temps_reponse_incidents':
         return html.Div([
-            html.H1("Temps de réponse aux incidents", style={'textAlign': 'center'}),
+            html.H1("Temps de réponse aux incidents"),
+
+            html.Div([
             html.Label("Sélectionnez le type d'incident :"),
             dcc.Dropdown(
                 id='incident-type-dropdown',
-                options=[{'label': html.Span(
-                    [
-                        html.Span(problem.capitalize(), className='dropdown-item')
-                    ], style={}), 'value': problem} for problem in all_types_split_unique],
-                value=all_types_split_unique,  # Sélectionner le premier type par défaut
+                options=[{'label': 'Tous les problèmes', 'value': 'all'}] +[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
+                value=['all'],  # Sélectionner tous les types par défaut
                 multi=True,
                 optionHeight=50,
                 placeholder="Sélectionnez un type d'incident",
                 searchable=True,
             ),
+            ]
+            , className="modifiers"
+            , style={'width': '95%'}),
             html.Div([
             html.Div(id='average-response-time'),
-                ], style={'margin-top':'40px', 'margin-left':'auto', 'margin-right':'auto', 'border': '5px solid black', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '100%'
-                          }),
+                ], className="average_response_time_display"),
             html.Div(className='separator'),
-            html.H1("Vue complète", style={'textAlign': 'center'}),
+            html.H1("Vue complète"),
 
                 html.Div([
                     html.Label("Sélectionnez le type de graphique :", style={'display': 'block', 'textAlign': 'center', 'marginBottom': '10px'}),
@@ -399,8 +324,9 @@ def render_content(tab):
                         value='bar',
                         labelStyle={'display': 'inline-block', 'marginRight': '20px'}  # Espacer les boutons radio
                     )
-                ], style={'margin-left':'auto', 'margin-right':'auto', 'border': '1px solid #ccc', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '50%'}),
-
+                ]
+                , className="modifiers"
+                , style={'width': '50%'}),                
                 dcc.Graph(id='time_solve_graph', config={"displayModeBar": False}),
                 dcc.RangeSlider(
                     id='month-slider_time',
@@ -422,7 +348,7 @@ def render_content(tab):
                 ),
 
                 html.Div(className='separator'),
-                html.H1("Problèmes les plus courants", style={'textAlign': 'center'}),
+                html.H1("Problèmes les plus courants"),
                 dcc.Graph(id='incidents_occurences', config={"displayModeBar": False}),
                 dcc.RangeSlider(
                     id='month-slider_time_occurences',
@@ -445,7 +371,7 @@ def render_content(tab):
                 ),
 
                 html.Div(className='separator'),
-                html.H1("Par typologie spécifique", style={'textAlign': 'center'}),
+                html.H1("Par typologie spécifique"),
 
                 html.Div([
                     html.Label("Sélectionnez la typologie d'incidents", style={'display': 'block', 'textAlign': 'center', 'marginBottom': '10px'}),
@@ -455,7 +381,10 @@ def render_content(tab):
                     value=all_types_split_unique[0],  # Valeur par défaut
                     style={'width': '100%', 'display': 'inline-block', 'marginRight': '4%'}
                     ),
-                ], style={'margin-left':'auto', 'margin-right':'auto', 'border': '1px solid #ccc', 'padding': '10px', 'borderRadius': '5px', 'textAlign': 'center', 'marginBottom': '20px', 'width': '80%'}),
+                ] 
+                , className="modifiers"
+                , style={'width': '80%'}                
+                ),
 
 
                 dcc.Graph(id='incidents_details', config={"displayModeBar": False}),
@@ -499,7 +428,8 @@ def render_content(tab):
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
-                step=None
+                step=None,
+                className='custom-slider'
             ),
             dcc.RangeSlider(
                 id='month-dropdown_gare',
@@ -510,11 +440,33 @@ def render_content(tab):
                     step=None,
                     className='custom-range-slider'
             ),
-            html.Div(id='incident-info'),
+            html.Div(className='separator'),
+            html.Div(style={'height': '5px', 'backgroundColor': 'red', 'marginTop': '10px', 'width':'100%'}),
+
+                html.Div([
+                    html.Div([
+                        html.Div([
+                        html.H3(id='incident-classement'),
+                        html.H1(id='selected_gare'),
+                    ], id="classement_gare"),
+                        html.H3(id='incident-info'),
+                    ], id='gare_and_period'),
+                    #html.H3(f"Temps moyen (total)", style={'textAlign': 'left', 'marginLeft':'1%', 'padding':'1%'}),
+                    html.Div([
+                        html.H3(id='incident-numbers'),
+                        html.H5("incidents")
+                    ], id='gare_and_incident_number')
+                ], style={'display': 'flex', 'width': '100%', 'height':'10%'}),
+            html.Div(style={'height': '5px', 'backgroundColor': 'red', 'marginBottom': '10px', 'width':'100%'}),
+
             html.Div([
-                html.Div(dcc.Graph(id='pie-chart_gare'), style={'width': '48%', 'display': 'inline-block'}),
-                html.Div(dcc.Graph(id='incident-graph_details_gare'), style={'width': '48%', 'display': 'inline-block'})
-            ]),
+                html.Div(dcc.Graph(id='pie-chart_gare', config={"displayModeBar": False}), style={'width': '48%'}, ),
+                html.Div(style={'width': '5px', 'height': '300px', 'backgroundColor': 'grey', 'borderRadius':'25px', "marginLeft":'3%', 'marginRight':"3%"}),  # Séparateur vertical
+                html.Div(dcc.Graph(id='incident-graph_details_gare', config={"displayModeBar": False}), style={'width': '48%'})
+            ], style={"display": 'flex', 'width': '100%', 'alignItems': 'center', 'justifyContent': 'center'}),
+            html.Div(className='separator'),
+            html.H3("Classement de la gare sur la période sélectionnée"),
+            dcc.Graph(id='classement_general', config={"displayModeBar": False}),
 
         ])
         
@@ -1116,6 +1068,9 @@ def update_graphs(selected_gares, selected_year, selected_month, val_type, sort_
 
 @app.callback(
     [Output('incident-info', 'children'),
+     Output("selected_gare", 'children'),
+    Output("incident-classement", 'children'),
+    Output('incident-numbers', 'children'),
      Output('pie-chart_gare', 'figure'),
      Output('incident-graph_details_gare', 'figure')],
     [Input('gare-dropdown_details_gare', 'value'),
@@ -1146,7 +1101,10 @@ def update_incident_info(selected_gare, selected_year, selected_months):
     time_grouped = selected_gare_data.groupby(['year', 'month']).size().reset_index(name='count')
 
     # Créer le texte d'information
-    info_text = f"La gare {selected_gare} a {num_incidents} incidents et est classée {rank}ème parmi les {df_sorted.shape[0]}gares, ayant eu des incidents sur la période allant de {begin_date_selected} à {end_date_selected}."
+    info_text = f"Sur la période allant de {begin_date_selected} à {end_date_selected}."
+    selected_gare_info = f"{selected_gare}"
+    nombre_incidents = f"{num_incidents}"
+    classement_incident = f"#{rank}"
 
     pie_data = selected_gare_data.groupby('label').size().reset_index(name='incidents')
     # Créer un graphique en lignes pour afficher le nombre d'incidents chronologiquement
@@ -1155,17 +1113,77 @@ def update_incident_info(selected_gare, selected_year, selected_months):
                 y='count', 
                 title=f"Nombre d'incidents chronologiquement pour la gare {selected_gare}",
                 labels={'x': 'Date', 'count': "Nombre d'incidents"})
+    fig.update_traces(
+        line=dict(color='#284897', width=4),
+    )
     fig.update_layout(plot_bgcolor='white')
 
     pie_fig = px.pie(
         pie_data, 
         names='label',
-        values='incidents', title=f"Proportion des problèmes pour la gare {selected_gare}")
+        values='incidents', title=f"Proportion des problèmes pour la gare {selected_gare}",
+        color_discrete_sequence=px.colors.sequential.matter_r
+        )
     
     pie_fig.update_traces(textinfo='label+percent', textposition='inside')
     pie_fig.update_layout(showlegend=False)
 
-    return info_text, fig, pie_fig
+    return info_text, selected_gare_info, classement_incident, nombre_incidents, fig, pie_fig
+
+
+@app.callback(
+    Output('classement_general', 'figure'),
+    [Input('year-dropdown_gare', 'value'),
+    Input('month-dropdown_gare', 'value'),
+    Input('gare-dropdown_details_gare', 'value')
+    ]
+)
+def update_classement_general(selected_year, selected_months, selected_gare):
+    begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
+    end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
+
+    filtered_df = pb_resolve_df[
+        (pb_resolve_df['begin_date'] >= begin_date_selected) & 
+        (pb_resolve_df['begin_date'] <= end_date_selected)
+    ]
+    filtered_df['month'] = filtered_df.begin_date.dt.month
+    filtered_df['year'] = filtered_df.begin_date.dt.year
+
+
+    all_gares = pd.DataFrame({'gare_source': gare_list})    
+
+    df_sorted = filtered_df.groupby('gare_source').size().reset_index(name='count').sort_values(by='count', ascending=False).reset_index(drop=True)
+    df_all_gares = all_gares.merge(df_sorted, on='gare_source', how='left').fillna(0)
+
+    df_all_gares = df_all_gares.sort_values(by='count', ascending=False)
+
+    bar_fig = px.bar(
+        df_all_gares, 
+        x='gare_source', 
+        y='count', 
+        color='count',
+        color_continuous_scale="matter", 
+        title="Nombre d'incidents par gare",
+        labels={'gare_source': 'Gare', 'count': "Nombre d'incidents"}
+    )
+    # Mettre en surbrillance la barre de la gare sélectionnée
+    bar_fig.update_traces(marker=dict(
+        color=['green' if gare == selected_gare else px.colors.sequential.matter_r[int(i * len(px.colors.sequential.matter_r) / len(df_all_gares['gare_source']))] for i, gare in enumerate(df_all_gares['gare_source'])],
+    ))
+
+    bar_fig.update_layout(
+    xaxis=dict(
+        tickmode='array',
+        tickvals=df_all_gares['gare_source'],
+        ticktext=[f'<b><span style="color:green">{gare}</span></b>' if gare == selected_gare else gare for gare in df_all_gares['gare_source']]
+    ),
+    yaxis=dict(title='Nombre d\'incidents'),
+    plot_bgcolor='white',
+    title='',
+    margin=dict(t=0, b=0, l=0, r=0),
+    )
+
+    return bar_fig
 
 if __name__ == '__main__':
     app.run_server(debug=True, dev_tools_hot_reload=True, host='127.0.0.1', port=5000)
