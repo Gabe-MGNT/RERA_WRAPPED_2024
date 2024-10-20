@@ -6,11 +6,34 @@
 body{
     font-family: 'ParisineBold';
     color:#284897;
-    background-color: #FEFFF2;
+    background-color: white;
+}
+
+#incidents_selected{
+    color:grey;
+    font-size: 0.8em;
+}
+
+
+#logo_rera{
+    width: 12%; 
+    margin-right: 20px; 
+    margin-left:10px
+}
+
+#multiple_tabs{
+    display: flex; 
+    flex-direction:row; 
+    justify-content: center;
+}
+
+.label{
+    display: block; 
+    text-align:center;
+    margin-top: 10px
 }
 
 .separator {
-
     height: 5px;
     background-color: #E30418;
     margin-top: 40px;
@@ -19,6 +42,22 @@ body{
     border-radius: 25px;
     margin-left: auto; 
     margin-right: auto;
+}
+
+.red_full_line{
+    height: 5px;
+    background-color: red;
+    margin-bottom: 10px;
+    width:100%
+}
+
+.grey_vertical_separator{
+    width: 5px; 
+    height: 300px;
+    background-color: grey;
+    border-radius:25px;
+    margin-left:3%;
+    margin-right:3%;
 }
 
 .dropdown-item {
