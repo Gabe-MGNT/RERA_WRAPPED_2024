@@ -12,76 +12,70 @@ import pandas as pd
 import plotly.express as px
 from dash import dcc, html, Input, Output, callback
 from constant import month_dict, max_day_per_month, gares, gare_list
-from data_preparation import df_f, pb_resolve_df, all_types_split_unique
+from data_preparation import df_f, pb_resolve_df, all_types_split_unique, months, years
 from load_img import img, img_height, img_width
 
 # Créer l'application Dash
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 
-# Obtenir les années uniques pour le slider
-years = df_f['year'].unique()
-years.sort()
-months = df_f['month'].unique()
-months.sort()
-
 app.layout = html.Div([
     html.Div([
         html.Img(id='logo_rera', src='assets/IDF_RER_A_logo.svg'),
         html.H1('Dashboard du RER A')
-    ], className="title_div"),   
+    ], id="dashboard_title"),   
     html.Div(className='separator'),
-    dcc.Tabs(id="multiple_tabs", value="accueil", children=[
+    dcc.Tabs(id="main_tabs", value="accueil", children=[
         dcc.Tab(label="Vue générale", 
-                value='ligne_rer_a',
-                 className='tab', selected_className='tab--selected' ),
+                value='overall_details',
+                className='tab', selected_className='tab--selected' ),
         dcc.Tab(label="Temps réponse à incident", 
                 value='temps_reponse_incidents',
-                 className='tab', selected_className='tab--selected' ),
+                className='tab', selected_className='tab--selected' ),
         dcc.Tab(label="Détails par gare", 
                 value='details_par_gare', 
                 className='tab', selected_className='tab--selected'),
     ], ),
     html.Div(className='separator'),
-    html.Div(id='tabs-content-example-graph', className="main_content")
+    html.Div(id='main_content_display', className="main_content")
 ])
 
 
-@callback(Output('tabs-content-example-graph', 'children'),Input('multiple_tabs', 'value'))
+@callback(Output('main_content_display', 'children'),Input('main_tabs', 'value'))
 def render_content(tab):
-    if tab == 'ligne_rer_a':
+    if tab == 'overall_details':
         return html.Div([
             html.H1("Nombre d'incidents par gare"),
             html.Div([
             html.Label("Sélectionnez le type de problème :"),
             dcc.Dropdown(
-                id='problem-dropdown',
+                id='incident_map_dropdown',
                 options=[{'label': 'Tous les problèmes', 'value': 'all'}] +[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
                 value=['all'], 
                 multi=True,),
             ]
             , className="modifiers"
             , style={'width': '95%'}),            
-            dcc.Graph(id='incident-graph', config={"displayModeBar": False}),
+            dcc.Graph(id='incident_map', config={"displayModeBar": False}),
             html.Div([
                 html.Label("Sélectionnez l'année :"),
                 dcc.Slider(
-                id='year-slider',
+                id='incident_map_year_slider',
                 min=years.min(),
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
                 step=None,
-                className='custom-slider'
+                className='custom_slider'
             ),
             html.Label("Sélectionnez le mois :"),
             dcc.RangeSlider(
-                id='month-slider',
+                id='incident_map_month_slider',
                 min=months.min(),
                 max=months.max(),
                 value=[months.min(), months.max()],
                 marks={str(month): month_dict[month] for month in months},
                 step=None,
-                className='custom-range-slider'
+                className='custom_range_slider'
             ),
             html.Div(className='separator'),
             html.H1("Nombre d'incidents par typologie sélectionnées"),
@@ -89,7 +83,7 @@ def render_content(tab):
             html.Div([ 
             html.Label("Sélectionnez le type de tri :", className='label'),
             dcc.RadioItems(
-                        id='sort_type1',
+                        id='incidents_all_gares_barchart_sort_type',
                         options=[
                             {'label': 'Non triés', 'value': 'no_sort'},
                             {'label': 'Croissant', 'value': 'asc_sort'},
@@ -101,7 +95,7 @@ def render_content(tab):
             ]
             , className="modifiers"
             , style={'width': '60%'}),
-            dcc.Graph(id='incident-bar', config={"displayModeBar": False})
+            dcc.Graph(id='incidents_all_gares_barchart', config={"displayModeBar": False})
             ])
         ])
     elif tab == 'temps_reponse_incidents':
@@ -111,9 +105,9 @@ def render_content(tab):
             html.Div([
             html.Label("Sélectionnez le type d'incident :", className='label'),
             dcc.Dropdown(
-                id='incident-type-dropdown',
+                id='incidents_mean_response_time_dropdown',
                 options=[{'label': 'Tous les problèmes', 'value': 'all'}] +[{'label': problem.capitalize(), 'value': problem} for problem in all_types_split_unique],
-                value=['all'],  # Sélectionner tous les types par défaut
+                value=['all'], 
                 multi=True,
                 optionHeight=50,
                 placeholder="Sélectionnez un type d'incident",
@@ -123,15 +117,14 @@ def render_content(tab):
             , className="modifiers"
             , style={'width': '95%'}),
             html.Div([
-            html.Div(id='average-response-time'),
-                ], className="average_response_time_display"),
+            html.Div(id='mean_response_time'),
+                ], className="mean_response_time_display"),
             html.Div(className='separator'),
             html.H1("Vue complète"),
-
-                html.Div([
+            html.Div([
                     html.Label("Sélectionnez le type de graphique :", className='label'),
                     dcc.RadioItems(
-                        id='graph-type',
+                        id='mean_response_time_graph_type',
                         options=[
                             {'label': 'Simplifié', 'value': 'bar'},
                             {'label': 'Détaillé', 'value': 'box'}
@@ -142,47 +135,47 @@ def render_content(tab):
                 ]
                 , className="modifiers"
                 , style={'width': '50%'}),                
-                dcc.Graph(id='time_solve_graph', config={"displayModeBar": False}),
-                dcc.RangeSlider(
-                    id='month-slider_time',
+            dcc.Graph(id='mean_response_time_graph', config={"displayModeBar": False}),
+            dcc.RangeSlider(
+                    id='mean_reponse_time_month_slider',
                     min=months.min(),
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
                     step=None,
-                    className='custom-range-slider'
+                    className='custom_range_slider'
                 ),
-                dcc.Slider(
-                id='year-slider_time',
+            dcc.Slider(
+                id='mean_reponse_time_year_slider',
                 min=years.min(),
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
                 step=None,
-                className='custom-slider'
+                className='custom_slider'
                 ),
 
                 html.Div(className='separator'),
                 html.H1("Problèmes les plus courants"),
-                dcc.Graph(id='incidents_occurences', config={"displayModeBar": False}),
+                dcc.Graph(id='incidents_occurrence_proportio', config={"displayModeBar": False}),
                 dcc.RangeSlider(
-                    id='month-slider_time_occurences',
+                    id='incidents_occurence_proportio_month_slider',
                     min=months.min(),
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
                     step=None,
-                    className='custom-range-slider'
+                    className='custom_range_slider'
 
                 ),
                 dcc.Slider(
-                id='year-slider_time_occurences',
+                id='incidents_occurence_proportio_year_slider',
                 min=years.min(),
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
                 step=None,
-                className='custom-slider'
+                className='custom_slider'
                 ),
 
                 html.Div(className='separator'),
@@ -191,10 +184,9 @@ def render_content(tab):
                 html.Div([
                     html.Label("Sélectionnez la typologie d'incidents", className='label'),
                     dcc.Dropdown(
-                    id='typology-dropdown-1',
+                    id='specific_incidents_dropdown',
                     options=[{'label': typology.upper(), 'value': typology} for typology in all_types_split_unique],
                     value=all_types_split_unique[0],
-                    style={'width': '100%', 'display': 'inline-block', 'marginRight': '4%'}
                     ),
                 ] 
                 , className="modifiers"
@@ -202,24 +194,24 @@ def render_content(tab):
                 ),
 
 
-                dcc.Graph(id='incidents_details', config={"displayModeBar": False}),
+                dcc.Graph(id='specific_incidents_details', config={"displayModeBar": False}),
                 dcc.RangeSlider(
-                    id='month-slider_time_incidents_details',
+                    id='specific_incidents_details_month_slider',
                     min=months.min(),
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
                     step=None,
-                    className='custom-range-slider'
+                    className='custom_range_slider'
                 ),
                 dcc.Slider(
-                id='year-slider_time_incidents_details',
+                id='specific_incidents_details_year_slider',
                 min=years.min(),
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
                 step=None,
-                className='custom-slider'
+                className='custom_slider'
                 ),
 
 
@@ -230,72 +222,75 @@ def render_content(tab):
         return html.Div([  
             html.H1("Sélectionnez une gare"),
             dcc.Dropdown(
-                id='gare-dropdown_details_gare',
+                id='chosen_gare_dropdown',
                 options=[{'label': gare, 'value': gare} for gare in df_f['gare_source'].dropna().unique()],
                 multi=False,
                 value='Poissy',
                 placeholder="Sélectionnez une ou plusieurs gares",
-                style={'width': '90%', 'margin': 'auto'}
             ),
             dcc.Slider(
-                id='year-dropdown_gare',
+                id='chosen_gare_year_slider',
                 min=years.min(),
                 max=years.max(),
                 value=years.max(),
                 marks={str(year): str(year) for year in years},
                 step=None,
-                className='custom-slider'
+                className='custom_slider'
             ),
             dcc.RangeSlider(
-                id='month-dropdown_gare',
+                id='chosen_gare_month_slider',
                     min=months.min(),
                     max=months.max(),
                     value=[months.min(), months.max()],
                     marks={str(month): month_dict[month] for month in months},
                     step=None,
-                    className='custom-range-slider'
+                    className='custom_range_slider'
             ),
             html.Div(className='separator'),
             html.Div(className='red_full_line'),
             html.Div([
                     html.Div([
                         html.Div([
-                        html.H3(id='incident-classement'),
-                        html.H1(id='selected_gare'),
+                        html.H3(id='chosen_gare_classement'),
+                        html.H1(id='chosen_gare'),
                     ], id="classement_gare"),
-                        html.H3(id='incident-info'),
+                        html.H3(id='gare_and_period_info'),
                     ], id='gare_and_period'),
                     html.Div([
-                        html.H3(id='incident-numbers'),
+                        html.H3(id='incidents_numbers'),
                         html.H5("incidents")
                     ], id='gare_and_incident_number')
-                ], style={'display': 'flex', 'width': '100%', 'height':'10%'}),
+                ],
+                 className='main_info_gare'
+                 ),
             html.Div(className='red_full_line'),
             html.Div([
-                html.Div(dcc.Graph(id='pie-chart_gare', config={"displayModeBar": False}), style={'width': '48%'}, ),
-                html.Div(className="grey_vertical_separator"),  # Séparateur vertical
-                html.Div(dcc.Graph(id='incident-graph_details_gare', config={"displayModeBar": False}), style={'width': '48%'})
-            ], style={"display": 'flex', 'width': '100%', 'alignItems': 'center', 'justifyContent': 'center'}),
+                html.Div(dcc.Graph(id='chosen_gare_incidents_pie_chart', config={"displayModeBar": False}), style={'width': '48%'}, ),
+                html.Div(className="grey_vertical_separator"), 
+                html.Div(dcc.Graph(id='chosen_gare_incident_evolution', config={"displayModeBar": False}), style={'width': '48%'})
+            ], className="panel_gare"),
             html.Div(className='separator'),
             html.H3("Classement de la gare sur la période sélectionnée"),
-            dcc.Graph(id='classement_general', config={"displayModeBar": False}),
+            dcc.Graph(id='chosen_gare_classement_general', config={"displayModeBar": False}),
 
         ])      
 
 @app.callback(
-    [Output('incident-graph', 'figure'),
-    Output('incident-bar', 'figure'),],
+    [Output('incident_map', 'figure'),
+    Output('incidents_all_gares_barchart', 'figure'),],
 
-    [Input('year-slider', 'value'),
-     Input('month-slider', 'value'),
-     Input('problem-dropdown', 'value'),
-        Input('sort_type1', 'value')]
+    [Input('incident_map_year_slider', 'value'),
+     Input('incident_map_month_slider', 'value'),
+     Input('incident_map_dropdown', 'value'),
+        Input('incidents_all_gares_barchart_sort_type', 'value')]
      
 )
 def update_figure(selected_year, selected_month, selected_problems, sort_type):
 
     if selected_problems == ['all']:
         selected_problems = all_types_split_unique
+    elif 'all' in selected_problems:
+        selected_problems.remove('all')
 
     filtered_df = df_f[(df_f['year'] == selected_year) 
                        & (df_f['month'] >= selected_month[0]) 
@@ -443,13 +438,15 @@ def update_figure(selected_year, selected_month, selected_problems, sort_type):
 from datetime import datetime
 
 @app.callback(
-    Output('average-response-time', 'children'),
-    [Input('incident-type-dropdown', 'value')]
+    Output('mean_response_time', 'children'),
+    [Input('incidents_mean_response_time_dropdown', 'value')]
 )
 def update_figure(selected_incident_type):
 
     if selected_incident_type == 'all':
         selected_incident_type = all_types_split_unique
+    elif 'all' in selected_incident_type:
+        selected_incident_type.remove('all')
 
     pb_resolve_df_filtered = pb_resolve_df[pb_resolve_df['label'].str.contains('|'.join(selected_incident_type))]
 
@@ -470,50 +467,51 @@ def update_figure(selected_incident_type):
         incident_average_minute = (incident_average_duration.seconds // 60) % 60
 
         incident_divs.append(                    
-            html.Div(style={'height': '3px', 'backgroundColor': '#BCBCBC', 'width': '100%'}),
+            html.Div(className='time_separator'),
         )
         incident_divs.append(
             html.Div([
-                    html.H3(f"• Temps moyen ({incident})", style={'textAlign': 'left', 'padding':'1%', 'marginLeft':'5%'}),
+                    html.H3(f"• Temps moyen ({incident})", className='mean_total_time'),
                     html.Div([
-                        html.H3(f"{incident_average_day} jours, {incident_average_hour} heures, {incident_average_minute} minutes", style={'color': 'yellow', 'textAlign': 'center', 'marginLeft': 'auto'})
-                    ], style={'backgroundColor': '#4D4D4D', 'padding': '10px', 'marginLeft': 'auto', 'width': '40%', 'display': 'flex', 'alignItems': 'center'})
-                ], style={'display': 'flex', 'width': '100%', 'textAlign': 'center', 'justifyContent': 'center'}),
+                        html.H3(f"{incident_average_day} jours, {incident_average_hour} heures, {incident_average_minute} minutes"
+                                , className='mean_time_text')
+                    ], className='mean_time_background')
+                ], className='mean_time_box'),
         )
 
     return html.Div([
             html.Div([
                 html.Div([
-                    html.Img(src='/assets/IDF_RER_A_logo.svg', style={'width': '15%', 'float': 'left'}),
-                    html.H1("Temps de réponses à incidents", style={'marginLeft': '20px', 'marginTop': '0px'}),
-                    html.Div(current_time, style={'backgroundColor': 'black', 'color': 'yellow', 'fontSize':'2em','padding': '5px 10px', 'marginLeft': 'auto', 'marginRight':'5%', 'display': 'inline-block'})
-
-                ], style={'display': 'flex', 'alignItems': 'center', 'width': '100%'})
-            ], style={'overflow': 'hidden'}),
-            html.Div(style={'height': '5px', 'backgroundColor': 'red', 'marginTop': '10px', 'width':'100%'}),
+                    html.Img(src='/assets/IDF_RER_A_logo.svg', className='mean_time_display_logo'),
+                    html.H1("Temps de réponses à incidents", className='mean_time_display_title'),
+                    html.Div(current_time, className='mean_time_display_current_time')
+                ],
+                 className='mean_time_display_header')
+            ], className='mean_time_display_header_encap'),
+            html.Div(className='separator', style={'marginTop': '10px', 'width':'100%'}),
             html.Div([
                 html.Div([
-                    html.H3(f"Temps moyen (total)", style={'textAlign': 'left', 'marginLeft':'1%', 'padding':'1%'}),
+                    html.H3(f"Temps moyen (total)", className="mean_time_display_list_elem_title" ),
                     html.Div([
-                        html.H3(f"{average_day} jours, {average_hour} heures, {average_minute} minutes", style={'color': 'yellow', 'textAlign': 'center', 'marginLeft': 'auto'})
-                    ], style={'backgroundColor': '#4D4D4D', 'padding': '10px', 'marginLeft': 'auto', 'width': '40%', 'display': 'flex', 'alignItems': 'center'})
-                ], style={'display': 'flex', 'width': '100%'}),
+                        html.H3(f"{average_day} jours, {average_hour} heures, {average_minute} minutes", className="mean_time_display_list_elem_time" )
+                    ], className="mean_time_display_list_elem_time_background")
+                ], className="mean_time_display_list_elem_box"),
                 *incident_divs
-            ], style={'height':'300px', 'overflow': 'auto'}),
-            ], style={"marginTop":'50px'},)
+            ], className="mean_time_display_list_scroll"),
+            ])
 
 
 @app.callback(
         Output('incidents_selected', 'children'),
-        Input('problem-dropdown', 'value')
+        Input('incident_map_dropdown', 'value')
 )
 def update_h5(selected_incident_type):
     return "(" + ", ".join(selected_incident_type) + ")"
 
 @app.callback(
-    Output('incidents_occurences', 'figure'),
-    [Input('year-slider_time_occurences', 'value'),
-    Input('month-slider_time_occurences', 'value')]
+    Output('incidents_occurrence_proportio', 'figure'),
+    [Input('incidents_occurence_proportio_year_slider', 'value'),
+    Input('incidents_occurence_proportio_month_slider', 'value')]
 )
 def update_graph(selected_year, selected_months):
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
@@ -547,10 +545,10 @@ def update_graph(selected_year, selected_months):
 
 
 @app.callback(
-    Output('time_solve_graph', 'figure'),
-    [Input('month-slider_time', 'value'),
-    Input('year-slider_time', 'value'),
-    Input('graph-type', 'value')]
+    Output('mean_response_time_graph', 'figure'),
+    [Input('mean_reponse_time_month_slider', 'value'),
+    Input('mean_reponse_time_year_slider', 'value'),
+    Input('mean_response_time_graph_type', 'value')]
 
 )
 def update_graph(selected_months, selected_year, graph_type):
@@ -623,10 +621,10 @@ def update_graph(selected_months, selected_year, graph_type):
 
 
 @app.callback(
-    Output('incidents_details', 'figure'),
-    [Input('typology-dropdown-1', 'value'),
-    Input('month-slider_time_incidents_details', 'value'),
-    Input('year-slider_time_incidents_details', 'value')]
+    Output('specific_incidents_details', 'figure'),
+    [Input('specific_incidents_dropdown', 'value'),
+    Input('specific_incidents_details_month_slider', 'value'),
+    Input('specific_incidents_details_year_slider', 'value')]
 )
 def update_graph(typo1, selected_months, selected_year):
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
@@ -682,17 +680,17 @@ def update_graph(typo1, selected_months, selected_year):
 
 
 @app.callback(
-    [Output('incident-info', 'children'),
-     Output("selected_gare", 'children'),
-    Output("incident-classement", 'children'),
-    Output('incident-numbers', 'children'),
-     Output('pie-chart_gare', 'figure'),
-     Output('incident-graph_details_gare', 'figure')],
-    [Input('gare-dropdown_details_gare', 'value'),
-     Input('year-dropdown_gare', 'value'),
-     Input('month-dropdown_gare', 'value')]
+    [Output('gare_and_period_info', 'children'),
+     Output("chosen_gare", 'children'),
+    Output("chosen_gare_classement", 'children'),
+    Output('incidents_numbers', 'children'),
+     Output('chosen_gare_incidents_pie_chart', 'figure'),
+     Output('chosen_gare_incident_evolution', 'figure')],
+    [Input('chosen_gare_dropdown', 'value'),
+     Input('chosen_gare_year_slider', 'value'),
+     Input('chosen_gare_month_slider', 'value')]
 )
-def update_incident_info(selected_gare, selected_year, selected_months):
+def update_incident_info(chosen_gare, selected_year, selected_months):
 
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
@@ -704,16 +702,16 @@ def update_incident_info(selected_gare, selected_year, selected_months):
     filtered_df['month'] = filtered_df.begin_date.dt.month
     filtered_df['year'] = filtered_df.begin_date.dt.year
 
-    selected_gare_data = filtered_df[filtered_df['gare_source'] == selected_gare]
+    selected_gare_data = filtered_df[filtered_df['gare_source'] == chosen_gare]
     num_incidents = selected_gare_data.shape[0]
 
     df_sorted = filtered_df.groupby('gare_source').size().reset_index(name='count').sort_values(by='count', ascending=False).reset_index(drop=True)
-    rank = df_sorted[df_sorted['gare_source'] == selected_gare].index[0] + 1
+    rank = df_sorted[df_sorted['gare_source'] == chosen_gare].index[0] + 1
 
     time_grouped = selected_gare_data.groupby(['year', 'month']).size().reset_index(name='count')
 
     info_text = f"Sur la période allant de {begin_date_selected} à {end_date_selected}."
-    selected_gare_info = f"{selected_gare}"
+    selected_gare_info = f"{chosen_gare}"
     nombre_incidents = f"{num_incidents}"
     classement_incident = f"#{rank}"
 
@@ -722,7 +720,7 @@ def update_incident_info(selected_gare, selected_year, selected_months):
     fig = px.line(time_grouped, 
                 x=pd.to_datetime(time_grouped[['year', 'month']].assign(day=1)), 
                 y='count', 
-                title=f"Nombre d'incidents chronologiquement pour la gare {selected_gare}",
+                title=f"Nombre d'incidents chronologiquement pour la gare {chosen_gare}",
                 labels={'x': 'Date', 'count': "Nombre d'incidents"})
     fig.update_traces(
         line=dict(color='#284897', width=4),
@@ -732,7 +730,7 @@ def update_incident_info(selected_gare, selected_year, selected_months):
     pie_fig = px.pie(
         pie_data, 
         names='label',
-        values='incidents', title=f"Proportion des problèmes pour la gare {selected_gare}",
+        values='incidents', title=f"Proportion des problèmes pour la gare {chosen_gare}",
         color_discrete_sequence=px.colors.sequential.matter_r
         )
     
@@ -743,13 +741,13 @@ def update_incident_info(selected_gare, selected_year, selected_months):
 
 
 @app.callback(
-    Output('classement_general', 'figure'),
-    [Input('year-dropdown_gare', 'value'),
-    Input('month-dropdown_gare', 'value'),
-    Input('gare-dropdown_details_gare', 'value')
+    Output('chosen_gare_classement_general', 'figure'),
+    [Input('chosen_gare_year_slider', 'value'),
+    Input('chosen_gare_month_slider', 'value'),
+    Input('chosen_gare_dropdown', 'value')
     ]
 )
-def update_classement_general(selected_year, selected_months, selected_gare):
+def update_classement_general(selected_year, selected_months, chosen_gare):
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
 
@@ -778,14 +776,14 @@ def update_classement_general(selected_year, selected_months, selected_gare):
         labels={'gare_source': 'Gare', 'count': "Nombre d'incidents"}
     )
     bar_fig.update_traces(marker=dict(
-        color=['green' if gare == selected_gare else px.colors.sequential.matter_r[int(i * len(px.colors.sequential.matter_r) / len(df_all_gares['gare_source']))] for i, gare in enumerate(df_all_gares['gare_source'])],
+        color=['green' if gare == chosen_gare else px.colors.sequential.matter_r[int(i * len(px.colors.sequential.matter_r) / len(df_all_gares['gare_source']))] for i, gare in enumerate(df_all_gares['gare_source'])],
     ))
 
     bar_fig.update_layout(
     xaxis=dict(
         tickmode='array',
         tickvals=df_all_gares['gare_source'],
-        ticktext=[f'<b><span style="color:green">{gare}</span></b>' if gare == selected_gare else gare for gare in df_all_gares['gare_source']]
+        ticktext=[f'<b><span style="color:green">{gare}</span></b>' if gare == chosen_gare else gare for gare in df_all_gares['gare_source']]
     ),
     yaxis=dict(title='Nombre d\'incidents'),
     plot_bgcolor='white',

@@ -16,3 +16,8 @@ all_types = all_types.values
 all_types_split = [a.split(',') for a in all_types]
 all_types_split_flat = [item for sublist in all_types_split for item in sublist if item]
 all_types_split_unique = list(set(all_types_split_flat))
+
+years = df_f['year'].unique()
+years.sort()
+months = df_f['month'].unique()
+months.sort()
