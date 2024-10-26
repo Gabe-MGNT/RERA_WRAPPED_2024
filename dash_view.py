@@ -277,15 +277,15 @@ def render_content(tab):
 
 @app.callback(
     [Output('incident_map', 'figure'),
-    Output('incidents_all_gares_barchart', 'figure'),],
+    Output('incidents_all_gares_barchart', 'figure'),
+    Output('incidents_selected', 'children'),],
 
     [Input('incident_map_year_slider', 'value'),
      Input('incident_map_month_slider', 'value'),
      Input('incident_map_dropdown', 'value'),
-        Input('incidents_all_gares_barchart_sort_type', 'value')]
-     
+    Input('incidents_all_gares_barchart_sort_type', 'value')]    
 )
-def update_figure(selected_year, selected_month, selected_problems, sort_type):
+def update_map_barchart_subtitle(selected_year, selected_month, selected_problems, sort_type):
 
     if selected_problems == ['all']:
         selected_problems = all_types_split_unique
@@ -299,7 +299,6 @@ def update_figure(selected_year, selected_month, selected_problems, sort_type):
                        ]
 
     filtered_df2 = filtered_df[(filtered_df['tweet_type'] == 'Normal') & (filtered_df['len_label'] > 0)]
-
 
     agg_data = filtered_df2.groupby('gare_source').size().reset_index(name='count')
 
@@ -432,7 +431,8 @@ def update_figure(selected_year, selected_month, selected_problems, sort_type):
 
 
 
-    return scatter_fig, bar_fig
+    return scatter_fig, bar_fig, "(" + ", ".join(selected_problems) + ")"
+
 
 
 from datetime import datetime
@@ -441,7 +441,7 @@ from datetime import datetime
     Output('mean_response_time', 'children'),
     [Input('incidents_mean_response_time_dropdown', 'value')]
 )
-def update_figure(selected_incident_type):
+def update_mean_response_time_display(selected_incident_type):
 
     if selected_incident_type == 'all':
         selected_incident_type = all_types_split_unique
@@ -502,18 +502,11 @@ def update_figure(selected_incident_type):
 
 
 @app.callback(
-        Output('incidents_selected', 'children'),
-        Input('incident_map_dropdown', 'value')
-)
-def update_h5(selected_incident_type):
-    return "(" + ", ".join(selected_incident_type) + ")"
-
-@app.callback(
     Output('incidents_occurrence_proportio', 'figure'),
     [Input('incidents_occurence_proportio_year_slider', 'value'),
     Input('incidents_occurence_proportio_month_slider', 'value')]
 )
-def update_graph(selected_year, selected_months):
+def update_incidents_occurence_proportion(selected_year, selected_months):
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
 
@@ -549,9 +542,8 @@ def update_graph(selected_year, selected_months):
     [Input('mean_reponse_time_month_slider', 'value'),
     Input('mean_reponse_time_year_slider', 'value'),
     Input('mean_response_time_graph_type', 'value')]
-
 )
-def update_graph(selected_months, selected_year, graph_type):
+def update_mean_response_time_global(selected_months, selected_year, graph_type):
 
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
@@ -626,7 +618,7 @@ def update_graph(selected_months, selected_year, graph_type):
     Input('specific_incidents_details_month_slider', 'value'),
     Input('specific_incidents_details_year_slider', 'value')]
 )
-def update_graph(typo1, selected_months, selected_year):
+def update_mean_response_time_specific_incident(typo1, selected_months, selected_year):
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
 
@@ -690,7 +682,7 @@ def update_graph(typo1, selected_months, selected_year):
      Input('chosen_gare_year_slider', 'value'),
      Input('chosen_gare_month_slider', 'value')]
 )
-def update_incident_info(chosen_gare, selected_year, selected_months):
+def update_info_about_specific_gare(chosen_gare, selected_year, selected_months):
 
     begin_date_selected = "{:04d}-{:02d}-01".format(selected_year, selected_months[0])
     end_date_selected = "{:04d}-{:02d}-{}".format(selected_year, selected_months[1], max_day_per_month[selected_months[1]])
