@@ -14,12 +14,18 @@ body {
 p{
     color:black;
 }
+
+h1{
+    color:#284897;
+}
 </style>
 
 # Dashboard des incidents du RER A
 Bienvenue sur la page du projet ayant pour but d'avoir des informations et statistiques détaillées sur les incidents ayant lieu sur les voies du RER A.
 
-## Explication
+<img src='assets/plan_rer__a.png'>
+
+## Expliquation
 Ce projet a pour but de faire une étude complète et détaillée des incidents ayant lieu sur les voies du RER A, autant sur la typologie des incidents que sur le temps de réponse à incidents.
 
 Il est possible de voir les périodes de l'année ayant le plus d'incidents (ou d'un type d'incident spécifique), et voir si le temps de réponse à incidents évolue au cours de l'année en fonction de l'affluence supposée.
@@ -46,8 +52,30 @@ Et une fois à la racine, il faut lancer le script contenant le dashboard
 [LIGNE DE COMMANDE]
 
 ## Motivation
-Pour être tout à fait honnête, l'incompréhension et le désespoir sont les 2 principales motivations de ce projet.
-Utilisant le RER A presque quotidiennement...
+Pour être tout à fait honnête, l'incompréhension et le désespoir sont les 2 principales motivations derrière ce projet.
+Quand on voit que certains incidents ayant lieu à un bout de la ligne paralysent l'entièreté du trafic pendant des durées aberrantes à des horaires de pointes, c'est assez gênant et déprimant.
+
+Et c'est comme ça que petit à petit, j'avais de plus en plus envie de savoir, qu'est ce qui était la cause majoritaire des incidents ? L'affluence a-t-elle une réelle corrélation avec l'occurrences des incidents (car les incidents surviennent autant à 8h qu'à 1h du matin) ?
+
+Je me suis donc lancé dans ce projet d'analyser les incidents du RER A et le temps de réponse à incidents. _(Le projet m'aura pris du temps car la flemme est pasée par là...)_
+
 ## Détails techniques
+Le projet a entièrement réalisé en utilisant Python, allant de la récolte à l'analyse des données à leur mise en forme sous graphiques.
+
+### Librairies
+Pour la récolte des données, c'est Selenium qui a été utilisé pour faciliter la récolte, au vues des mesures prises par le site pour annuler les robots de scraping.
+
+Pour tout ce qui est traitement des données, globalement il y a Pandas pour la mise en forme et NLTK pour toutes les opérations de NLP.
+
+Et enfin pour le dashboard, c'est Dash qui a été utilisé.
+
+### Hébergement du Dashboard
+Comme il n'existe pas beaucoup de solution gratuite pour héberger des dashbaord Dash non statiques, j'ai utilisé PythonEverywhere. Mais le compte gratuit a pas mal de restriction, donc il se peut que l'hébergement ne fonctionne plus, mais pas de soucis vous pouvez l'exécuter en local.
+
+## Bilan de l'étude
+
+
+## Disclaimer
+Je préfère le redire mais : tous les chiffres présentés autant dans mes dire que dans le dashboard sont des estimations, puisque les données utilisées ne sont pas officielles mais seulement récupérer par un intermédiaire. Même si ces estimations peuvent donner une idée générale, elles ne sont en aucun cas des faits avérés.
 
 
