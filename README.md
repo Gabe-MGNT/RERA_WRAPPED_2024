@@ -1,25 +1,3 @@
-<style>
-@font-face {
-    font-family: 'ParisineBold'; 
-    src: url('/assets/Parisine\ Bold.otf');
-}
-
-
-body {
-    font-family: 'Parisine', sans-serif;
-    color:#284897;
-    background-color: white;
-}
-
-p{
-    color:black;
-}
-
-h1{
-    color:#284897;
-}
-</style>
-
 # Dashboard des incidents du RER A
 Bienvenue sur la page du projet ayant pour but d'avoir des informations et statistiques détaillées sur les incidents ayant lieu sur les voies du RER A.
 
