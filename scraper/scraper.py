@@ -7,6 +7,9 @@ from tweet_class import Tweet
 import re
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import uuid
 import logging
 
@@ -140,7 +143,7 @@ class TweetScraper:
                 pass
 
             # Wait the page to load
-            time.sleep(delay_between_page + random.randint(1, 3))
+            time.sleep(delay_between_page + random.randint(10, 20))
 
             # Retrieve all the tweets on the page
             try:
@@ -178,6 +181,7 @@ class TweetScraper:
 
         for tweet in tweets_on_page:
 
+
             thread_id = str(uuid.uuid4())
 
             # Scrap the main tweet informations
@@ -185,7 +189,7 @@ class TweetScraper:
                 tweet_item = self.scrap_tweet(tweet, 'Normal')
             except Exception as e:
                 logging.error("Error while scrapping main tweet")
-                raise e
+                break
             
             tweet_item.thread_id = thread_id
             time_posted_conv = tweet_item.time_posted
@@ -203,16 +207,18 @@ class TweetScraper:
             ActionChains(chrome).key_down(Keys.CONTROL).click(tweet).key_up(Keys.CONTROL).perform()
             chrome.switch_to.window(chrome.window_handles[-1])
 
-            time.sleep(delay_between_tweet + random.randint(1, 3))
+            time.sleep(delay_between_tweet + random.randint(3, 6))
 
             # Scrap the thread
             try:
                 self._scrap_thread(chrome, thread_id)
             except Exception as e:
                 logging.error("Error while scrapping thread")
+                chrome.close()  
+                chrome.switch_to.window(chrome.window_handles[0]) 
                 raise e
 
-            time.sleep(delay_before_closing_tab + random.randint(1, 3))
+            time.sleep(delay_before_closing_tab + random.randint(3, 6))
             
             self.df.to_csv(self.filename, index=False)
             
@@ -221,6 +227,13 @@ class TweetScraper:
 
             # Switch back to the original tab
             chrome.switch_to.window(chrome.window_handles[0]) 
+            WebDriverWait(chrome, 10).until(
+                    EC.presence_of_element_located((By.XPATH, "//article[@data-testid='tweet']"))
+            )
+            time.sleep(delay_before_closing_tab + random.randint(3, 6))
+
+
+
         return list(self.already_done_set)[-1]
 
 
@@ -280,7 +293,7 @@ class TweetScraper:
         tweet_item = Tweet()
 
         try:
-            elements = tweet.find_elements('xpath', './div/div/div')
+            elements = tweet.find_elements('xpath', './div/div/div[2]')
             content = elements[-1].find_elements('xpath', './div[2]/div')
         except Exception as e:
             raise "Couldn't get tweet content"
