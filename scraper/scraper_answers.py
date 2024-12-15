@@ -33,10 +33,12 @@ class TweetScraper:
         self.df = pd.DataFrame(columns=['tweet_type', 'time_posted', 'content', 'thread_id', 'comments', 'retweets', 'likes', 'views', 'extraction_date'])
         self.nb_row = 0
         self.already_done_set = set()
+        self.already_done_set_with_threadid = {}
         now = datetime.now()
         date_string = now.strftime("%Y-%m-%d_%H-%M-%S")
         self.filename = f'data/test_{date_string}.csv'
-        self.url_to_scrape = f'https://x.com/search?f=live&q=(from%3A{self.account_name})%20until%3A{self.end_date}%20since%3A{self.begin_date}%20-filter%3Areplies&src=typed_query'
+        self.url_to_scrape = f'https://x.com/search?f=live&q=(from%3A{self.account_name})+(to%3A{self.account_name})%20until%3A{self.end_date}%20since%3A{self.begin_date}&src=typed_query'
+        #self.url_to_scrape = "https://x.com/search?f=live&q=(from%3ARER_A)%20(to%3ARER_A)%20until%3A2024-10-24&src=typed_query"
 
     def _set_argument(self, data_dir="/home/seluser/twitter_scraper/selenium", window_width=900, window_height=700):
         """
@@ -151,7 +153,7 @@ class TweetScraper:
                 pass
 
             # Wait the page to load
-            time.sleep(delay_between_page + random.randint(10, 30))
+            time.sleep(delay_between_page + random.randint(7, 15))
 
             # Retrieve all the tweets on the page
             try:
@@ -165,7 +167,7 @@ class TweetScraper:
                 logging.info("Reached end date")
                 break
             else:
-                chrome.execute_script("window.scrollBy(0, 900);")
+                chrome.execute_script("window.scrollBy(0, 450);")
         logging.info("Reached end date")
         chrome.quit()
 
@@ -194,38 +196,62 @@ class TweetScraper:
             thread_id = str(uuid.uuid4())
 
             # Scrap the main tweet informations
-            try:
-                tweet_item = self.scrap_tweet(tweet, 'Normal')
-            except Exception as e:
-                logging.error("Error while scrapping main tweet")
-                break
+            tweet_item = self.scrap_tweet(tweet, 'Réponse')
+
             
             tweet_item.thread_id = thread_id
             time_posted_conv = tweet_item.time_posted
 
+            print(time_posted_conv)
+            print(time_posted_conv in self.already_done_set)
             # Check if the tweet has already been scrapped
             if time_posted_conv in self.already_done_set:
                 continue
+            self.already_done_set.add(time_posted_conv)
 
-            self.df.loc[self.nb_row] = tweet_item.to_dict()
-            self.nb_row += 1
+
 
             # Click sur le tweet si adresse est sur X sinon rien
             # Click on the tweet to access the thread
-            tweetContent = tweet.find_element('xpath', './/div[@data-testid="tweetText"]')
-            ActionChains(chrome).key_down(Keys.CONTROL).click(tweetContent).key_up(Keys.CONTROL).perform()
-            chrome.switch_to.window(chrome.window_handles[-1])
+            try:
+                """
+                tweetContent = tweet.find_element('xpath', './/div[@data-testid="tweetText"]')
+                ActionChains(chrome).key_down(Keys.CONTROL).click(tweetContent).key_up(Keys.CONTROL).perform()
+                chrome.switch_to.window(chrome.window_handles[-1])
+                """
+                """
+                tweetProfile = tweet.find_element("xpath", './/div[@data-testid="Tweet-User-Avatar"]')
+                actions = ActionChains(chrome).key_down(Keys.CONTROL)
+                actions.move_to_element_with_offset(tweetProfile, 0, 40)  # Déplacement de 20 pixels vers le bas
+                actions.click().key_up(Keys.CONTROL).perform()  # Cliquer à cet endroit
+                chrome.switch_to.window(chrome.window_handles[-1])
+                """
+                tweetThreadLink = tweet.find_element("xpath", './/a[contains(@href, "/status/")]')
+                ActionChains(chrome).key_down(Keys.CONTROL).click(tweetThreadLink).key_up(Keys.CONTROL).perform()
+                #chrome.click(tweetThreadLink).perform()
+                #tweetThreadLink.click()  
+                chrome.switch_to.window(chrome.window_handles[-1])  
+            except:
+                continue
 
-            time.sleep(delay_between_tweet + random.randint(5, 10))
+            time.sleep(delay_between_tweet + random.randint(7, 15))
 
             # Scrap the thread
             try:
-                self._scrap_thread(chrome, thread_id)
+                res = self._scrap_thread(chrome, thread_id)
+                if res != 0:
+                    tweet_item.thread_id = res
             except Exception as e:
                 logging.error("Error while scrapping thread")
-                chrome.close()  
-                chrome.switch_to.window(main_page) 
+                #chrome.close()  
+                #chrome.switch_to.window(main_page) 
+                chrome.back()
                 raise e
+            
+
+            self.already_done_set_with_threadid[time_posted_conv] = tweet_item.thread_id
+            self.df.loc[self.nb_row] = tweet_item.to_dict()
+            self.nb_row += 1
 
             #time.sleep(delay_before_closing_tab + random.randint(4, 7))
             
@@ -233,14 +259,14 @@ class TweetScraper:
             
             # Close the new tab
             chrome.close()
-            self.already_done_set.add(time_posted_conv)
-
+            #time.sleep(1)
             # Switch back to the original tab
             chrome.switch_to.window(main_page) 
+            #chrome.back()
             WebDriverWait(chrome, 10).until(
                     EC.presence_of_element_located((By.XPATH, "//article[@data-testid='tweet']"))
             )
-            time.sleep(delay_before_closing_tab + random.randint(5, 10))
+            time.sleep(delay_before_closing_tab + random.randint(7, 15))
 
 
 
@@ -261,38 +287,51 @@ class TweetScraper:
             None: If everything works, nothing is returned otherwise an error is raised
         """
         subtweets = chrome.find_elements('xpath', '//article[@data-testid="tweet"]')
-        for index, subtweet in enumerate(subtweets[1:]):
+        for index, subtweet in enumerate(subtweets):
 
                 #last_thread_tweet = subtweet.find_elements('xpath', '../../../div/div/div//text()')
-                last_thread_tweet = subtweet.find_elements('xpath', './parent::div/parent::div/parent::div/following-sibling::div')[0]
+                try:
+                    last_thread_tweet = subtweet.find_elements('xpath', './parent::div/parent::div/parent::div/following-sibling::div')[0]
 
 
-                elements = subtweet.find_elements('xpath', './div/div/div')
-                content = elements[-1].find_elements('xpath', './div[2]/div')
-                header = content[0]
-
+                    elements = subtweet.find_elements('xpath', './div/div/div')
+                    content = elements[-1].find_elements('xpath', './div[2]/div')
+                    header = content[0]
+                except:
+                    continue
+                
                 # Check if the tweet is from the account mentioned in the constructor
                 if self.account_name not in header.text:
-                    return
+                    return thread_id
 
                 try:
-                    subtweet_item = self.scrap_tweet(subtweet, 'Réponse')
+                    if index==0:
+                        subtweet_item = self.scrap_tweet(subtweet, 'Normal')
+                    else:
+                        subtweet_item = self.scrap_tweet(subtweet, 'Réponse')
                 except Exception as e:
                     logging.error("Error while scrapping tweet in thread")
                     logging.error(f"Thread link :{chrome.current_url}, reponse index : {index}")   
-                    raise(e)
+                    continue
                 
+
+                if subtweet_item.time_posted in self.already_done_set:
+                    thread_id =  self.already_done_set_with_threadid.get(subtweet_item.time_posted)
+                    continue
+                self.already_done_set.add(subtweet_item.time_posted)
+                self.already_done_set_with_threadid[subtweet_item.time_posted] = thread_id
+ 
+
+
                 subtweet_item.thread_id = thread_id
-            
                 self.df.loc[self.nb_row] = subtweet_item.to_dict()
                 self.nb_row += 1
-
-                # Check if the tweet is the last from the thread
                 
                 #if last_thread_tweet == "" or index == len(subtweets) - 1:
                 #    return
                 if last_thread_tweet.text == "" or index == len(subtweets) - 1:
-                    return
+                    return thread_id
+        return thread_id
 
     def scrap_tweet(self, tweet, type):
         """
@@ -315,14 +354,10 @@ class TweetScraper:
         header = content[0]
         time_posted_conv = self._get_tweet_posted_time(header)
 
-        try:
-            content_tweet = content[1]
-        except Exception as e:
-            raise f"Content was not correctly retrieved of tweet posted at {time_posted_conv}"
-
+        
         # Check if the tweet is a quote tweet
         try:
-            date_cited_tweet = content[2].find_elements('xpath','.//time')[0].get_attribute('datetime')
+            date_cited_tweet = content[-2].find_elements('xpath','.//time')[0].get_attribute('datetime')
             time_posted_conv = datetime.strptime(date_cited_tweet, "%Y-%m-%dT%H:%M:%S.%fZ")
             tweet_item.type = type
             tweet_item.time_posted = self._get_tweet_posted_time(header)
@@ -337,13 +372,28 @@ class TweetScraper:
             pass
 
         try:
+            content_tweet = content[-2]
+            elements = content_tweet.find_elements(By.XPATH, "./div//*")
+            content_list = []
+
+            for element in elements:
+                if element.tag_name == 'span':
+                    content_list.append(element.text)
+                elif element.tag_name == 'img':
+                    content_list.append(element.get_attribute('alt'))
+            content_tweet_text = " ".join(content_list)
+        except Exception as e:
+            raise f"Content was not correctly retrieved of tweet posted at {time_posted_conv}"
+
+
+        try:
             comment, retweet, like, views = self._get_tweet_stats(content[-1])
         except Exception as e:
             raise f"Stats were not correctly retrieved of tweet posted at {time_posted_conv}"
 
         tweet_item.type = type
         tweet_item.time_posted = time_posted_conv
-        tweet_item.content = content_tweet.text  
+        tweet_item.content = content_tweet_text  
         tweet_item.comment = comment
         tweet_item.retweet = retweet
         tweet_item.like = like

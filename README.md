@@ -1,7 +1,7 @@
 # Dashboard des incidents du RER A
 Bienvenue sur la page du projet ayant pour but d'avoir des informations et statistiques détaillées sur les incidents ayant lieu sur les voies du RER A.
 
-<img src='assets/plan_rer__a.png'>
+<img src='img/plan_rer__a.png'>
 
 ## Expliquation
 Ce projet a pour but de faire une étude complète et détaillée des incidents ayant lieu sur les voies du RER A, autant sur la typologie des incidents que sur le temps de réponse à incidents.
@@ -55,5 +55,14 @@ Comme il n'existe pas beaucoup de solution gratuite pour héberger des dashbaord
 
 ## Disclaimer
 Je préfère le redire mais : tous les chiffres présentés autant dans mes dire que dans le dashboard sont des estimations, puisque les données utilisées ne sont pas officielles mais seulement récupérer par un intermédiaire. Même si ces estimations peuvent donner une idée générale, elles ne sont en aucun cas des faits avérés.
+
+
+## Améliorations possible
+Les principales améliorations à faire sont sur la récupération des données, qui viennent fausser le calcul du temps de réponse à incident.
+
+- Tweets non issus du thread qui sont récupérés
+- La récupération des réponses récupère parfois des tweets du RER A répondant à des gens ayant supprimer leur tweet
+- Gestion des citations trop ambivalente (temps de réponse négatif)
+
 
 
