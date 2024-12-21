@@ -1,3 +1,5 @@
-
 *.csv
 scraper/example.log
+config.ini
+__pycache__/
+.vscode/
