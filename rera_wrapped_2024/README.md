@@ -7,52 +7,54 @@ Avec Canva et un peu de temps, voilà le résultat !
 ## #RERAWRAPPED2024
 
 
-<img src='img/1.png'>
+<img align="center" width="80%" src='img/1.png'>
 
 ---
 
-<img src='img/Annonce Temps résolution moyen.png'>
+<img align="center" width="80%" src='img/Annonce Temps résolution moyen.png'>
 
 ---
 
-<img src='img/Annonce Temps résolution par incident.png'>
+<img align="center" width="80%" src='img/Annonce Temps résolution par incident.png'>
 
 ---
 
-<img src='img/Annonce top gares.png'>
+<img align="center" width="80%" src='img/Annonce top gares.png'>
 
 ---
 
-<img src='img/Annonce Top Incidents.png'>
+<img align="center" width="80%" src='img/Annonce Top Incidents.png'>
 
 ---
 
-<img src='img/Incident le + tard et + tot.png'>
+<img align="center" width="80%" src='img/Incident le + tard et + tot.png'>
 
 ---
 
-<img src='img/Incidents par Mois et Par Heures.png'>
+<img align="center" width="80%" src='img/Incidents par Mois et Par Heures.png'>
 
 ---
 
-<img src='img/Temps résolution par mois.png'>
+<img align="center" width="80%" src='img/Temps résolution par mois.png'>
 
 ---
 
-<img src='img/Top Gares.png'>
+<img align="center" width="80%" src='img/Top Gares.png'>
 
 ---
 
-<img src='img/Top Incidents.png'>
+<img align="center" width="80%" src='img/Top Incidents.png'>
 
 ---
 
+<p align="center" width="100%">
+    <img src='img/Résumé.png' alt='Résumé 1' style="width: 48%; height: auto;"/>    
+<img src='img/Résumé 2.png' alt='Résumé 2' style="width: 48%; height: auto;"/>
+</p>
+<p align="center" width="100%">
+    <img src='img/Résumé 3.png' alt='Résumé 1' style="width: 48%; height: auto;"/>    
+<img src='img/Résumé 4.png' alt='Résumé 2' style="width: 48%; height: auto;"/>
+</p>
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-    <img src='img/Résumé.png' alt='Résumé 1' style="width: 100%; height: auto;"/>
-    <img src='img/Résumé 2.png' alt='Résumé 2' style="width: 100%; height: auto;"/>
-    <img src='img/Résumé 3.png' alt='Résumé 3' style="width: 100%; height: auto;"/>
-    <img src='img/Résumé 4.png' alt='Résumé 4' style="width: 100%; height: auto;"/>
-</div>
 
 ---
