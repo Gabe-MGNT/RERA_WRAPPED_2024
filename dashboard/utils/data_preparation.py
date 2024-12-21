@@ -1,8 +1,9 @@
 import pandas as pd
 
-df_f = pd.read_csv("./csv_files/to_exploite.csv")
-pb_resolve_df = pd.read_csv("./csv_files/pb_resolve.csv", parse_dates=['begin_date', 'end_date'])
+df_f = pd.read_csv("./csv_files/incident_notifies2.csv")
+pb_resolve_df = pd.read_csv("./csv_files/pb_resolve2.csv", parse_dates=['begin_date', 'end_date'])
 pb_resolve_df['duration'] = pd.to_timedelta(pb_resolve_df['duration'])
+pb_resolve_df.dropna(inplace=True)
 
 df_f['date'] = pd.to_datetime(df_f['time_posted'])
 
