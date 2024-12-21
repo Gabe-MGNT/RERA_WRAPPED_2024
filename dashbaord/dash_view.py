@@ -13,7 +13,7 @@ import plotly.express as px
 from dash import dcc, html, Input, Output, callback
 from constant import month_dict, max_day_per_month, gares, gare_list
 from data_preparation import df_f, pb_resolve_df, all_types_split_unique, months, years
-from load_img import img, img_height, img_width
+from dashbaord.load_img import img, img_height, img_width
 
 # Créer l'application Dash
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)

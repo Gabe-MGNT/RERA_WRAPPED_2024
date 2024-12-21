@@ -50,7 +50,6 @@ Et enfin pour le dashboard, c'est Dash qui a été utilisé.
 ### Hébergement du Dashboard
 Comme il n'existe pas beaucoup de solution gratuite pour héberger des dashbaord Dash non statiques, j'ai utilisé PythonEverywhere. Mais le compte gratuit a pas mal de restriction, donc il se peut que l'hébergement ne fonctionne plus, mais pas de soucis vous pouvez l'exécuter en local.
 
-## Bilan de l'étude
 
 
 ## Disclaimer
