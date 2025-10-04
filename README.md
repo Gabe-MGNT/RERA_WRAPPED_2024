@@ -64,4 +64,6 @@ Les principales améliorations à faire sont sur la récupération des données,
 - Gestion des citations trop ambivalente (temps de réponse négatif)
 
 
+<img src='img/grok_train1.jpg'>
+
 
